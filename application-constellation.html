@@ -1,0 +1,138 @@
+<head>
+    <link rel = "stylesheet" href = "style/main.css">
+    <link rel = "stylesheet" href = "style/dark.css">
+    <title>Constellation Application</title>
+    <link rel="icon" type = "image/png" href="image/logo.png">
+</head>
+
+<body>
+    <!-- THEME BUTTON -->
+    <button id = "themebutton" class = "theme button" onclick = "toggleTheme()">Switch Theme</button>
+
+
+    <!-- TOP MENU -->
+    <div class = "topmenu container banner">
+        <img src = "image/banner.png" class = "topmenu banner">
+    </div>
+    <div class = "topmenu container menu">
+        <button type = "button" class = "topmenu button" onclick="location.href='index.html';">
+            <img src = "image/Home.png" class = "topmenu icon"><br>Home</button>
+        <button type = "button" class = "topmenu button" onclick="location.href='news.html';">
+            <img src = "image/News.png" class = "topmenu icon"><br>News</button>
+        <button type = "button" class = "topmenu button" onclick="location.href='staff.html';">
+            <img src = "image/Staff.png" class = "topmenu icon"><br>Staff</button>
+        <button type = "button" class = "topmenu button" onclick="location.href='changelog.html';">
+            <img src = "image/Changelog.png" class = "topmenu icon"><br>Changelog</button>
+        <button type = "button" class = "topmenu button" onclick="location.href='plugins.html';">
+            <img src = "image/Plugins.png" class = "topmenu icon"><br>Plugins</button>
+        <button type = "button" class = "topmenu button" onclick="location.href='ranks.html';">
+            <img src = "image/Ranks.png" class = "topmenu icon"><br>Ranks</button>
+        <button type = "button" class = "topmenu button" onclick="location.href='rules.html';">
+            <img src = "image/Rules.png" class = "topmenu icon"><br>Rules</button>
+    </div>
+
+
+    <!--APPLCATION INFO-->
+    <div class = "application container">
+        
+        <h class = "heading big">Constellation Application</h><br>
+        <h class = "heading small">What will you be doing?</h>
+        <p class = "text monospace">As a Constellation, you'll be helping to moderate the server, including both in-game and Discord. You'll be responding to griefs, hacks, and other reported rule-breaks, along with answering questions related to moderation, plugins, and occasionally administration. Constellations are also invited to staff meetings for input into administration and major server decisions.<br><br>
+        Please spend some time on your application. The more long and detailed your answers are, the better. Good luck!</p>
+        <br>
+        
+        <h class = "heading small">Application<br></h>
+        <form action = "application-constellation-submitted.html">
+
+            <div class = "application container">
+                <h class = "text monospace">How old are you?<br></h>
+                <label class = "application label">13-15
+                    <input class = "application radio input" type = "radio" value = "13-15" name = "age">
+                    <span class = "application radio checkmark"></span>
+                </label>
+
+                <label class = "application label">15-17
+                    <input class = "application radio input" type = "radio" value = "15-17" name = "age">
+                    <span class = "application radio checkmark"></span>
+                </label>
+
+                <label class = "application label">18-24
+                    <input class = "application radio input" type = "radio" value = "18-24" name = "age">
+                    <span class = "application radio checkmark"></span>
+                </label>
+                
+                <label class = "application label">25+
+                    <input class = "application radio input" type = "radio" value = "25+" name = "age">
+                    <span class = "application radio checkmark"></span>
+                </label>
+            </div>
+
+            <div class = "application container">
+                <h class = "text monospace">Are you comfortable with and able to voice chat? (this is not necessary, but encouraged)<br></h>
+                <label class = "application label">yes
+                    <input class = "application radio input" type = "radio" value = "yes" name = "ableToVc">
+                    <span class = "application radio checkmark"></span>
+                </label>
+
+                <label class = "application label">no
+                    <input class = "application radio input" type = "radio" value = "no" name = "ableToVc">
+                    <span class = "application radio checkmark"></span>
+                </label>
+            </div>
+
+            <div class = "application container">
+                <h class = "text monospace">Timezone</h><br>
+                <input class = "application text short" type = "text" name = "timezone"><br>
+            </div>
+
+            <div class = "application container">
+                <h class = "text monospace">Minecraft username</h><br>
+                <input class = "application text short" type = "text" name = "minecraftUsername"><br>
+            </div>
+
+            <div class = "application container">
+                <h class = "text monospace">Discord username and tag</h><br>
+                <input class = "application text short" type = "text" name = "discordUsername"><br>
+            </div>
+
+            <div class = "application container">
+                <h class = "text monospace">Why should you be a staff member?</h><br>
+                <textarea class = "application text long" type = "text" name = "shouldBeStaff"></textarea><br>
+            </div>
+
+            <div class = "application container">
+                <h class = "text monospace">Why should you <b>not</b> be a staff member?</h><br>
+                <textarea class = "application text long" type = "text" name = "shouldNotBeStaff"></textarea><br>
+            </div>
+
+            <div class = "application container">
+                <h class = "text monospace">What prior experience do you have with moderation?</h><br>
+                <textarea class = "application app text long" type = "text" name = "moderationExperience"></textarea><br>
+            </div>
+
+            <div class = "application container">
+                <h class = "text monospace">If you could change one thing about the server, what would it be and how would you do it?</h><br>
+                <textarea class = "application text long" type = "text" name = "changeWhatHow"></textarea><br>
+            </div>
+
+            <div class = "application container">
+                <h class = "text monospace">Tell us about yourself. Introvert or extrovert? What's your opinion on the meaning of life? What's your favourite tea brand?</h><br>
+                <textarea class = "application text long" type = "text" name = "tellUsAboutYourself"></textarea><br>
+            </div>
+        </form>
+
+        <div class = "text error" id = "errorContainer">
+        </div>
+
+        <div class = "text success" id = "successContainer">
+        </div>
+
+        <button class = "application submit" onclick = "sendConstellationMessage()"> >>> submit <<< </button>
+
+    </div>
+
+
+    <!-- SCRIPTS -->
+    <script src="script/switchtheme.js"></script>
+    <script src="script/submitconstellation.js"></script>
+</body>

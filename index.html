@@ -1,0 +1,93 @@
+<head>
+    <link rel = "stylesheet" href = "style/main.css">
+    <link rel = "stylesheet" href = "style/dark.css">
+    <title>Home</title>
+    <link rel="icon" type = "image/png" href="image/logo.png">
+</head>
+
+
+<body>
+    <!-- THEME BUTTON -->
+    <button id = "themebutton" class = "theme button" onclick = "toggleTheme()">Switch Theme</button>
+
+
+    <!-- TOP MENU -->
+    <div class = "topmenu container banner">
+        <img src = "image/banner.png" class = "topmenu banner">
+    </div>
+    <div class = "topmenu container menu">
+        <button type = "button" class = "topmenu button" onclick="location.href='index.html';">
+            <img src = "image/Home.png" class = "topmenu icon"><br>Home</button>
+        <button type = "button" class = "topmenu button" onclick="location.href='news.html';">
+            <img src = "image/News.png" class = "topmenu icon"><br>News</button>
+        <button type = "button" class = "topmenu button" onclick="location.href='staff.html';">
+            <img src = "image/Staff.png" class = "topmenu icon"><br>Staff</button>
+        <button type = "button" class = "topmenu button" onclick="location.href='changelog.html';">
+            <img src = "image/Changelog.png" class = "topmenu icon"><br>Changelog</button>
+        <button type = "button" class = "topmenu button" onclick="location.href='plugins.html';">
+            <img src = "image/Plugins.png" class = "topmenu icon"><br>Plugins</button>
+        <button type = "button" class = "topmenu button" onclick="location.href='ranks.html';">
+            <img src = "image/Ranks.png" class = "topmenu icon"><br>Ranks</button>
+        <button type = "button" class = "topmenu button" onclick="location.href='rules.html';">
+            <img src = "image/Rules.png" class = "topmenu icon"><br>Rules</button>
+    </div>
+
+
+    <!-- HOME -->
+    <div class = "container main">
+        <h class = "heading big">Welcome<br></h>
+        <p class = "text monospace">Here's the TL;DR of what the server's about.</p>
+        <br><br>
+
+        <h class = "heading small">Focus<br></h>
+        <ul class = "text monospace">
+            <li>Largely oriented around Slimefun, a plugin that adds hundreds of
+                new items
+            </li>
+            <li>Design huge factories, automate everything, become invincible, go
+                to space, build cool stuff
+            </li>
+            <li>Powerful server hardware allows for large-scale factories and machines
+                without impacting performance
+            </li>
+        </ul>
+        <br>
+
+        <h class = "heading small">Transparency<br></h>
+        <ul class = "text monospace">
+            <li>A full list of plugins and Slimefun addons can be found <a href = "plugins.html" class = "text link">here</a></li>
+            <li>A changelog and roadmap can be found <a href = "changelog.html" class = "text link">here</a></li>
+        </ul>
+        <br>
+
+        <h class = "heading small">Ranks<br></h>
+        <ul class = "text monospace">
+            <li>An overview of ranks can be found in-game using /rank</li>
+            <li>Craft increasingly difficult Slimefun items to rank up</li>
+            <li>Ranking up allows you to use new commands and abilities (eg: using 
+                colours in chat)
+            </li>
+        </ul>
+        <br>
+
+        <h class = "heading small">Events<br></h>
+        <ul class = "text monospace">
+            <li>We regularly host events, such as finding armor stand scenes scattered 
+                around spawn
+            <l/i>
+            <li>If it's your sort of thing, we have a minigame world for you to murder 
+                your friends/enemies in
+            <l/i>
+        </ul>
+        <br>
+
+        <p class = "text monospace">
+            Sounds good to you? Drop by using <b>obelisk.game-server.cc</b> or join our Discord at
+            <a href = "https://discord.com/invite/6Ew8BYxUtZ" class = "text link">discord.gg/6Ew8BYxUtZ</a>.
+        </p>
+    </div>
+
+    
+    <!-- SCRIPTS -->
+    <script src="script/switchtheme.js"></script>
+</body>

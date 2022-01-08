@@ -1,0 +1,87 @@
+<head>
+    <link rel = "stylesheet" href = "style/main.css">
+    <link rel = "stylesheet" href = "style/dark.css">
+    <title>Plugins</title>
+    <link rel="icon" type = "image/png" href="image/logo.png">
+</head>
+
+
+<body>
+    <!-- THEME BUTTON -->
+    <button id = "themebutton" class = "theme button" onclick = "toggleTheme()">Switch Theme</button>
+
+
+    <!-- TOP MENU -->
+    <div class = "topmenu container banner">
+        <img src = "image/banner.png" class = "topmenu banner">
+    </div>
+    <div class = "topmenu container menu">
+        <button type = "button" class = "topmenu button" onclick="location.href='index.html';">
+            <img src = "image/Home.png" class = "topmenu icon"><br>Home</button>
+        <button type = "button" class = "topmenu button" onclick="location.href='news.html';">
+            <img src = "image/News.png" class = "topmenu icon"><br>News</button>
+        <button type = "button" class = "topmenu button" onclick="location.href='staff.html';">
+            <img src = "image/Staff.png" class = "topmenu icon"><br>Staff</button>
+        <button type = "button" class = "topmenu button" onclick="location.href='changelog.html';">
+            <img src = "image/Changelog.png" class = "topmenu icon"><br>Changelog</button>
+        <button type = "button" class = "topmenu button" onclick="location.href='plugins.html';">
+            <img src = "image/Plugins.png" class = "topmenu icon"><br>Plugins</button>
+        <button type = "button" class = "topmenu button" onclick="location.href='ranks.html';">
+            <img src = "image/Ranks.png" class = "topmenu icon"><br>Ranks</button>
+        <button type = "button" class = "topmenu button" onclick="location.href='rules.html';">
+            <img src = "image/Rules.png" class = "topmenu icon"><br>Rules</button>
+    </div>
+
+
+    <!-- PLUGINS -->
+    <div class = "container main">
+        <h class = "heading big">Plugins</h><br>
+        <h class = "text monospace">Plugins running on the survival server only. Last updated 21/12/2021</h><br><br>
+        <h class = "heading small">Standalone Plugins</h><br>
+        <ul class = "text monospace">
+            <li><b>CMI</b> - large general-purpose plugin adding teleports, homes, QoL commands, and much more</li>
+            <li><b>CMILib</b> - Dependency of CMI</li>
+            <li><b>CoreProtect</b> - logging plugin, primarily used to revert griefs</li>
+            <li><b>DiscordSRV</b> - handles Discord chat, console, and rank syncing</li>
+            <li><b>GriefPrevention</b> - land claiming plugin</li>
+            <li><b>Harbor</b> - highly configurable sleeping plugin</li>
+            <li><b>InteractiveChat</b> - adds interactive messages such as [inv]</li>
+            <li><b>LuckPerms</b> - permission management plugin with a web interface</li>
+            <li><b>McMMO</b> - adds skills that you can level up to gain advantages like more damage in combat</li>
+            <li><b>MetaRank</b> - custom ranking plugin specifically designed for Slimefun centric ranks</li>
+            <li><b>PlaceholderAPI</b> - allows other plugins to use placeholders such as number of online players</li>
+            <li><b>Plan</b> - player analytics plugin</li>
+            <li><b>PvPManager</b> - allows for toggling PvP</li>
+            <li><b>Slimefun</b> - adds hundreds of new items</li>
+            <li><b>Spark</b> - performance analysis plugin</li>
+            <li><b>TABBukkitBridge</b> - bridges TAB plugin between the server and BungeeCord</li>
+            <li><b>Vault</b> - dependency of a lot of plugins</li>
+            <li><b>ViaBackwards</b> - allows clients to connect using version 1.12+</li>
+            <li><b>ViaVersion</b> - dependency of ViaBackwards</li>
+            <li><b>VotingPluging</b> - manages rewards for voting</li>
+        </ul>
+        <h class = "heading small">Slimefun Addons</h><br>
+        <ul class = "text monospace">
+            <li><b>DankTech</b> - adds backpacks with functionality such as auto-deleting specific items</li>
+            <li><b>DyedBackpacks</b> - adds dyed variants of Slimefun backpacks</li>
+            <li><b>EcoPower</b> - adds new ways to renewably generate power</li>
+            <li><b>ExoticGarden</b> - adds new plants and foods</li>
+            <li><b>ExtraHeads</b> - adds heads that randomly drop from mobs</li>
+            <li><b>ExtraTools</b> - adds more tools that can be made from Slimefun materials</li>
+            <li><b>FluffyMachines</b> - adds quality-of-life machines and items</li>
+            <li><b>FoxyyMachines</b> - adds miscallenous magic and technology items and machines</li>
+            <li><b>Galacitfun</b> - adds rockets, stargates, new planets, and other space stuff</li>
+            <li><b>HotbarPets</b> - adds pets that can be crafted and give you special abilities</li>
+            <li><b>InfinityExpansion</b> - massive end game expansion adding ridiculously powerful items and machines</li>
+            <li><b>Networks</b> - adds a digital item storage system, compatible with Infinity Expansion storage units</li>
+            <li><b>SlimeCustomizer</b> - plugin for creating custom machines</li>
+            <li><b>SlimeTinker</b> - allows you to create hugely customisable tools</li>
+            <li><b>SlimyTreeTaps</b> - adds a renewable source of plastic</li>
+            <li><b>SoulJars</b> - adds items that can be used to change the type of spawners</li>
+        </ul>
+    </div>
+
+
+    <!-- SCRIPTS -->
+    <script src="script/switchtheme.js"></script>
+</body>

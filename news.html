@@ -1,0 +1,999 @@
+<head>
+    <link rel = "stylesheet" href = "style/main.css">
+    <link rel = "stylesheet" href = "style/dark.css">
+    <title>News</title>
+    <link rel="icon" type = "image/png" href="image/logo.png">
+</head>
+
+
+<body>
+    <!-- THEME BUTTON -->
+    <button id = "themebutton" class = "theme button" onclick = "toggleTheme()">Switch Theme</button>
+
+
+    <!-- TOP MENU -->
+    <div class = "topmenu container banner">
+        <img src = "image/banner.png" class = "topmenu banner">
+    </div>
+    <div class = "topmenu container menu">
+        <button type = "button" class = "topmenu button" onclick="location.href='index.html';">
+            <img src = "image/Home.png" class = "topmenu icon"><br>Home</button>
+        <button type = "button" class = "topmenu button" onclick="location.href='news.html';">
+            <img src = "image/News.png" class = "topmenu icon"><br>News</button>
+        <button type = "button" class = "topmenu button" onclick="location.href='staff.html';">
+            <img src = "image/Staff.png" class = "topmenu icon"><br>Staff</button>
+        <button type = "button" class = "topmenu button" onclick="location.href='changelog.html';">
+            <img src = "image/Changelog.png" class = "topmenu icon"><br>Changelog</button>
+        <button type = "button" class = "topmenu button" onclick="location.href='plugins.html';">
+            <img src = "image/Plugins.png" class = "topmenu icon"><br>Plugins</button>
+        <button type = "button" class = "topmenu button" onclick="location.href='ranks.html';">
+            <img src = "image/Ranks.png" class = "topmenu icon"><br>Ranks</button>
+        <button type = "button" class = "topmenu button" onclick="location.href='rules.html';">
+            <img src = "image/Rules.png" class = "topmenu icon"><br>Rules</button>
+    </div>
+
+
+    <!-- NEWS -->
+    <div class = "container main">
+
+        <h class = "heading big">Still no ETA for 1.18</h><br>
+        <h class = "text monospace"><i>18/12/2021 - Idra</i></p>
+        <p class = "text monospace">
+            Hi all, still no updates on 1.18 I'm afraid. We're still waiting for paper to update, and 
+            even the developers of paper don't have an ETA. I'll let you know if anything happens, and 
+            hopefully once paper does update, we can start the anarchy event within a day or two.<br><br>
+        </p>
+
+        <h class = "heading big">Log4shell patch</h><br>
+        <h class = "text monospace"><i>10/12/2021 - Idra</i></p>
+        <p class = "text monospace">
+            Hi all, quick announcement about the exploit recently discovered - I updated the server 
+            yesterday to use the latest paper version (where the exploit has been patched). It should 
+            be completely safe to play on the server.<br><br>
+        </p>
+
+        <h class = "heading big">Another update on 1.18</h><br>
+        <h class = "text monospace"><i>30/11/2021 - Idra</i></p>
+        <p class = "text monospace">
+            A couple of small updates.<br><br>
+
+            1) I ran into multiple problems and large bugs with Sunlight. I considered moving back 
+            to Essentials, but in the end concluded that it would be far better to move to CMI, 
+            so we're now using that instead. It's also replacing many other plugins, so the plugin 
+            count continues to decrease with the number of features staying the same.<br><br>
+
+            2) I said a while back that we may give rewards to players that have gone sufficiently 
+            far in Slimefun. I've decided to not go ahead with this. Sorry to those who have 
+            progressed far in Slimefun. Hopefully you found the experience completely painfu - 
+            I mean, enjoyable.<br><br>
+
+            3) Keeping XP and inventory will be restricted behind the second and third ranks 
+            respectively (assuming players start on the first rank when they join the server)<br><br>
+
+            4) Voting will be a much bigger thing. There will be a server shop using points gained 
+            by voting where things such as name tokens, lore tokens, warp tokens (yes, that's what 
+            you think it is), claim blocks, XP, and some other stuff will be sold.<br><br>
+
+            5) Absolutely no promises, but from what I've seen so far the number of API changes has 
+            been very low, meaning that the plugins may be 1.18-ready sooner than expected.<br><br>
+
+            6) There will be an anarchy period for 48 hours before the server resets. There will be 
+            no server download available due to the world being 250GB, so if you want to keep your 
+            builds, save them now using schematica/etc while you can. PVP will be enabled universally 
+            and Towny will be removed entirely, though KeepInventory will still be enabled. I'll let 
+            you know at least 24 hours before this begins.<br><br>
+
+            Any questions, feel free to DM me.<br><br>
+        </p>
+
+        <h class = "heading big">Update on 1.18</h><br>
+        <h class = "text monospace"><i>28/10/2021 - Idra</i></p>
+        <p class = "text monospace">
+            Hi everyone,<br><br>
+
+            It's been a while since the last announcement I made regarding 1.18, so I thought 
+            I would post an update for those interested. I've made a lot of progress in setting 
+            up a new server for 1.18, and a lot has also changed since that last announcement, 
+            so I'll also be detailing everything that is currently true of the new server. Keep 
+            in mind that this is still subject to change and nothing is certain.<br><br>
+
+            Firstly, I'd like to clarify that we will not be transferring anything, including 
+            builds, McMMO levels, items, etc. This is a hard reset. We're now less sure about 
+            whitelisting, and are now in the process of deciding whether to implement a 
+            whitelist/application process and if so, how it should work.<br><br>
+
+            The server is being split into two individual servers - a lobby server and a survival 
+            server. The lobby will host events, contain the spawn, contain the (staff) creative 
+            world, and hold new content that will be releasing tomorrow and the day after that. 
+            Players will initially spawn here and will easily be able to travel to the survival 
+            server. Chat will be maintained as one channel between both servers, both in-game 
+            and on Discord (using separate bots).<br><br>
+            
+            This combined with bungeecord to link the servers will hopefully make this feel less 
+            like a split of the current server, and more as an extension to it. To aid with this 
+            transition, lots of plugins have been moved to using databases shared between both 
+            servers as opposed to maintaining individual flatfile databases, which should hopefully 
+            make data storage more reliable.<br><br>
+            
+            In terms of the survival server, we've decided to keep ranks and have a new system set 
+            up for progressing through them, though I can't reveal any details about them yet. 
+            There have been a huge number of other major and minor changes, but they're too extensive 
+            to detail here, so I'll leave you with a list of the current plugins for both servers. 
+            All of these have been full configured and are (probably?) working correctly (apart 
+            from Terra which I hope to set up in the near future):<br><br>
+            
+            <b>Lobby:</b> ArmorStandTools, DiscordSRV, FastAsyncWorldEdit, HeadsInventory, 
+            HeadsPluginAPI, InteractiveChat, LuckPerms, NexEngine, PlaceholderAPI, Plan, ProtocolLib, 
+            Spark, SunLight, Vault, ViaBackwards, ViaVersion, Worldguard<br><br>
+
+            <b>Survival:</b> ArmorStandTools, CoreProtect, DiscordSRV, Dynmap, FastChunkPregenerator, 
+            GriefPrevention, Harbor, InteractiveChat, LuckPerms, McMMO, MetaRank, NexEngine, NuVotifier, 
+            PlaceholderAPI, Plan, ProtocolLib, PVPManager, Spark, SunLight, Vault, ViaBackwards, 
+            ViaVersion, VotingPlugin,  DankTech, DyedBackpacks, EcoPower, ExtraHeads, ExtraTools, 
+            FluffyMachines, FoxyMachines, Galactifun, HotbarPets, InfinityExpansion, SlimeCustomizer, 
+            Slimefun, SlimeTinker, SlimyTreeTaps, SoulJars<br><br>
+        </p>
+
+        <h class = "heading big">New staff member</h><br>
+        <h class = "text monospace"><i>24/10/2021 - Idra</i></p>
+        <p class = "text monospace">
+            Welcome Eosophilian (aka Dawn) to the staff team! They'll be acting as trial helper for the 
+            next 3 weeks.<br><br>
+        </p>
+
+        <h class = "heading big">New staff member</h><br>
+        <h class = "text monospace"><i>14/10/2021 - Idra</i></p>
+        <p class = "text monospace">
+            Welcome PsychoGoddess to the staff team! They will be acting as a trial helper for the next 
+            3 weeks.<br><br>
+        </p>
+
+        <h class = "heading big">Halloween event part 2</h><br>
+        <h class = "text monospace"><i>08/10/2021 - Idra</i></p>
+        <p class = "text monospace">
+            Halloween event part 2 is up! The server will be shutting down 4 hours after this (01:00am BST, 
+            19:00 CST) for 24-48 hours for a full backup and switch to linux, so come and 'enjoy' the 
+            event while you can. <br><br>
+        </p>
+
+        <h class = "heading big">Downtime begins</h><br>
+        <h class = "text monospace"><i>27/09/2021 - Idra</i></p>
+        <p class = "text monospace">
+            Downtime is now happening, and the server will be going down shortly. We'll be back up anywhere 
+            from 12-48 hours from now (21:30 BST, 15:30 CST)<br><br>
+        </p>
+
+        <h class = "heading big">Expect downtime soon</h><br>
+        <h class = "text monospace"><i>24/09/2021 - Void</i></p>
+        <p class = "text monospace">
+            The server will be down for likely a full day or 2 next week as we're moving from windows to a 
+            linux OS to solve some major file system problems. Also because I'm re-doing my ENTIRE network 
+            infrastructure going full ubiquiti so I can segregate the network away from everything else. :) 
+            I'll post again when its going to happen. Cheers!<br><br>
+
+            EDIT: Shipping was delayed on one ubiquiti product, estimated oct 4th arrival. I'll keep this 
+            updated so check back.<br><br>
+        </p>
+
+        <h class = "heading big">Cargo node issues</h><br>
+        <h class = "text monospace"><i>19/09/2021 - redstonepowder</i></p>
+        <p class = "text monospace">
+            Hello, red here.<br><br>
+
+            There appears to be a concerning amount of advanced output nodes that have been vanillized, 
+            so for that reason I urge you to check your cargo systems for any faulty nodes, collect them 
+            and place them into a chest along with it's coordinates so we can refund them. Please put your 
+            information into a ticket should you need a refund.<br><br>
+        </p>
+
+        <h class = "heading big">Regex exploit explained</h><br>
+        <h class = "text monospace"><i>19/09/2021 - Idra</i></p>
+        <p class = "text monospace">
+            So, here's vaguely what happened earlier, though not particularly detailed because I don't 
+            understand regex in enough detail to figure out exactly what happened.<br><br>
+
+            Multiverse is a plugin that lets us create and manage different worlds (such as a world to 
+            contain the spawn and the resource world). Regex (Regular Expression) is a sequence of characters 
+            that lets you perform searches on other sequences of characters (strings). While I'm unable to 
+            figure out exactly why, the regex ^(.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.+)$^ takes 
+            longer and longer to evaluate as you add more characters.<br><br>
+
+            According to https://regexr.com/, 5 characters takes 10ms to parse, then at 6 characters this 
+            balloons to 50ms, then at 7 characters 200ms, and keeps growing exponentially as you add more 
+            characters. By the time you get to a hundred or so, it would probably take years to compute.<br><br>
+
+            This exact expression was then parsed into multiverse's command engine by simply running /mv 
+            ^(.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.+)$^. The command engine started trying to 
+            execute the regex expression on some arbitrary data, most likely over a hundred characters long. 
+            To be clear, this shouldn't have been possible - ideally the command arguments should not be 
+            passed directly into a regex parser, because people can do stuff like this. The issue was reported 
+            on Github in https://github.com/Multiverse/Multiverse-Core/issues/2702 5 days ago, and patched in 
+            a snapshot which I promptly updated multiverse to.<br><br>
+
+            Interestingly, when I tested the exploit on a locally hosted server, it took around a minute and 
+            ten seconds to crash and shut down. However, the actual server continued running for 30 minutes 
+            before I asked Void to manually restart it. Paper should automatically shut the server down once 
+            the main thread has been stuck for so long, but for some reason it didn't in this instance. <br><br>
+        </p>
+
+        <h class = "heading big">Compromises must be made</h><br>
+        <h class = "text monospace"><i>18/09/2021 - Idra</i></p>
+        <p class = "text monospace">
+            I've recently felt burnt out with the server. This isn't what I want to do anymore. I've come to the 
+            realisation that I simply can't put as much work into making this server run as I was hoping. 
+            Yesterday, I had a long meeting with the rest of the staff team where we discussed how to run the 
+            server long-term while preserving my sanity/mental health. We have made a lot of decisions that I 
+            know many of you won't like, but this is largely necessary for the future of the server.<br><br>
+
+            I will continue to minimally maintain the server in its current state while separately configuring 
+            the server, from the ground up, for 1.18. There will be several key changes.<br><br>
+            
+            1) Towny is going. Towny is overly complex and to perform what should be simple actions, it takes a 
+            string of obscure commands. It's also a nightmare to maintain. When we first started the server, we 
+            chose Towny over other plugins because it encourages players to build communities and surround 
+            themselves by other players. After some observation we realised that this isn't the case, and that 
+            a similar claiming plugin would achieve largely the same tasks without the complexity and maintenance 
+            issues. We're therefore switching to GriefPrevention.<br><br>
+
+            2) ExcellentEnchants is going. The plugin is difficult to maintain and provides many opportunities 
+            for exploiting, particularly paired with Slimefun. We feel that Slimefun's own items should somewhat 
+            supplement this.<br><br>
+
+            3) ChatGames are going. At this point, several people have memorised the answers to most of them, and 
+            as a consequence few people actively engage with the chat games. They are a mere annoyance to the 
+            majority of players.<br><br>
+
+            4) Ranks are going. The current setup with McMMO doesn't fit our vision. We planned originally to use 
+            a quest system paired with ranks to match ranking to Slimefun progression, but this has proven 
+            extremely difficult to set up, and is ultimately not going to fix many of the issues with ranks. We 
+            briefly considered adding playtime-based ranks but realised that this would have to be paired with 
+            anti-AFK mechanisms, a route that we don't really want to take. Permissions from our current ranks 
+            will be merged into the default permission set.<br><br>
+
+            5) The server will move to a whitelist/application model. Rather than being completely public, players 
+            will need to apply to be able to join the server, and their application must be reviewed by at least 
+            two staff members before they are given whitelist access. All existing players will be automatically 
+            whitelisted. This will reduce our growth, but will also be excellent for maintaining a mature 
+            playerbase and having a small quantity of long-term players rather than a large quantity of short-term 
+            ones. We will provide clear directions for new players on how to apply, most likely using Discord or 
+            our server website.<br><br>
+
+            6) There won't be a poll to reset for 1.18. I hate to make this decision, but resetting will allow 
+            me to implement the changes that I wish to make, and as I've discussed at length, will likely be 
+            healthy for the community in the long term.<br><br>
+
+            7) Economy is going. It's a pain to balance and maintain, and a large number of unrelated decisions 
+            end up heavily concerning economy because it is so ubiquitous. We feel that switching commerce to a 
+            trading/bartering system where only items can be exchange will also help with existing balance 
+            problems, and encourage more communication between players.<br><br>
+
+            To clarify, warnings and bans will not be wiped.<br><br>
+
+            Thanks for your understanding. <br><br>
+        </p>
+
+        <h class = "heading big">Compliation problems</h><br>
+        <h class = "text monospace"><i>11/09/2021 - Idra</i></p>
+        <p class = "text monospace">
+            Apologies for the downtime, there was an issue on my end (I'm still unsure what exactly) that resulted 
+            in Slimefun recompiling on an older version that all addons are now incompatible with. I'm re-opening 
+            the server for now, if anything is still wrong then let me know. Compressed Machines hasn't loaded 
+            though, so we're switching to Slime Customizer variants sooner than planned. If you had any compressed 
+            machines, put them all into a chest, open a ticket, and give the coordinates of the chest. We will 
+            refund them with new versions as soon as replacements are implemented.<br><br>
+
+            Also, we've now switched back to the regular Slimefun.jar file, meaning there may be issues with saving 
+            between now and midnight on Friday (CST). If you experience any issues, open a ticket ASAP.<br><br>
+        </p>
+
+        <h class = "heading big">Extending the trial period</h><br>
+        <h class = "text monospace"><i>07/09/2021 - Idra</i></p>
+        <p class = "text monospace">
+            We're extending the trial period for V3MON_ by a week. This will likely be the default from now on for 
+            new moderators; 2 weeks as a trial helper before fully becoming a staff member<br><br>
+        </p>
+
+        <h class = "heading big">Major changes to staff team structure</h><br>
+        <h class = "text monospace"><i>03/09/2021 - Idra</i></p>
+        <p class = "text monospace">
+            Just to clear up possible confusion we've made some changes to the structure of the staff team.<br><br>
+
+            1) neutronstar01 is now an administrator!<br><br>
+
+            2) Head Builder and Event Coordinator have been merged into Coordinator (Aria_Night) who will now be 
+            coordinating Assistants<br><br>
+
+            3) Moderator and Helper have now been merged into one role, as having two roles was redundant<br><br>
+
+            4) Assistant Builders and Event Assistants have been merged into Assistants<br><br>
+
+            We're also minimising hierarchy between the staff ranks. The Helper and Administrator ranks both work on 
+            different aspects of the server, and have equal weight into server decisions. Assistants have equal weight 
+            to Moderators and Administrators (though all of these have less authority than the Coordinator) into 
+            decisions concerning building and events. <br><br>
+        </p>
+
+        <h class = "heading big">New staff member</h><br>
+        <h class = "text monospace"><i>31/08/2021 - Idra</i></p>
+        <p class = "text monospace">
+            Welcome to our new helper V3M0N_! They will be acting as a trial helper for one week, then will officially 
+            be part of the staff team.<br><br>
+        </p>
+
+        <h class = "heading big">Turbine troubles</h><br>
+        <h class = "text monospace"><i>30/08/2021 - Idra</i></p>
+        <p class = "text monospace">
+        I've recently discovered that dynatech hydro turbines have been taking ridiculous amounts of processing power, 
+        along with some other more obscure machines. If you have hydro turbines, turn them in to me, redstonepowder, 
+        neutronstar01 or Nethereasy and we will exchange them for generators that sum to produce the same amount of 
+        power. Hydro turbines will be disabled a week from now, along with dragon egg generators and orechids. We will 
+        refund as many materials as possible for dragon egg generators and orechids, so turn them in too if you have 
+        any.<br><br>
+        </p>
+
+        <h class = "heading big">A 1.18 reset?</h><br>
+        <h class = "text monospace"><i>23/08/2021 - Idra</i></p>
+        <p class = "text monospace">
+            The chat continues to erupt into debate every time the topic of a reset comes up, so here's a Q&A to hopefully 
+            address the most important questions. However, I want to emphasise that nothing is certain right now. 
+            Everything I say here is subject to change.<br><br>
+
+            This is also available as a blog post on <a href = "https://metamechanists.enjin.com/" class = "text link">
+            https://metamechanists.enjin.com/</a>.<br><br>
+
+            <h class = "heading small">Will there be a reset? When?</h><br>
+            If we want to update the main server to 1.18, there has to be a reset due to changes in world generation. 
+            However, there will be a poll if we want to 1) update to 1.18 with a reset or 2) stay on 1.17 some time 
+            longer. If the second option is the most popular, we will likely eventually launch a second server to run 
+            alongside with 1.18, as an update is simply necessary for the community's future for reasons I will describe 
+            next.<br><br>
+
+            <h class = "heading small">Why are we considering a reset?</h><br>
+            The reasons are extremely extensive, but I will try to compact the main three reasons here. 1) Chunk 
+            generation is taking a significant amount of processing power. The solution to this is world pregeneration. 
+            However, the current world is already 250 gigabytes, so pregenerating all the chunks would inflate the file 
+            size such that it is unmanageable. 2) The server is currently difficult to maintain. A reset would give me 
+            the opportunity to reconfigure plugins from the ground up and compact multiple plugins into one (which is 
+            better for performance as well as bugs and maintenance). 3) This server has been running for almost a year 
+            and many people are starting to approach Slimefun's endgame by the means of infinity expansion. With a reset, 
+            we could reconfigure parts of Slimefun to significantly improve and streamline progression. This, coupled 
+            with a level playing field for all players, would make playing on the server more enjoyable. 4) Perhaps the 
+            most obvious reason, 1.18 uses different chunk generation and this will be incompatible with our current 
+            world. It's therefore necessary to reset if we want to update to 1.18.<br><br>
+
+            <h class = "heading small">Build transfers</h><br>
+            This is something I'm afraid will probably not transfer in the event of a reset. I've discovered that WorldEdit 
+            is not very practical for transferring the large number of builds that exist on the server, and corruption, 
+            lost builds, and problems with transferring are likely.<br><br>
+
+            <h class = "heading small">Item transfers</h><br>
+            The answer to this question ties in with reason 3 that we're considering a reset. We'd like to provide a 
+            level playing field for all players and this is not possible with (especially) item transfer. In addition, 
+            if progression is significantly changed this may lead to a larger imbalance between early and endgame players 
+            than there may have been initially. It's therefore unlikely that we will transfer any items - however! We're 
+            considering giving a reward to players who progress sufficiently far in Slimefun that will transfer over the 
+            reset. If this becomes a reality, we will announce the conditions far in advance of the deadline to give 
+            everyone time to prepare. As a side note, researches will likely not transfer.<br><br>
+
+            <h class = "heading small">McMMO, jobs, and economy</h><br>
+            These abstract possessions are one of the few things that might be transferred, but I am still sceptical, 
+            largely for the reasons I listed in the previous answers: I want to provide a level playing field, and major 
+            changes may be made to the balance of McMMO, jobs, and (especially) economy. Some form of transfer may or may 
+            not be provided, but this is perhaps the largest grey area.<br><br>
+
+            <h class = "heading small">Main worlds</h><br>
+            Obviously, a large attraction of 1.18 is world generation, and thus the main world will be generated with this. 
+            However, we may also consider setting up a second world which uses custom world generation to allow for some 
+            flexibility with building. Both of these worlds will be fully pregenerated and have a world border significantly 
+            smaller than today, to prevent large world file sizes and performance loss from chunk generation.<br><br>
+
+            <h class = "heading small">Resource world</h><br>
+            The resource world will likely no longer be a thing, as the complexity of having it is simply not worth it, 
+            especially with chunk pregeneration in the main worlds. Even prior to introducing it we didn't have problems 
+            with rampant destruction in the main world. If it becomes an issue, we will re-introduce the resource 
+            world.<br><br>
+        </p>
+
+        <h class = "heading big">Adios to lag machines</h><br>
+        <h class = "text monospace"><i>19/08/2021 - Idra</i></p>
+        <p class = "text monospace">
+            Server TPS is back to normal.<br><br>
+
+            So.<br><br>
+
+            We are apparently being attacked by a group of people trying to 'take the server down' because it's 'pay to win' 
+            by building lag machines.<br><br>
+
+            Yeah, I'm not sure either...<br><br>
+        </p>
+
+        <h class = "heading big">New staff member</h><br>
+        <h class = "text monospace"><i>15/08/2021 - Idra</i></p>
+        <p class = "text monospace">
+            Everyone welcome BraydenLeungPro to the staff team!!!<br><br>
+        </p>
+
+        <h class = "heading big">Downtime almost over</h><br>
+        <h class = "text monospace"><i>14/08/2021 - Idra</i></p>
+        <p class = "text monospace">
+            Downtime is almost over. Server will be back up shortly :)<br><br>
+        </p>
+
+        <h class = "heading big">Downtime incoming</h><br>
+        <h class = "text monospace"><i>14/08/2021 - Idra</i></p>
+        <p class = "text monospace">
+            Hi everyone,<br><br>
+
+            I think I'm now fairly close to figuring out the cause of all the recent bugs, but experimentation will have to 
+            be done on a test server, much of it is far too dangerous to do on the actual live server, even with backups. 
+            Therefore I'm going to need to perform a download of a large number of server files (namely the entire plugins 
+            folder excluding dynmap, and the resource world). I don't know how long it will take but hopefully won't be longer 
+            than a couple of millennia 3-6 hours. I will be able to get a more precise estimate once the download starts. 
+            We're currently 2 hours in. 7 GB transferred and 42.8 GB of data to go. Still don't have a good estimate for time, 
+            but it will take a while. (2h40m in - FTP's estimate is another 2 hours)<br><br>
+
+            The downtime will start at in 20 minutes, 1am BST (19:00 CST and 20:00 EST). Thanks for your patience.<br><br>
+        </p>
+
+        <h class = "heading big">Hardware upgrade</h><br>
+        <h class = "text monospace"><i>10/08/2021 - Void</i></p>
+        <p class = "text monospace">
+            Server upgrade complete! 16 core 32 thread CPU and 128gb of ram!<br><br>
+        </p>
+
+        <h class = "heading big">Event starting soon</h><br>
+        <h class = "text monospace"><i>03/08/2021 - Idra</i></p>
+        <p class = "text monospace">
+            Hi everyone,<br><br>
+
+            On August <b>3rd</b> (not 2nd, there was a miscommunication) we'll be opening a new halloween/fall/autumn themed 
+            spawn, designed by our building team (assistant builders DragonSky2005, Wyatt_Kimchi, and head builder Aria_Night), 
+            including puzzles with prizes for the first few people to complete them. The spawn will be opened somewhere around 
+            3pm GMT / 10am EST / 9am CST. We'll see you there :)<br><br>
+        </p>
+
+        <h class = "heading big">Downtime over</h><br>
+        <h class = "text monospace"><i>23/07/2021 - Idra</i></p>
+        <p class = "text monospace">
+            SERVER IS BACK UP AND UPDATED TO 1.17.1!<br><br>
+
+            Resource world has been reset to allow for new chunks to generate with 1.17 content.<br><br>
+
+            We have also made some major changes to the rules - please run /warp rules to see them.<br><br>
+        </p>
+
+        <h class = "heading big">Downtime incoming</h><br>
+        <h class = "text monospace"><i>22/07/2021 - Idra</i></p>
+        <p class = "text monospace">
+            Downtime will be starting at 8pm GMT (4pm EST) and hopefully finishing at 2am GMT (10pm EST) for a full server 
+            backup and consecutive update to 1.17. Thanks for your patience.<br><br>
+        </p>
+
+
+        <h class = "heading big">1.17 update</h><br>
+        <h class = "text monospace"><i>17/07/2021 - Idra</i></p>
+        <p class = "text monospace">
+            It's likely that we will be updating to 1.17 at some point within the next 7 days. This will be a purely technical 
+            update - nothing about the server will change (apart from the fact that 1.17 blocks/entities/etc will be accessible). 
+            There will [hopefully] be no resets of any kind in the survival world with this update, and you will still be able 
+            to connect with all versions from 1.12.<br><br>
+
+            There will likely be a downtime lasting any time from 15 minutes to 2 hours, but we do not have a date for this 
+            yet.<br><br>
+
+            The resource world will be reset exactly a week from now to support this change and allow for new chunk generation. 
+            Please move anything you still have in the resource world out before this deadline.<br><br>
+        </p>
+
+        <h class = "heading big">Downtime incoming</h><br>
+        <h class = "text monospace"><i>17/07/2021 - Idra</i></p>
+        <p class = "text monospace">
+            Downtime will be starting at 8pm GMT (4pm EST) and hopefully finishing at 2am GMT (10pm EST) for a full server 
+            backup and consecutive update to 1.17. Thanks for your patience.<br><br>
+        </p>
+
+        <h class = "heading big">Microsoft updates cause rapid unexpected downtime (again)</h><br>
+        <h class = "text monospace"><i>14/07/2021 - Idra</i></p>
+        <p class = "text monospace">
+            Server is currently running windows updates, should be back shortly. Blame microsoft.<br><br>
+        </p>
+
+        <h class = "heading big">Armorstand issues</h><br>
+        <h class = "text monospace"><i>10/07/2021 - Idra</i></p>
+        <p class = "text monospace">
+            I've become aware of an issue with armourstands; when editing them, items they have equipped may disappear. Please 
+            be wary of this, and don't equip any valuable items on armourstands.<br><br>
+        </p>
+
+        <h class = "heading big">Builder applications close</h><br>
+        <h class = "text monospace"><i>07/07/2021 - Idra</i></p>
+        <p class = "text monospace">
+            Builder applications have been closed for now, however event assistant applications are still open - you can apply 
+            at https://metamechanists.enjin.com/eventassistantapp :)<br><br>
+        </p>
+
+        <h class = "heading big">Microsoft causes rapid unexpected downtime</h><br>
+        <h class = "text monospace"><i>07/07/2021 - Idra</i></p>
+        <p class = "text monospace">
+            Server's back up. As per usual, blame microsoft ;)<br><br>
+        </p>
+
+        <h class = "heading big">New builders (part 2)</h><br>
+        <h class = "text monospace"><i>05/07/2021 - Idra</i></p>
+        <p class = "text monospace">
+            Aaaand congratulations to our second new assistant builder Wyatt_Kimchi!<br><br>
+        </p>
+
+        <h class = "heading big">New builders (part 1)</h><br>
+        <h class = "text monospace"><i>03/07/2021 - Idra</i></p>
+        <p class = "text monospace">
+            Congratulations to our new assistant builder DragonSky2005! We will be selecting one more builder, who will be announced 
+            tomorrow :)<br><br>
+        </p>
+
+        <h class = "heading big">Permission issues fixed</h><br>
+        <h class = "text monospace"><i>29/06/2021 - Idra</i></p>
+        <p class = "text monospace">
+            Hi everyone<br><br>
+
+            I just wanted to apologise about the permissions breaking earlier. It looks to me like a plugin that our permission 
+            manager (LuckPerms) depended on automatically updated (or something similar - it's impossible to tell exactly what the 
+            problem was). This was fixed by simply updating LuckPerms (which evidently doesn't have an auto-updater).<br><bR>
+
+            In light of this, I've moved restarts to 1am/pm GMT every day (9am/pm EST) so I can deal with these issues sooner after 
+            they pop up.<br><br>
+        </p>
+
+        <h class = "heading big">Resource world and end reset</h><br>
+        <h class = "text monospace"><i>24/06/2021 - Idra</i></p>
+        <p class = "text monospace">
+            Resource world + the end resetting tomorrow! Last chance to move any items out of those dimensions.<br><br>
+        </p>
+
+        <h class = "heading big">Migration finally complete</h><br>
+        <h class = "text monospace"><i>23/06/2021 - Idra</i></p>
+        <p class = "text monospace">
+            Hi everyone,<br><br>
+
+            The server finished transferring a short while ago and we're ready to start it again. My apologies again for the 
+            inconvenience, I severely underestimated the size of the server (I blame y'all for making the world 200 gigabytes 
+            large) and so it took far longer than expected to transfer. Regardless, we are now up again, under the IP of 
+            obelisk.game-server.cc<br><br>
+
+            Though I know we can't compensate the time everyone has lost, as partial compensation we will have double  McMMO 
+            XP for the next 3 days.<br><br>
+
+            I'd also like to take this opportunity to announce some new ranks we've put in place to help with server events 
+            and building. We are now introducing two new roles which can be applied for: Assistant Builders and Event Assistants. 
+            For more information, visit https://metamechanists.enjin.com/applications.<br><br>
+            
+            Again, sorry that this took so long, and thanks so much for your patience!<br><br>
+        </p>
+
+        <h class = "heading big">Downtime extended (again)</h><br>
+        <h class = "text monospace"><i>20/06/2021 - Idra</i></p>
+        <p class = "text monospace">
+            Downtime may take even longer than expected due to more technical difficulties. I'm currently unsure how long it'll 
+            take, but in the best-case scenario it'll be around 19 hours from now, in the worst case scenario it'll be around 36 
+            hours. Thanks for your patience so far :)<br><br>
+        </p>
+
+        <h class = "heading big">Downtime extended</h><br>
+        <h class = "text monospace"><i>19/06/2021 - Idra</i></p>
+        <p class = "text monospace">
+            Downtime may take longer than expected due to bisect having awful download suppo- I mean, due to me being an idiot 
+            and not contacting support about compressing large files sooner<br><br>
+        </p>
+
+        <h class = "heading big">Migration incoming</h><br>
+        <h class = "text monospace"><i>19/06/2021 - Idra</i></p>
+        <p class = "text monospace">
+            Hi everyone,<br><br>
+
+            We've received an  offer from a friend of ours for a significant hardware upgrade. To migrate the server, we will 
+            need to have a downtime tomorrow. The downtime will start somewhere around 2:00pm GMT (10am EST) and will last from 
+            8-12 hours. We apologise for all the inconvenience, but there will be a huge increase in performance 
+            afterwards :)<br><br>
+        </p>
+        
+        <h class = "heading big">Resource world reset</h><br>
+        <h class = "text monospace"><i>18/06/2021 - Idra</i></p>
+        <p class = "text monospace">
+        Hi everyone,<br><br>
+
+        As per popular request, we'll be resetting the resource world and the end around a week from now. This is your chance to 
+        retrieve any items you have there. No refunds!<br><br>
+        </p>
+
+        <h class = "heading big">Multiblock plugin</h><br>
+        <h class = "text monospace"><i>08/06/2021 - Idra</i></p>
+        <p class = "text monospace">
+            For the past month or so, I've been developing a plugin that allows implementation of custom multiblocks. This will 
+            be expanded hugely upon in the future, but I have developed the plugin to a stage where I am happy with installing 
+            it on the server. For now, there are only two multiblocks: the large gold pan, and the large dust washer. These 
+            machines process in stacks, and require large amounts of coolant and energy to operate.<br><br>
+
+            For the next few days and weeks I will be beta testing these machines and the plugin on the server. If you wish to 
+            take part in the test, let me know and I will show you how to use the multiblocks (as the interface is not particularly 
+            intuitive at the moment). During the test, I will attempt to find and fix as many bugs as possible, and solve any 
+            performance or UI issues that may pop up, particularly over a long time period.<br><br>
+
+            If you partake in the testing, please report any of your findings in #deleted-channel or send them to me, so I can 
+            investigate further. Thanks for reading :)<br><br>
+        </p>
+
+        <h class = "heading big">Placeholders added</h><br>
+        <h class = "text monospace"><i>05/06/2021 - Idra</i></p>
+        <p class = "text monospace">
+            Chat placeholders have been added! The current list is [item], [inv], [echest], [bal], [pos], and [ping]. Type these 
+            into the chat to see what they do. You can now also see a player's timezone, join date, SF researches, and playtime 
+            by hovering over their name in chat.<br><br>
+        </p>
+
+        <h class = "heading big">Compressed machines obliterated</h><br>
+        <h class = "text monospace"><i>04/06/2021 - Idra</i></p>
+        <p class = "text monospace">
+            The latest slimefun update removed a function that was being used by compressed smelteries. Slimefun was not happy 
+            about this and basically deleted all the compressed smelteries. If you've lost anything, message me and I will 
+            refund it.<br><br>
+        </p>
+
+        <h class = "heading big">Lag prevention</h><br>
+        <h class = "text monospace"><i>31/05/2021 - Idra</i></p>
+        <p class = "text monospace">
+            Hi all,<br><br>
+
+            Recently I've been running profiles to help determine the cause of recent server lag. The main (preventable) culprit 
+            seems to be bees and villagers. I'd like to ask everyone who has bees or villagers to, if possible, move them away 
+            from your main base (so they are loaded less often) and/or spread them out more (entity collisions are very CPU 
+            intensive). Thanks in advance :)<br><br>
+        </p>
+
+        <h class = "heading big">Slimefun incompatibilities</h><br>
+        <h class = "text monospace"><i>29/05/2021 - Idra</i></p>
+        <p class = "text monospace">
+            Hi @Announcements , I think you deserve an explanation about the fiasco that happened earlier.<br><br>
+
+            A couple of months ago, several slimefun addons broke after an incompatibility occurred with the latest version of 
+            slimefun. To ensure this didn't happen again (particularly with a larger playerbase), I manually disabled auto updates 
+            for many of the addons we had at the time. Unbeknown to me, claytech (which was at the centre of the incompatibility) 
+            had broken because it had recently been abandoned. I occasionally manually updated the addons by checking for 
+            incompatibilities in a test server, then uploading them to the main server.<br><br>
+
+            This was all well and good until today, when infinity expansion automatically updated (I left updates for this enabled 
+            because it was not previously affected by any incompatibilities). The new infinity expansion update made use of what I 
+            believe was a new piece of code for handling menus, which hadn't yet been implemented in the server's slimefun version, 
+            and so the plugin failed to load entirely. Normally this wouldn't be an issue because the addon's blocks would not 
+            have been handled at this stage, but the error seems to have occurred after the blocks were loaded, evidently causing a 
+            signifcant number of slimefun blocks to revert to vanilla blocks or vanish, along with their cargo connectors.<br><br>
+
+            The whole thing was further complicated by the fact that we had made two major adjustments to the addons which directly 
+            involved infinity expansion, so it was unclear what exactly was causing the issue; thus it took several adjustments and 
+            restarts to realise the root of the problem was a version incompatibility. Once this was determined, I copied across 
+            all the plugin .jar files from the test server, which was still loading correctly. That has fixed the problem for every 
+            plugin.<br><br>
+
+            To counteract anything like this happening in the future, I've re-enabled auto-updates for every slimefun addon. I've 
+            also discovered that Poma expansion has been abandoned (the main repository has been deleted with no further 
+            information) so we've decided to remove this from the server.<br><br>
+
+            If you have lost any items, please message me or an administrator, and we'll attempt to sort it out<br><br>
+        </p>
+        
+        <h class = "heading big">Community project finished</h><br>
+        <h class = "text monospace"><i>28/05/2021 - redstonepowder</i></p>
+        <p class = "text monospace">
+            Hello everyone! Ye olde man Jenkins here. Aka redstonepowder. The community project has been finished! If you want to 
+            make use of it, use /warp commproj<br>
+            I'd like to thank Bappo, Quincy, Neutronstar, George, Shelled, Brayden, Flint, Teddy and many others that came to 
+            help!<br><br>
+
+            With the conclusion of the community  project, we can now hold a poll on the next event soon!<br>
+            Feel free to add your suggestions for what you want in the poll.<br><br>
+        </p>
+
+        <h class = "heading big">ColouredEnderChests going adios</h><br>
+        <h class = "text monospace"><i>26/05/2021 - Idra</i></p>
+        <p class = "text monospace">
+            Hi everyone, sorry for the ping.<br><br>
+
+            Recently we've uncovered a large problem with ColouredEnderChests which causes huge TPS drop when crafting large 
+            quantities of items. The plugin and all coloured ender chests will be removed in 3 days. If you have any items 
+            stored in the chests, please take them out; we won't be refunding anything lost after the plugin is removed. Thank 
+            you.<br><br>
+        </p>
+
+        <h class = "heading big">New marketplace opened</h><br>
+        <h class = "text monospace"><i>26/05/2021 - Idra</i></p>
+        <p class = "text monospace">
+            Hi everyone,<br><br>
+
+            Aria and I have spent the past few days building a new marketplace, as the old one was getting far too crowded. 
+            Access it with /warp market; if you still need to access the old marketplace, you can do so with /warp oldmarket.<br><br>
+
+            If you still have a shop in the old market, please buy a plot in the new market and private message me (or send 
+            me a /mail) with the location of your new plot to get your old one transferred. The old market will be removed 
+            a month from now.<br><br>
+
+            Beware that plots are now grouped, and can be purchased either individually or in groups.<br><br>
+        </p>
+
+        <h class = "heading big">New staff member #2</h><br>
+        <h class = "text monospace"><i>24/05/2021 - Idra</i></p>
+        <p class = "text monospace">
+            Hi everyone, we've reviewed our final applications as promised and have decided on our new helper. Applications 
+            will be open permanently, so if you wish to apply you may still do so. We will accept any new staff members who 
+            meet the criteria.<br><br>
+
+            Without further ado then, welcome to our second new helper Aria_Night!!!<br>
+            As a note - thanks to everyone else who applied, your application is much appreciated. There will be more 
+            opportunities after this :)<br><br>
+        </p>
+
+        <h class = "heading big">Spawner duplication fixed</h><br>
+        <h class = "text monospace"><i>22/05/2021 - Idra</i></p>
+        <p class = "text monospace">
+            We've finally found the problem causing the spawner duplication glitch. Electric spawners will now be 
+            re-implemented.<br><br>
+        </p>
+
+        <h class = "heading big">Warning about silk touch spawners</h><br>
+        <h class = "text monospace"><i>22/05/2021 - redstonepowder</i></p>
+        <p class = "text monospace">
+            Hello everyone, be advised, while silk touch spawners is enabled, it does NOT work on naturally generated 
+            spawners. Notice NOT.<br><br>
+        </p>
+
+        <h class = "heading big">New staff member #1</h><br>
+        <h class = "text monospace"><i>22/05/2021 - Idra</i></p>
+        <p class = "text monospace">
+            Hi everyone, we've decided to review applications and announce one of our new helpers slightly earlier. 
+            However, we have decided to keep applications open permanently, so fear not if you haven't applied yet. 
+            Another helper will be chosen and announced around 32 hours from now from the remaining pool of 
+            applicants.<br><br>
+
+            Without further ado then, welcome to our first new helper neutronstar01!!!<br><br>
+        </p>
+
+        <h class = "heading big">Staff applications open</h><br>
+        <h class = "text monospace"><i>16/05/2021 - Idra</i></p>
+        <p class = "text monospace">
+            Hi everyone,<br><br>
+            
+            A reminder that staff applications are open. We'll be closing these next week on Monday at 00:00 GMT, so 
+            make sure you submit before Monday. Apply at https://metamechanists.enjin.com/staffapplication.<br><br>
+        </p>
+
+        <h class = "heading big">New webstore</h><br>
+        <h class = "text monospace"><i>15/05/2021 - Idra</i></p>
+        <p class = "text monospace">
+            Hi everyone,<br><br>
+            
+            We've set up a webstore where you can purchase cosmetics or donate to support the server. Please do 
+            have a look :)<br><br>
+
+            [link removed]<br><br>
+        </p>
+
+        <h class = "heading big">Community project update</h><br>
+        <h class = "text monospace"><i>12/05/2021 - redstonepowder</i></p>
+        <p class = "text monospace">
+            Hi everyone,<br><br>
+            
+            Update: There's an outpost in the center of the perimeter, where you can safely set a home at. We'll 
+            move the Warp there at a later time.<br><br>
+
+            A chest has been linked to a barrel near the outpost, it's got explosive pickaxes that will keep being 
+            filled up until the barrel runs out. Feel free to take some to work on the perimeter! (Don't be greedy, 
+            we have eyes)<br><br>
+
+            By the by, it'd be nice if you could clear up small lava pockets as you reveal them, it'd help cleaning 
+            up the perimeter much easier.<br><br>
+        </p>
+
+        <h class = "heading big">Community project</h><br>
+        <h class = "text monospace"><i>11/05/2021 - redstonepowder</i></p>
+        <p class = "text monospace">
+            Hello everyone Jenkins here, a.k.a redstonepowder.<br>
+            I've been marking out an area with a community project in mind.  A public wither skeleton perimeter 
+            to be more specific.<br><br>
+
+            The goal here is to let everyone have a little fun on the server that does not involve slimefun.<br><br>
+
+            I'm sure there will be many questions about this so I'll try to pre-emptively answer some of them here. 
+            Feel free to ask me anything I haven't covered in this announcement.<br><br>
+
+            1. What is a wither skeleton perimeter?<br><
+            It is essentially a wither skeleton farm, but with a LOT of space mined out around it to reduce any 
+            lag that the farm would produce.<br><br>
+
+            2. How does this work and what're we doing?<br>
+            The idea is to have volunteers come and help dig out the marked area and maybe even help build the 
+            farm. Special equipment will be supplied to help out in this event. (It's a secret unless you join 
+            :p)<br><br>
+
+            3. Do I HAVE to go?<br>
+            No, this is strictly volunteers only.<br><br>
+
+            4. What do I get if I participate?<br>
+            Aside from having fun destroying the landscape, you also get to keep whatever you break and destroy. 
+            You can also keep some special equipment along with treasures that you may find. You'll also help 
+            finish it faster, meaning there will be a quick source of wither skulls, coal and exp.<br><br>
+
+            5. What happens if no one volunteers?<br>
+            Well, first off, I'd feel depressed because no one w- nah joking.<br>
+            I'll still be working on it, so it'll eventually be completed, just much more slowly, and you'll 
+            still have access to the farm.<br><br>
+
+            6. How do I get to the perimeter?<br>
+            Use /warp CommProj<br><br>
+
+            If you have any further questions, or want to volunteer, go ahead and msg me.<br>
+            P.S: Special equipment will be provided later, because this announcement got rushed.<br><br>
+        </p>
+
+        <h class = "heading big">Hosting provider issues</h><br>
+        <h class = "text monospace"><i>11/05/2021 - Idra</i></p>
+        <p class = "text monospace">
+            Sorry, looks like our host is having some problems, the server should be up again shortly<br><br>
+        </p>
+
+        <h class = "heading big">Sign up to our website</h><br>
+        <h class = "text monospace"><i>09/05/2021 - Idra</i></p>
+        <p class = "text monospace">
+            Hi all, please go sign up and link up on our Server site! https://metamechanists.enjin.com/<br>
+            I've been asked about some staff application business, all that will go on within the website!<br><br>
+        </p>
+
+        <h class = "heading big">RAM upgraded</h><br>
+        <h class = "text monospace"><i>07/05/2021 - Idra</i></p>
+        <p class = "text monospace">
+            Server RAM has been upgraded. No more crashes, and lag should hopefully decrease massively :)<br><br>
+        </p>
+
+        <h class = "heading big">Server crash</h><br>
+        <h class = "text monospace"><i>06/05/2021 - Idra</i></p>
+        <p class = "text monospace">
+            Sorry about the clusterfuck that was the server crash about 5 minutes ago. The server ran out of 
+            RAM and decided to quit life. I will get this fixed ASAP (read: tomorrow)<br><br>
+        </p>
+
+        <h class = "heading big">KeepInventory disabled</h><br>
+        <h class = "text monospace"><i>30/04/2021 - Idra</i></p>
+        <p class = "text monospace">
+            KeepInventory will not be enabled for about 4-5 hours after the restart because it needs enabling 
+            manually. Don't die in lava.<br><br>
+        </p>
+
+        <h class = "heading big">Website upgrade, vote or else</h><br>
+        <h class = "text monospace"><i>29/04/2021 - _Flintlock</i></p>
+        <p class = "text monospace">
+            Hello everyone! 2 things,<br><br>
+
+            1. We recently updated our Enjin site, https://metamechanists.enjin.com/ so do sign up and get 
+            familiar! Our staff/builder/etc. apps will likely be posted there. (However most things will be 
+            communicated here on discord as well, we'll see how it goes)<br><br>
+
+            2. Please VOTEEEEEEE :D I mean you get goodies so why not :p<br><br>
+        </p>
+
+        <h class = "heading big">Automatic startups</h><br>
+        <h class = "text monospace"><i>27/04/2021 - Idra</i></p>
+        <p class = "text monospace">
+            Server should now automatically try to start on every half-hour. If the server goes down again, 
+            wait until the next xx:10 or xx:40 for it to start again. If it doesn't, assume that either I 
+            messed something up horribly, or the host is having network issues.<br><br>
+        </p>
+
+        <h class = "heading big">No griefing >:(</h><br>
+        <h class = "text monospace"><i>27/04/2021 - Idra</i></p>
+        <p class = "text monospace">
+            Alright everyone, I was hoping I wouldn't need to make this announcement but here we are.<br><br>
+
+            I'm aware there have been multiple griefing threats and that certain groups are 'teaming up' on 
+            each other. I'd like to remind everyone that griefing is bannable as of the implementation of 
+            /protection. If you wish to participate in griefing, use /protection - it's as simple as that.
+            <br><br>
+
+            On a related note, we've decided to be less lenient with toxicity from now on - this includes 
+            insulting or flaming players, instigating arguments, and generally acting hostile. Please behave 
+            yourselves. Thank you.<br><br>
+        </p>
+
+        <h class = "heading big">/spawner removal</h><br>
+        <h class = "text monospace"><i>25/04/2021 - Idra</i></p>
+        <p class = "text monospace">
+            As an advance warning - /spawner will be removed from available commands tomorrow<br><br>
+        </p>
+
+        <h class = "heading big">Difficulty change</h><br>
+        <h class = "text monospace"><i>18/04/2021 - Idra</i></p>
+        <p class = "text monospace">
+            The difficulty has been set to hard in line with the poll sent out earlier on Discord.<br><br>
+        </p>
+
+        <h class = "heading big">*confusion*</h><br>
+        <h class = "text monospace"><i>18/04/2021 - Idra</i></p>
+        <p class = "text monospace">
+            I'm not completely sure what happened last night; my best guess is chunk generating taking too 
+            much RAM and crashing the server. AntiCheat was triggered but it doesn't look like it contributed 
+            anything in the way of lag. Either way, I've enabled some automatic profiling configs so next time 
+            it should be far easier to figure out what happened.<br><br>
+        </p>
+
+        <h class = "heading big">Lag spikes fixed</h><br>
+        <h class = "text monospace"><i>15/04/2021 - Idra</i></p>
+        <p class = "text monospace">
+            Lag spikes are probably fixed. It appears they were caused by a new plugin (LiteXpansion), should 
+            be fine now.<br><br>
+        </p>
+
+        <h class = "heading big">Lag, exploits, and bugs</h><br>
+        <h class = "text monospace"><i>15/04/2021 - Idra</i></p>
+        <p class = "text monospace">
+            Three things<br>
+            1) The latest paper update broke backward compatibility. That is now fixed, and you can connect 
+            with earlier versions again<br>
+            2) The massive lag spike yesterday seems to have been caused by a huge number of chunks being 
+            generated. If this happens again please ping me or Nethereasy, as we can't gather much more 
+            information on this unless we're there at the time<br>
+            3) Voting rewards should now be consistently working, though I had to remove a site<br><br>
+        </p>
+
+        <h class = "heading big">Adios to Craftbook</h><br>
+        <h class = "text monospace"><i>10/04/2021 - Idra</i></p>
+        <p class = "text monospace">
+            I recently did a timing profile to find out the cause of server lag. Craftbook is apparently 
+            responsible for 6% of CPU usage per tick (the highest of any plugin), so removing it would 
+            increase server performance by about 6%. I have therefore removed Craftbook. RIP.<br><br>
+        </p>
+
+        <h class = "heading big">We are not 2b2t</h><br>
+        <h class = "text monospace"><i>10/04/2021 - Idra</i></p>
+        <p class = "text monospace">
+            Okay, enough is enough. This is not an anarchy server. I've written a script that allows you 
+            to toggle 'protection,' which shows whether you wish to participate in raiding or not. Run 
+            /protection to use it.<br>
+            - Towny plots cannot be raided by anyone, regardless of your protection level<br>
+            - Anything you don't build in a town can be raided providing your protection is disabled<br>
+            - You cannot raid anyone else if your protection is enabled<br>
+            - Protection can only be toggled every 48 hours<br>
+            - It is your job to use /co i and /co l to find out if you have been raided illegally<br>
+            - If a raid is illegal (in a towny plot or done by someone without protection disabled), the 
+            raider will be banned for 3 days and the damage will be reverted<br>
+            - Exceptions to these rules (eg: if two towns wish to go to war) should go through me first<br><br>
+        </p>
+
+        <h class = "heading big">Server back up</h><br>
+        <h class = "text monospace"><i>08/04/2021 - Idra</i></p>
+        <p class = "text monospace">
+            The server's back up, there were some network issues in Amsterdam (where the server's hosted) 
+            while I was sleeping. sorry about that!<br><br>
+        </p>
+
+        <h class = "heading big">Market open</h><br>
+        <h class = "text monospace"><i>05/04/2021 - Idra</i></p>
+        <p class = "text monospace">
+            The player market is open!<br>
+            At /warp market you can buy from and sell to player shops, and build your own. Plot prices start 
+            at $10,000. 15 plots are available in total.<br><br>
+        </p>
+
+        <h class = "heading big">Lag, exploits, and bugs</h><br>
+        <h class = "text monospace"><i>15/04/2021 - Nethereasy</i></p>
+        <p class = "text monospace">
+            We have now added a resource World which will be reset every month. If you wish to access it 
+            you may by using the command /warp resource<br>
+            You are able to rtp to a further location of this map and you can return to main world by 
+            simping teleporting to a home or by teleporting to spawn via /spawn<br>
+            We ask that players that wish to do large scale terraforming, excavation, etc. For it to be 
+            done in this world as it will not effect the main world where players will progress their town.
+            Hope you all have a good time playing if any more suggestions are needed please done hesitate 
+            to make them in the suggestions part of the discord.<br><br>
+        </p>
+    </div>
+
+    
+    <!-- SCRIPTS -->
+    <script src="script/switchtheme.js"></script>
+</body>

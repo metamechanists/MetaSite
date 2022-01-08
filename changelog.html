@@ -1,0 +1,76 @@
+<head>
+    <link rel = "stylesheet" href = "style/main.css">
+    <link rel = "stylesheet" href = "style/dark.css">
+    <title>Changelog</title>
+    <link rel="icon" type = "image/png" href="image/logo.png">
+</head>
+
+
+<body>
+    <!-- THEME BUTTON -->
+    <button id = "themebutton" class = "theme button" onclick = "toggleTheme()">Switch Theme</button>
+
+
+    <!-- TOP MENU -->
+    <div class = "topmenu container banner">
+        <img src = "image/banner.png" class = "topmenu banner">
+    </div>
+    <div class = "topmenu container menu">
+        <button type = "button" class = "topmenu button" onclick="location.href='index.html';">
+            <img src = "image/Home.png" class = "topmenu icon"><br>Home</button>
+        <button type = "button" class = "topmenu button" onclick="location.href='news.html';">
+            <img src = "image/News.png" class = "topmenu icon"><br>News</button>
+        <button type = "button" class = "topmenu button" onclick="location.href='staff.html';">
+            <img src = "image/Staff.png" class = "topmenu icon"><br>Staff</button>
+        <button type = "button" class = "topmenu button" onclick="location.href='changelog.html';">
+            <img src = "image/Changelog.png" class = "topmenu icon"><br>Changelog</button>
+        <button type = "button" class = "topmenu button" onclick="location.href='plugins.html';">
+            <img src = "image/Plugins.png" class = "topmenu icon"><br>Plugins</button>
+        <button type = "button" class = "topmenu button" onclick="location.href='ranks.html';">
+            <img src = "image/Ranks.png" class = "topmenu icon"><br>Ranks</button>
+        <button type = "button" class = "topmenu button" onclick="location.href='rules.html';">
+            <img src = "image/Rules.png" class = "topmenu icon"><br>Rules</button>
+    </div>
+
+
+    <!-- CHANGELOG -->
+
+    <div class = "container main">
+        <h class = "heading big">Key</h><br>
+        <ul>
+            <li class = "changelog complete">complete</li>
+            <li class = "changelog wip">work in progress</li>
+            <li class = "changelog scheduled">scheduled</li>
+            <li class = "changelog planned">planned eventually</li>
+        </ul>
+        <ul>
+            <li class = "changelog major">major change</li>
+            <li class = "changelog minor">minor change</li>
+        </ul>
+    </div>
+
+    <div class = "container main">
+        <h class = "heading big">Roadmap</h><br>
+        <ul>
+            <li class = "changelog complete">[+] Release 1.18 server</li>
+            <li class = "changelog complete">[+] New winter spawn to be implemented alongside the 1.18 release</li>
+            <li class = "changelog wip">[+] New summer spawn to be implemented around April</li>
+            <li class = "changelog planned">[+] Move website onto the same machine that hosts the servers</li>
+            <li class = "changelog planned">[+] Expanded end-game with SlimeCustomizer</li>
+            <li class = "changelog planned">[+] Data section of the website with data pulled from PLAN and/or custom plugin</li>
+            <br>
+        </ul>
+
+        <h class = "heading big">Changelog</h><br>
+        <ul>
+            <h class = "heading small">??/01/2022</h><br>
+            <li class = "changelog major">[+] 1.18 server released</li>
+            <br>
+        </ul>
+        <br>
+    </div>
+
+
+    <!-- SCRIPTS -->
+    <script src="script/switchtheme.js"></script>
+</body>

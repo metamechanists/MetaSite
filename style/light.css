@@ -1,0 +1,299 @@
+/* BODY */
+body {
+    background-color:#e7e7e7;
+}
+
+
+/* THEME */
+.theme.button {
+    background-color:#e7e7e7;
+    color:#50505e;
+}
+
+.theme.button:hover {
+    background-color:#d6d6d6;
+}
+
+
+/* TOP MENU */
+.topmenu.button {
+    background-color:#e7e7e7;
+    color:#50505e;
+}
+
+.topmenu.button:hover {
+    background-color:#d6d6d6;
+}
+
+
+/* HEADING */
+.heading.small {
+    color:rgb(202, 146, 73);
+}
+
+.heading.big {
+    color:rgb(112, 198, 255);
+}
+
+
+/* TEXT */
+.text.monospace {
+    color:rgb(56, 56, 56);
+}
+
+.text.error {
+    color:rgb(84, 30, 30);
+}
+
+.text.success {
+    color:rgb(30, 84, 61);
+}
+
+.text.link {
+    color:rgb(106, 219, 121);
+}
+
+
+/* RULES */
+.rules.listelement {
+    color:rgb(56, 56, 56);
+}
+
+
+/* APPLICATION */
+.application.container {
+    background-color: rgb(220,230,227);
+}
+
+.application.label {
+    color:rgb(65, 160, 136);
+}
+
+.application.form {
+    color:rgb(56, 56, 56);
+}
+
+.application.radio.input:checked ~ .application.radio.checkmark {
+    background-color: rgb(66, 207, 78);
+}
+
+.application.radio.checkmark {
+    background-color: rgb(56, 56, 56);
+}
+
+.application.text {
+    background-color: #e7e7e7;
+    color: #161616;
+}
+
+.application.submit {
+    background-color: rgb(220,230,227);
+    color: #161616;
+}
+
+.application.view.button {
+    background-color: rgb(220,230,227);
+    color: #161616;
+}
+
+.staff.members.member.rank {
+    color:rgb(112, 198, 255);
+}
+
+.staff.members.member.name {
+    color:rgb(56, 56, 56);
+}
+
+.staff.members.member.description {
+    color:rgb(56, 56, 56);
+}
+
+.staff.members.member.aka {
+    color:rgb(56, 56, 56);
+}
+
+.staff.members.member.background.universe {
+    background-color: rgb(222,209,219);
+}
+
+.staff.members.member.background.universe:hover {
+    background-color: rgb(138,15,107,0.1);
+}
+
+.staff.members.member.background.universe.description {
+    background-color: rgb(138,15,107,0.3);
+}
+
+.staff.members.member.background.host {
+    background-color: rgb(232,218,228);
+}
+
+.staff.members.member.background.host:hover {
+    background-color: rgb(238,102,204,0.3);
+}
+
+.staff.members.member.background.host.description {
+    background-color: rgb(238,102,204,0.3);
+}
+
+.staff.members.member.background.galaxy {
+    background-color: rgb(208,233,208);
+}
+
+.staff.members.member.background.galaxy:hover {
+    background-color: rgb(0,255,0,0.3);
+}
+
+.staff.members.member.background.galaxy.description {
+    background-color: rgb(0,255,0,0.3);
+}
+
+.staff.members.member.background.constellation {
+    background-color: rgb(220,230,227);
+}
+
+.staff.members.member.background.constellation:hover {
+    background-color: rgb(120,217,190,0.3);
+}
+
+.staff.members.member.background.constellation.description {
+    background-color: rgb(120,217,190,0.3);
+}
+
+.staff.members.member.background.star {
+    background-color: rgb(223,228,208);
+}
+
+.staff.members.member.background.star:hover {
+    background-color: rgb(153,204,0, 0.3);
+}
+
+.staff.members.member.background.star.description {
+    background-color: rgb(153,204,0, 0.3);
+}
+
+.staff.ranks.background.galaxy {
+    background-color: rgb(208,233,208);
+}
+
+.staff.ranks.background.constellation {
+    background-color: rgb(220,230,227);
+}
+
+.staff.ranks.background.star {
+    background-color: rgb(223,228,208);
+}
+
+.staff.rank.rank.text {
+    color:rgb(56, 56, 56);
+}
+
+
+/* RANKS */
+.ranks.rank {
+    color:rgb(112, 198, 255);
+}
+
+.ranks.title {
+    color:rgb(158, 99, 71);
+}
+
+.ranks.description {
+    color:rgb(17, 17, 17);
+}
+
+.ranks.background.mercury {
+    background-color: rgb(191,191,191);
+}
+
+.ranks.background.mercury:hover {
+    background-color: rgb(191,191,191);
+}
+
+.ranks.background.venus {
+    background-color: rgb(192,175,161);
+}
+
+.ranks.background.venus:hover {
+    background-color: rgb(192,175,161);
+}
+
+.ranks.background.earth {
+    background-color: rgb(172,195,236);
+}
+
+.ranks.background.earth:hover {
+    background-color: rgb(172,195,236);
+}
+
+.ranks.background.mars {
+    background-color: rgb(222,183,170);
+}
+
+.ranks.background.mars:hover {
+    background-color: rgb(222,183,170);
+}
+
+.ranks.background.jupiter {
+    background-color: rgb(238,220,185);
+}
+
+.ranks.background.jupiter:hover {
+    background-color: rgb(238,220,185);
+}
+
+.ranks.background.saturn {
+    background-color: rgb(231,231,187);
+}
+
+.ranks.background.saturn:hover {
+    background-color: rgb(231,231,187);
+}
+
+.ranks.background.uranus {
+    background-color: rgb(215,231,238);
+}
+
+.ranks.background.uranus:hover {
+    background-color: rgb(215,231,238);
+}
+
+.ranks.background.neptune {
+    background-color: rgb(159,213,231);
+}
+
+.ranks.background.neptune:hover {
+    background-color: rgb(159,213,231);
+}
+
+
+/* CHANGELOG */
+.changelog.major {
+    background-color: rgb(169,206,214);
+    color:rgb(56, 56, 56);
+}
+
+.changelog.minor {
+    background-color: rgb(169,178,214);
+    color:rgb(56, 56, 56);
+}
+
+.changelog.complete {
+    background-color: rgb(172,201,182);
+    color:rgb(56, 56, 56);
+}
+
+.changelog.wip {
+    background-color: rgb(213,214,169);
+    color:rgb(56, 56, 56);
+}
+
+.changelog.scheduled {
+    background-color: rgb(214,173,169);
+    color:rgb(56, 56, 56);
+}
+
+.changelog.planned {
+    background-color: rgb(162,162,162);
+    color:rgb(56, 56, 56);
+}
