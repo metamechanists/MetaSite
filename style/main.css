@@ -512,12 +512,17 @@
     font-size:20px;
 }
 
-.changelog.scheduled {
+.changelog.planned {
     font-family:monospace;
     font-size:20px;
 }
 
-.changelog.planned {
+.changelog.bug.known {
+    font-family:monospace;
+    font-size:20px;
+}
+
+.changelog.bug.fixed {
     font-family:monospace;
     font-size:20px;
 }
