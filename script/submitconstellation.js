@@ -8,6 +8,8 @@ var variableIDs = [
   'shouldNotBeStaff', 
   'moderationExperience', 
   'changeWhatHow', 
+  'censorshipPrivacy',
+  'tellUsAStory',
   'tellUsAboutYourself'];
 
 var variableNames = [
@@ -20,6 +22,8 @@ var variableNames = [
   'Why should you not be a staff member?',
   'What prior experience do you have with moderation?',
   'If you could change one thing about the server, what would it be and how would you do it?',
+  'What is your opinion on censorship and privacy?',
+  'Tell us a story (yes, this is open-ended, you can write about whatever you want)',
   'Tell us about yourself. Introvert or extrovert? What\'s your opinion on the meaning of life? What\'s your favourite tea brand?']
 
 

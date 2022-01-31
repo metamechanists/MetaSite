@@ -268,12 +268,7 @@ body {
 
 
 /* CHANGELOG */
-.changelog.major {
-    background-color: rgb(169,206,214);
-    color:rgb(56, 56, 56);
-}
-
-.changelog.minor {
+.changelog {
     background-color: rgb(169,178,214);
     color:rgb(56, 56, 56);
 }

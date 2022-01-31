@@ -43,8 +43,7 @@
             <li class = "changelog planned">planned</li>
             <li class = "changelog bug known">known issue</li>
             <li class = "changelog bug fixed">fixed issue</li>
-            <li class = "changelog major">major change</li>
-            <li class = "changelog minor">minor change</li>
+            <li class = "changelog">change</li>
         </ul>
     </div>
 
@@ -54,9 +53,11 @@
             <li class = "changelog complete">Release 1.18 server</li>
             <li class = "changelog complete">New winter spawn added alongside the 1.18 release</li>
             <li class = "changelog complete">Move website onto the same machine that hosts the servers</li>
+            <li class = "changelog complete">More voting sites and new server banner</li>
+            <li class = "changelog complete">Weekly events nights</li>
+            <li class = "changelog complete">Minigames world in lobby</li>
             <li class = "changelog wip">New summer spawn to be implemented around April</li>
-            <li class = "changelog wip">More voting sites and new server banner</li>
-            <li class = "changelog wip">Weekly events nights</li>
+            <li class = "changelog wip">Switch website from Apache/HTTP to Nginx/HTTPS</li>
             <li class = "changelog planned">Slimefun tutorial(s)</li>
             <li class = "changelog planned">Expanded end-game with SlimeCustomizer</li>
             <li class = "changelog planned">Data section of the website with data pulled from PLAN and/or custom plugin</li>
@@ -65,10 +66,13 @@
 
         <h class = "heading big">Known Issues</h><br>
         <h class = "text monospace"><i>If you find an issue not listed here, please report it on <a href = "https://discord.com/invite/6Ew8BYxUtZ" class = "text link">Discord</a> under #bug-reports.</i></h>
-        <li class = "changelog bug known">URL for 'Best Minecraft Servers' in /vote is 'VoteURL'</li>
+        <li class = "changelog bug known">Uranus void capacitor requirement already fulfilled in Saturn with void quarry</li>
+        <li class = "changelog bug known">#transparency-log is flat out broken for some staff members</li>
+        <li class = "changelog bug known">Missing permissions for Galactifun commands</li>
 
         <br><br>
         <h class = "heading big">Fixed Issues</h><br>
+        <li class = "changelog bug fixed">Phantom toggling does not save over restarts/rejoins(?)</li>
         <li class = "changelog bug fixed">Creepers do damage in claims</li>
         <li class = "changelog bug fixed">One-block land claim when placing chests</li>
         <li class = "changelog bug fixed">Annoying sounds when performing certain commands</li>
@@ -87,58 +91,164 @@
         <li class = "changelog bug fixed">Voteshop phantom membranes not working</li>
         <li class = "changelog bug fixed">Mistake in rank requirement name</li>
         <li class = "changelog bug fixed">No damage in lava/fire in the overworld </li>
+        <li class = "changelog bug fixed">URL for 'Best Minecraft Servers' in /vote is 'VoteURL</li>
+        <li class = "changelog bug fixed">Players have access to /schedulerestart (o_o)</li>
+        <li class = "changelog bug fixed">Players don't have access to /cmi</li>
         <br><br>
 
         <h class = "heading big">Changelog</h><br>
         <ul>
             <h class = "heading small">20/01/2022</h><br>
-            <li class = "changelog minor">Updated existing vote sites and added several existing ones that were not in the voting list</li>
-            <li class = "changelog minor">Fixed claims not working below y=0</li>
+            <li class = "changelog">Updated existing vote sites and added several existing ones that were not in the voting list</li>
+            <li class = "changelog">Fixed claims not working below y=0</li>
+            <br>
+        </ul>
+
+        <h class = "heading big">Changelog</h><br>
+        <ul>
+            <h class = "heading small">20/01/2022</h><br>
+            <li class = "changelog">Updated existing vote sites and added several existing ones that were not in the voting list</li>
+            <li class = "changelog">Fixed claims not working below y=0</li>
+            <br>
+        </ul>
+
+        <h class = "heading big">Changelog</h><br>
+        <ul>
+            <h class = "heading small">28/01/2022</h><br>
+            <li class = "changelog">Heavily optimised villagers due to the strain they were placing on the server by reducing activation distance, tick conditions, and a couple of other things. This is due to (according to profiling) villagers currently placing the most strain on performance out of any mob. Let me know if anything is broken (eg: iron golem spawners)</li>
+            <li class = "changelog">Slightly increased overall mob cab</li>
+            <li class = "changelog">Decreased mob spawn range (why was this at 32????)</li>
+            <li class = "changelog">Slightly decreased view distance (yes, again, I'll raise it again if the above two countermeasures are effective enough)</li>
+            <li class = "changelog">Increased lobby RAM allocation to 8GB</li>
+            <li class = "changelog">Changed Discord messages to show avatar</li>
+            <li class = "changelog">Fixed players having access to /schedulerestart (o_o)</li>
+            <li class = "changelog">Fixed players not having access to /cmi</li>
+            <li class = "changelog">Fixed players not having access to /pvpmanager and /pm</li>
+            <br>
+        </ul>
+
+        <h class = "heading big">Changelog</h><br>
+        <ul>
+            <h class = "heading small">27/01/2022</h><br>
+            <li class = "changelog">Updated existing vote sites and added several existing ones that were not in the voting list</li>
+            <li class = "changelog">Fixed claims not working below y=0</li>
+            <li class = "changelog">Added staff application section in #rules-and-info</li>
+            <li class = "changelog">Added three new broadcast about land claim, /kit bed, and /togglephantoms</li>
+            <li class = "changelog">Increased overall kit cooldown from 120 seconds to 300 seconds</li>
+            <li class = "changelog">Fixed BestMinecraftServers link</li>
+            <li class = "changelog">Fixed /kit bed not working</li>
+            <br>
+        </ul>
+
+        <h class = "heading big">Changelog</h><br>
+        <ul>
+            <h class = "heading small">26/01/2022</h><br>
+            <li class = "changelog">Slightly reduced mob spawn limits and reduced view distance (10 -> 8) due to TPS dropping with 20-25+ players </li>
+            <br>
+        </ul>
+
+        <h class = "heading big">Changelog</h><br>
+        <ul>
+            <h class = "heading small">25/01/2022</h><br>
+            <li class = "changelog">Removed InteractiveChat because most of the IC features were unused or disabled, and IC is not playing nice with other plugins. If there is sufficient demand for the [item] and [/command] features I may re-add it in the future</li>
+            <li class = "changelog">Added phantom toggle command (/togglephantoms)</li>
+            <li class = "changelog">Updated voting message so it doesn't look horrible</li>
+            <li class = "changelog">Fixed people being able to toggle trapdoors in lobby (lol)</li>
+            <br>
+        </ul>
+
+        <h class = "heading big">Changelog</h><br>
+        <ul>
+            <h class = "heading small">24/01/2022</h><br>
+            <li class = "changelog">Aurelium Skills exp adjustments</li>
+            <li class = "changelog">Various exp sources buffed/nerfed</li>
+            <li class = "changelog">Exp per level curve lowered</li>
+            <br>
+        </ul>
+
+        <h class = "heading big">Changelog</h><br>
+        <ul>
+            <h class = "heading small">23/01/2022</h><br>
+            <li class = "changelog">Added portal to get from lobby to survival</li>
+            <li class = "changelog">Added broadcasts at intervals before a server restart</li>
+            <li class = "changelog">Fixed a mistake in server hardware on the server banner (5.3 -> 4.7 GHz, 32 -> 16 cores, kinda embarrassing tbh)</li>
+            <li class = "changelog">Fixed creepers griefing inside land claims but not outside</li>
+            <br>
+        </ul>
+
+        <h class = "heading big">Changelog</h><br>
+        <ul>
+            <h class = "heading small">22/01/2022</h><br>
+            <li class = "changelog">Re-enabled phantoms (you asked for it!)</li>
+            <li class = "changelog">Removed phantom membranes from the vote shop</li>
+            <li class = "changelog">Increased render distance from 6 to 10 (may change depending on how TPS does after this change)</li>
+            <li class = "changelog">Changed Mars rank requirement from Cargo Manager to Network Controller</li>
+            <li class = "changelog">Added broadcasts with important information every 5 minutes</li>
+            <br>
+        </ul>
+
+        <h class = "heading big">Changelog</h><br>
+        <ul>
+            <h class = "heading small">21/01/2022</h><br>
+            <li class = "changelog">New banner! (see below)</li>
+            <li class = "changelog">Re-added reaction roles to #rules-and-info </li>
+            <li class = "changelog">Creepers no longer grief above y=64</li>
+            <li class = "changelog">Fire now spreads inside claims</li>
+            <li class = "changelog">Fixed TopMinecraftServers voting site (over school wifi because cloudflare thinks I'm ddosing them?)</li>
+            <li class = "changelog">Fixed fire and lava damage not being applied in the overworld</li>
+            <br>
+        </ul>
+
+        <h class = "heading big">Changelog</h><br>
+        <ul>
+            <h class = "heading small">20/01/2022</h><br>
+            <li class = "changelog">Updated existing vote sites and added several existing ones that were not in the voting list</li>
+            <li class = "changelog">Fixed claims not working below y=0</li>
             <br>
         </ul>
 
         <ul>
             <h class = "heading small">19/01/2022</h><br>
-            <li class = "changelog minor">Fixed phantom membrane voteshop purchases not working</li>
-            <li class = "changelog minor">Fixed mistake in Saturn's Advanced Smeltery rank requirement</li>
-            <li class = "changelog minor">Fixed hunger not replenishing on death</li>
+            <li class = "changelog">Fixed phantom membrane voteshop purchases not working</li>
+            <li class = "changelog">Fixed mistake in Saturn's Advanced Smeltery rank requirement</li>
+            <li class = "changelog">Fixed hunger not replenishing on death</li>
             <br>
         </ul>
 
         <ul>
             <h class = "heading small">18/01/2022</h><br>
-            <li class = "changelog minor">Aurelium Skills XP rate doubled (I accidentally halved it in the rush to get Aurelium Skills configure before release, sorry about that!)</li>
-            <li class = "changelog minor">Fixed /w not working (AGAIN)</li>
+            <li class = "changelog">Aurelium Skills XP rate doubled (I accidentally halved it in the rush to get Aurelium Skills configure before release, sorry about that!)</li>
+            <li class = "changelog">Fixed /w not working (AGAIN)</li>
             <br>
         </ul>
 
         <ul>
             <h class = "heading small">17/01/2022</h><br>
-            <li class = "changelog minor">Changed #how-to-gain-access to be more clear</li>
-            <li class = "changelog minor">Fixed Discord group syncing</li>
+            <li class = "changelog">Changed #how-to-gain-access to be more clear</li>
+            <li class = "changelog">Fixed Discord group syncing</li>
             <br>
         </ul>
 
         <ul>
             <h class = "heading small">16/01/2022</h><br>
-            <li class = "changelog minor">Added player server to tab list</li>
-            <li class = "changelog minor">Re-enabled [ping] and [item], but the other placeholders will be disabled for the time being due to an exploit</li>
-            <li class = "changelog minor">Fixed AFK not showing in tab list</li>
-            <li class = "changelog minor">Fixed spawn event area not displaying how many presents there are to find</li>
-            <li class = "changelog minor">Fixed /w not working</li>
-            <li class = "changelog minor">Fixed /ignore tab completion issues</li>
-            <li class = "changelog minor">Fixed /rtp dumping people into the ocean</li>
+            <li class = "changelog">Added player server to tab list</li>
+            <li class = "changelog">Re-enabled [ping] and [item], but the other placeholders will be disabled for the time being due to an exploit</li>
+            <li class = "changelog">Fixed AFK not showing in tab list</li>
+            <li class = "changelog">Fixed spawn event area not displaying how many presents there are to find</li>
+            <li class = "changelog">Fixed /w not working</li>
+            <li class = "changelog">Fixed /ignore tab completion issues</li>
+            <li class = "changelog">Fixed /rtp dumping people into the ocean</li>
             <br>
         </ul>
 
         <ul>
             <h class = "heading small">15/01/2022</h><br>
-            <li class = "changelog major">1.18 server released</li>
-            <li class = "changelog minor">Changed /w format to be more noticeable</li>
-            <li class = "changelog minor">Disabled InteractiveChat's chat placeholders until further notice due to an exploit</li>
-            <li class = "changelog minor">Fixed one-block land claim when placing chests</li>
-            <li class = "changelog minor">Fixed annoying sounds when performing certain commands</li>
-            <li class = "changelog minor">Fixed first-time players spawning in the canyon instead of on the spawn platform when they join the survival server</li>
+            <li class = "changelog">1.18 server released</li>
+            <li class = "changelog">Changed /w format to be more noticeable</li>
+            <li class = "changelog">Disabled InteractiveChat's chat placeholders until further notice due to an exploit</li>
+            <li class = "changelog">Fixed one-block land claim when placing chests</li>
+            <li class = "changelog">Fixed annoying sounds when performing certain commands</li>
+            <li class = "changelog">Fixed first-time players spawning in the canyon instead of on the spawn platform when they join the survival server</li>
             <br>
         </ul>
         <br>

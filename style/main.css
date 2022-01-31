@@ -492,12 +492,7 @@
 
 
 /* CHANGELOG */
-.changelog.major {
-    font-family:monospace;
-    font-size:20px;
-}
-
-.changelog.minor {
+.changelog {
     font-family:monospace;
     font-size:20px;
 }

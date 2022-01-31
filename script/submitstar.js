@@ -7,6 +7,7 @@ var variableIDs = [
   'buildingExperience', 
   'buildingStyle',
   'buildingPictures',
+  'tellUsAStory',
   'tellUsAboutYourself'];
 
 var variableNames = [
@@ -18,6 +19,7 @@ var variableNames = [
   'What experience do you have with building?',
   'Talk about your building style a bit.',
   'Attach some pictures of your past builds.',
+  'Tell us a story (yes, this is open-ended, you can write about whatever you want)',
   'Tell us about yourself. Introvert or extrovert? What\'s your opinion on the meaning of life? What\'s your favourite tea brand?']
 
 
