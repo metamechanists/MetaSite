@@ -56,19 +56,23 @@
             <li class = "changelog complete">More voting sites and new server banner</li>
             <li class = "changelog complete">Weekly events nights</li>
             <li class = "changelog complete">Minigames world in lobby</li>
+            <li class = "changelog complete">Add LiveAtlas as Dynmap frontend</li>
             <li class = "changelog wip">New summer spawn to be implemented around April</li>
             <li class = "changelog wip">Switch website from Apache/HTTP to Nginx/HTTPS</li>
             <li class = "changelog planned">Slimefun tutorial(s)</li>
             <li class = "changelog planned">Expanded end-game with SlimeCustomizer</li>
             <li class = "changelog planned">Data section of the website with data pulled from PLAN and/or custom plugin</li>
+            <li class = "changelog planned">Add LiveAtlas as Dynmap frontend</li>
+            <li class = "changelog planned">News/Changelog/Roadmap syncing to Discord via webhooks</li>
             <br>
         </ul>
 
         <h class = "heading big">Known Issues</h><br>
         <h class = "text monospace"><i>If you find an issue not listed here, please report it on <a href = "https://discord.com/invite/6Ew8BYxUtZ" class = "text link">Discord</a> under #bug-reports.</i></h>
-        <li class = "changelog bug known">Uranus void capacitor requirement already fulfilled in Saturn with void quarry</li>
         <li class = "changelog bug known">#transparency-log is flat out broken for some staff members</li>
-        <li class = "changelog bug known">Missing permissions for Galactifun commands</li>
+        <li class = "changelog bug known">Missing permissions for Galactifun commands (seemingly no permission nodes so this is currently unfixable)</li>
+        <li class = "changelog bug known">Setting maximum homes then sleeping grants you an extra home</li>
+        <li class = "changelog bug known">Vote reminders don't trigger at the right time</li>
 
         <br><br>
         <h class = "heading big">Fixed Issues</h><br>
@@ -94,25 +98,64 @@
         <li class = "changelog bug fixed">URL for 'Best Minecraft Servers' in /vote is 'VoteURL</li>
         <li class = "changelog bug fixed">Players have access to /schedulerestart (o_o)</li>
         <li class = "changelog bug fixed">Players don't have access to /cmi</li>
+        <li class = "changelog bug fixed">Players don't have access to /pvpmanager and /pm</li>
+        <li class = "changelog bug fixed">Uranus void capacitor requirement already fulfilled in Saturn with void quarry</li>
+        <li class = "changelog bug fixed">Uranus can't use colours</li>
+        <li class = "changelog bug fixed">GriefPrevention messages referencing golden shovel instead of stone hoe</li>
+        <li class = "changelog bug fixed">Rank descriptions not using the new home count for each rank</li>
         <br><br>
 
         <h class = "heading big">Changelog</h><br>
         <ul>
-            <h class = "heading small">20/01/2022</h><br>
-            <li class = "changelog">Updated existing vote sites and added several existing ones that were not in the voting list</li>
-            <li class = "changelog">Fixed claims not working below y=0</li>
+            <h class = "heading small">05/02/2022</h><br>
+            <li class = "changelog">Added fast leaf decay datapack</li>
+            <li class = "changelog">Added double shulker shells databack</li>
+            <li class = "changelog">Added wandering trader miniblocks datapack</li>
+            <li class = "changelog">Reduced player sleeping percentage required for night skip (30% -> 20%)</li>
+            <li class = "changelog">Removed looting levels higher than 3 in the advanced auto anvil due to a duping exploit</li>
+            <li class = "changelog">Fixed GriefPrevention messages referencing golden shovel instead of stone hoe</li>
+            <li class = "changelog">Fixed rank descriptions not using the new home count for each rank </li>
             <br>
         </ul>
 
-        <h class = "heading big">Changelog</h><br>
         <ul>
-            <h class = "heading small">20/01/2022</h><br>
-            <li class = "changelog">Updated existing vote sites and added several existing ones that were not in the voting list</li>
-            <li class = "changelog">Fixed claims not working below y=0</li>
+            <h class = "heading small">04/02/2022</h><br>
+            <li class = "changelog">Added TranscEndence</li>
+            <li class = "changelog">Added AlchimiaVitae</li>
+            <li class = "changelog">Added CrystamaeHistoria</li>
+            <li class = "changelog">Removed HotbarPets</li>
+            <li class = "changelog">Added permission to do /sf versions (for all your debugging needs)</li>
+            <li class = "changelog">Increased maximum number of homes by 2 for all ranks</li>
+            <li class = "changelog">You can no longer set a home by sleeping</li>
+            <li class = "changelog">Fixed claiming not working on some planets</li>
             <br>
         </ul>
 
-        <h class = "heading big">Changelog</h><br>
+        <ul>
+            <h class = "heading small">02/02/2022</h><br>
+            <li class = "changelog">Disabled Slimefun research animation</li>
+            <li class = "changelog">Claiming tool is now a stone hoe</li>
+            <li class = "changelog">Fixed wrong banner on topminecraftservers.org</li>
+            <li class = "changelog">Fixed Uranus void capacitor requirement already fulfilled in Saturn with void quarry</li>
+            <br>
+        </ul>
+
+        <ul>
+            <h class = "heading small">/31/2022</h><br>
+            <li class = "changelog">Major buffs: Farming, Foraging, Archery, Healing</li>
+            <li class = "changelog">Minor buffs: Mining, Defense, Endurance, Agility, Alchemy, Sorcery</li>
+            <li class = "changelog">Minor nerfs: Fighting</li>
+            <li class = "changelog">Unchanged: Enchanting, Excavation, Forging</li>
+            <br>
+        </ul>
+
+        <ul>
+            <h class = "heading small">30/01/2022</h><br>
+            <li class = "changelog">Increased render distance again (this is literally just a game of ping pong at this point)</li>
+            <li class = "changelog">Fixed phantom toggling settings constantly resetting</li>
+            <br>
+        </ul>
+
         <ul>
             <h class = "heading small">28/01/2022</h><br>
             <li class = "changelog">Heavily optimised villagers due to the strain they were placing on the server by reducing activation distance, tick conditions, and a couple of other things. This is due to (according to profiling) villagers currently placing the most strain on performance out of any mob. Let me know if anything is broken (eg: iron golem spawners)</li>
@@ -127,7 +170,6 @@
             <br>
         </ul>
 
-        <h class = "heading big">Changelog</h><br>
         <ul>
             <h class = "heading small">27/01/2022</h><br>
             <li class = "changelog">Updated existing vote sites and added several existing ones that were not in the voting list</li>
@@ -140,14 +182,12 @@
             <br>
         </ul>
 
-        <h class = "heading big">Changelog</h><br>
         <ul>
             <h class = "heading small">26/01/2022</h><br>
             <li class = "changelog">Slightly reduced mob spawn limits and reduced view distance (10 -> 8) due to TPS dropping with 20-25+ players </li>
             <br>
         </ul>
 
-        <h class = "heading big">Changelog</h><br>
         <ul>
             <h class = "heading small">25/01/2022</h><br>
             <li class = "changelog">Removed InteractiveChat because most of the IC features were unused or disabled, and IC is not playing nice with other plugins. If there is sufficient demand for the [item] and [/command] features I may re-add it in the future</li>
@@ -157,7 +197,6 @@
             <br>
         </ul>
 
-        <h class = "heading big">Changelog</h><br>
         <ul>
             <h class = "heading small">24/01/2022</h><br>
             <li class = "changelog">Aurelium Skills exp adjustments</li>
@@ -166,7 +205,6 @@
             <br>
         </ul>
 
-        <h class = "heading big">Changelog</h><br>
         <ul>
             <h class = "heading small">23/01/2022</h><br>
             <li class = "changelog">Added portal to get from lobby to survival</li>
@@ -176,7 +214,6 @@
             <br>
         </ul>
 
-        <h class = "heading big">Changelog</h><br>
         <ul>
             <h class = "heading small">22/01/2022</h><br>
             <li class = "changelog">Re-enabled phantoms (you asked for it!)</li>
@@ -187,7 +224,6 @@
             <br>
         </ul>
 
-        <h class = "heading big">Changelog</h><br>
         <ul>
             <h class = "heading small">21/01/2022</h><br>
             <li class = "changelog">New banner! (see below)</li>
@@ -199,7 +235,6 @@
             <br>
         </ul>
 
-        <h class = "heading big">Changelog</h><br>
         <ul>
             <h class = "heading small">20/01/2022</h><br>
             <li class = "changelog">Updated existing vote sites and added several existing ones that were not in the voting list</li>
