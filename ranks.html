@@ -1,226 +1,399 @@
 <head>
-    <link rel = "stylesheet" href = "style/main.css">
-    <link rel = "stylesheet" href = "style/dark.css">
-    <title>Ranks</title>
+    <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.6/build/grids-responsive-min.css" />
+    <script src="https://kit.fontawesome.com/6be673d481.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <link rel = "stylesheet" href = "style/body.css">
+    <link rel = "stylesheet" href = "style/align.css">
+    <link rel = "stylesheet" href = "style/text.css">
+    <link rel = "stylesheet" href = "style/images.css">
+    <link rel = "stylesheet" href = "style/menu.css">
+    <link rel = "stylesheet" href = "style/list.css">
     <link rel="icon" type = "image/png" href="image/logo.png">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ranks</title>
 </head>
 
 
 <body>
-    <!-- THEME BUTTON -->
-    <button id = "themebutton" class = "theme button" onclick = "toggleTheme()">Switch Theme</button>
 
-
-    <!-- TOP MENU -->
-    <div class = "topmenu container banner">
-        <img src = "image/banner.png" class = "topmenu banner">
-    </div>
-    <div class = "topmenu container menu">
-        <button type = "button" class = "topmenu button" onclick="location.href='index.html';">
-            <img src = "image/Home.png" class = "topmenu icon"><br>Home</button>
-        <button type = "button" class = "topmenu button" onclick="location.href='news.html';">
-            <img src = "image/News.png" class = "topmenu icon"><br>News</button>
-        <button type = "button" class = "topmenu button" onclick="location.href='staff.html';">
-            <img src = "image/Staff.png" class = "topmenu icon"><br>Staff</button>
-        <button type = "button" class = "topmenu button" onclick="location.href='changelog.html';">
-            <img src = "image/Changelog.png" class = "topmenu icon"><br>Changelog</button>
-        <button type = "button" class = "topmenu button" onclick="location.href='plugins.html';">
-            <img src = "image/Plugins.png" class = "topmenu icon"><br>Plugins</button>
-        <button type = "button" class = "topmenu button" onclick="location.href='ranks.html';">
-            <img src = "image/Ranks.png" class = "topmenu icon"><br>Ranks</button>
-        <button type = "button" class = "topmenu button" onclick="location.href='rules.html';">
-            <img src = "image/Rules.png" class = "topmenu icon"><br>Rules</button>
+    <!-- MENU -->
+    <div class="menu-container">
+        <img src = "image/banner.png" class = "menu-heading">
+        <ul class="menu-list">
+            <li class="menu-item">
+                <i data-feather="home" class = "menu-icon"></i>
+                <a href="index.html" class="menu-text-active">Home</a>
+            </li>
+            <li class="menu-item">
+                <i data-feather="mail" class = "menu-icon"></i>
+                <a href="news.html" class="menu-text-active">News</a>
+            </li>
+            <li class="menu-item">
+                <i data-feather="user" class = "menu-icon"></i>
+                <a href="staff.html" class="menu-text-active">Staff</a>
+            </li>
+            <li class="menu-item">
+                <i data-feather="chevrons-up" class = "menu-icon"></i>
+                <a href="ranks.html" class="menu-text-active">Ranks</a>
+            </li>
+            <li class="menu-item">
+                <i data-feather="map" class = "menu-icon"></i>
+                <a href="https://map.metamechanists.org" class="menu-text-active">Map</a>
+            </li>
+            <li class="menu-item">
+                <i data-feather="settings" class = "menu-icon"></i>
+                <a href="changelog.html" class="menu-text-active">Changelog</a>
+            </li>
+            <li class="menu-item">
+                <i data-feather="list" class = "menu-icon"></i>
+                <a href="plugins.html" class="menu-text-active">Plugins</a>
+            </li>
+            <li class="menu-item">
+                <i data-feather="bar-chart-2" class = "menu-icon"></i>
+                <a href="data.html" class="menu-text-wip">Data</a>
+            </li>
+            <li class="menu-item">
+                <i data-feather="align-left" class = "menu-icon"></i>
+                <a href="rules.html" class="menu-text-active">Rules</a>
+            </li>
+        </ul>
     </div>
 
 
     <!-- RANKS -->
-    <div class = "ranks container">
+    <div class = "pad-main">
 
-        <div class = "ranks top container">
-            <h class = "heading big">Ranks</h>
-            <br>
-            <h class = "text monospace">Hover on a rank to view it's requirements and rewards.</h>
-            <br>
-        </div>
+        <h class = "text-heading-big">RANKS</h><br>
 
-        <div class = "ranks rank container">
-            <div class = "ranks background mercury description">
-                <ul class = "ranks description">
-                    <h class = "ranks title">Requirements</h>
-                    <li>Default rank</li>
-                </ul>
-                <ul class = "ranks description">
-                    <h class = "ranks title">Rewards</h>
-                    <li>Default permissions</li>
-                </ul>
+        <div class = "pure-u-1 pure-u-md-2-5 pure-u-lg-1-5 pad-info-box">
+            <div class = "align-centre text-centre">
+                <img class = "ranks icon" src = "image/mercury.png" width = 100px height = 100px><br>
+                <h class = "text-heading-medium">Mercury</h><br>
             </div>
-            <div class = "ranks background mercury">
-                <p class = "ranks rank"><b>Mercury</b></p>
-                <img class = "ranks icon" src = "image/mercury.png" width = 300px height = 300px>
-            </div>
-        </div>
-        
-        <div class = "ranks rank container">
-            <div class = "ranks background venus description">
-                <ul class = "ranks description">
-                    <h class = "ranks title">Requirements</h>
-                    <li>8x Electromagnet</li>
-                    <li>4x Output Chest</li>
-                    <li>1x Automatic Ignition Chamber</li>
-                </ul>
-                <ul class = "ranks description">
-                    <h class = "ranks title">Rewards</h>
-                    <li>/suicide</li>
-                    <li>Keep XP on death</li>
-                    <li>Edit paintings with shift right click</li>
-                    <li>5 homes</li>
-                </ul>
-            </div>
-            <div class = "ranks background venus">
-                <p class = "ranks rank"><b>Venus</b></p>
-                <img class = "ranks icon" src = "image/venus.png" width = 300px height = 300px>
-            </div>
+            <h class = "text-heading-small">Requirements</h>
+            <ul class = "list-unordered-container text-paragraph">
+                <li>
+                    <i data-feather="arrow-left" class = "image-icon-small-amber"></i>
+                    N/A
+                </li>
+            </ul>
+            <h class = "text-heading-small">Rewards</h>
+            <ul class = "list-unordered-container text-paragraph">
+                <li>
+                    <i data-feather="arrow-right" class = "image-icon-small-amber"></i>
+                    Default Permissions
+                </li>
+            </ul>
         </div>
 
-        <div class = "ranks rank container">
-            <div class = "ranks background earth description">
-                <ul class = "ranks description">
-                    <h class = "ranks title">Requirements</h>
-                    <li>48x Electric Motor</li>
-                    <li>16x Heating Coil</li>
-                    <li>1x Energy Regulator</li>
-                    <li>1x Electric Ore grinder</li>
-                    <li>1x Electric Dust Washer</li>
-                    <li>1x Electric Gold Pan</li>
-                </ul>
-                <ul class = "ranks description">
-                    <h class = "ranks title">Rewards</h>
-                    <li>Keep inventory on death</li>
-                    <li>Can use /colors in books</li>
-                </ul>
+        <div class = "pure-u-1 pure-u-md-2-5 pure-u-lg-1-5 pad-info-box">
+            <div class = "align-centre text-centre">
+                <img class = "ranks icon" src = "image/venus.png" width = 100px height = 100px><br>
+                <h class = "text-heading-medium">Venus</h><br>
             </div>
-            <div class = "ranks background earth">
-                <p class = "ranks rank"><b>Earth</b></p>
-                <img class = "ranks icon" src = "image/earth.png" width = 300px height = 300px>
-            </div>
+            <h class = "text-heading-small">Requirements</h>
+            <ul class = "list-unordered-container text-paragraph">
+                <li>
+                    <i data-feather="arrow-left" class = "image-icon-small-amber"></i>
+                    8x Electromagnet
+                </li>
+                <li>
+                    <i data-feather="arrow-left" class = "image-icon-small-amber"></i>
+                    4x Output Chest
+                </li>
+                <li>
+                    <i data-feather="arrow-left" class = "image-icon-small-amber"></i>
+                    8x Automatic Ignition Chamber
+                </li>
+            </ul>
+            <h class = "text-heading-small">Rewards</h>
+            <ul class = "list-unordered-container text-paragraph">
+                <li>
+                    <i data-feather="arrow-right" class = "image-icon-small-amber"></i>
+                    /suicide
+                </li>
+                <li>
+                    <i data-feather="arrow-right" class = "image-icon-small-amber"></i>
+                    Keep XP on death
+                </li>
+                <li>
+                    <i data-feather="arrow-right" class = "image-icon-small-amber"></i>
+                    Edit paintings with shift right click
+                </li>
+                <li>
+                    <i data-feather="arrow-right" class = "image-icon-small-amber"></i>
+                    5 homes
+                </li>
+            </ul>
         </div>
 
-        <div class = "ranks rank container">
-            <div class = "ranks background mars description">
-                <ul class = "ranks description">
-                    <h class = "ranks title">Requirements</h>
-                    <li>1x Network Controller</li>
-                    <li>64x Cargo Node (connector)</li>
-                    <li>24x Reinforced Alloy Ingot</li>
-                    <li>8x Blistering Ingot</li>
-                    <li>1x Oil Pump</li>
-                </ul>
-                <ul class = "ranks description">
-                    <h class = "ranks title">Rewards</h>
-                    <li>/workbench</li>
-                    <li>/anvil</li>
-                    <li>6 homes</li>
-                </ul>
+        <div class = "pure-u-1 pure-u-md-2-5 pure-u-lg-1-5 pad-info-box">
+            <div class = "align-centre text-centre">
+                <img class = "ranks icon" src = "image/earth.png" width = 100px height = 100px><br>
+                <h class = "text-heading-medium">Earth</h><br>
             </div>
-            <div class = "ranks background mars">
-                <p class = "ranks rank"><b>Mars</b></p>
-                <img class = "ranks icon" src = "image/mars.png" width = 300px height = 300px>
-            </div>
+            <h class = "text-heading-small">Requirements</h>
+            <ul class = "list-unordered-container text-paragraph">
+                <li>
+                    <i data-feather="arrow-left" class = "image-icon-small-amber"></i>
+                    48x Electric Motor
+                </li>
+                <li>
+                    <i data-feather="arrow-left" class = "image-icon-small-amber"></i>
+                    16x Heating Coil
+                </li>
+                <li>
+                    <i data-feather="arrow-left" class = "image-icon-small-amber"></i>
+                    1x Energy Regulator
+                </li>
+                <li>
+                    <i data-feather="arrow-left" class = "image-icon-small-amber"></i>
+                    1x Electric Ore grinder
+                </li>
+                <li>
+                    <i data-feather="arrow-left" class = "image-icon-small-amber"></i>
+                    1x Electric Dust Washer
+                </li>
+                <li>
+                    <i data-feather="arrow-left" class = "image-icon-small-amber"></i>
+                    1x Electric Gold Pan
+                </li>
+            </ul>
+            <h class = "text-heading-small">Rewards</h>
+            <ul class = "list-unordered-container text-paragraph">
+                <li>
+                    <i data-feather="arrow-right" class = "image-icon-small-amber"></i>
+                    Keep inventory on death
+                </li>
+                <li>
+                    <i data-feather="arrow-right" class = "image-icon-small-amber"></i>
+                    Can use /colors in books
+                </li>
+            </ul>
         </div>
 
-        <div class = "ranks rank container">
-            <div class = "ranks background jupiter description">
-                <ul class = "ranks description">
-                    <h class = "ranks title">Requirements</h>
-                    <li>2x Dust Extractor</li>
-                    <li>1x Uranium Extractor</li>
-                    <li>2x Mob Simulation Chamber</li>
-                </ul>
-                <ul class = "ranks description">
-                    <h class = "ranks title">Rewards</h>
-                    <li>/me</li>
-                    <li>/nick</li>
-                    <li>/dispose</li>
-                    <li>/ender</li>
-                    <li>Edit signs with shift right click</li>
-                </ul>
+        <div class = "pure-u-1 pure-u-md-2-5 pure-u-lg-1-5 pad-info-box">
+            <div class = "align-centre text-centre">
+                <img class = "ranks icon" src = "image/mars.png" width = 100px height = 100px><br>
+                <h class = "text-heading-medium">Mars</h><br>
             </div>
-            <div class = "ranks background jupiter">
-                <p class = "ranks rank"><b>Jupiter</b></p>
-                <img class = "ranks icon" src = "image/jupiter.png" width = 300px height = 300px>
-            </div>
+            <h class = "text-heading-small">Requirements</h>
+            <ul class = "list-unordered-container text-paragraph">
+                <li>
+                    <i data-feather="arrow-left" class = "image-icon-small-amber"></i>
+                    1x Network Controller
+                </li>
+                <li>
+                    <i data-feather="arrow-left" class = "image-icon-small-amber"></i>
+                    64x Cargo Node (connector)
+                </li>
+                <li>
+                    <i data-feather="arrow-left" class = "image-icon-small-amber"></i>
+                    24x Reinforced Alloy Ingot
+                </li>
+                <li>
+                    <i data-feather="arrow-left" class = "image-icon-small-amber"></i>
+                    8x Blistering Ingot
+                </li>
+                <li>
+                    <i data-feather="arrow-left" class = "image-icon-small-amber"></i>
+                    1x Oil Pump
+                </li>
+            </ul>
+            <h class = "text-heading-small">Rewards</h>
+            <ul class = "list-unordered-container text-paragraph">
+                <li>
+                    <i data-feather="arrow-right" class = "image-icon-small-amber"></i>
+                    /workbench
+                </li>
+                <li>
+                    <i data-feather="arrow-right" class = "image-icon-small-amber"></i>
+                    /anvil
+                </li>
+                <li>
+                    <i data-feather="arrow-right" class = "image-icon-small-amber"></i>
+                    6 homes
+                </li>
+            </ul>
         </div>
 
-        <div class = "ranks rank container">
-            <div class = "ranks background saturn description">
-                <ul class = "ranks description">
-                    <h class = "ranks title">Requirements</h>
-                    <li>2x Void Quarry</li>
-                    <li>4x Reinforced Storage</li>
-                    <li>16x Advanced Electric Smeltery</li>
-                    <li>1x Singularity Constructor</li>
-                </ul>
-                <ul class = "ranks description">
-                    <h class = "ranks title">Rewards</h>
-                    <li>/condense</li>
-                    <li>/uncondense</li>
-                    <li>7 homes</li>
-                </ul>
+        <div class = "pure-u-1 pure-u-md-2-5 pure-u-lg-1-5 pad-info-box">
+            <div class = "align-centre text-centre">
+                <img class = "ranks icon" src = "image/jupiter.png" width = 100px height = 100px><br>
+                <h class = "text-heading-medium">Jupiter</h><br>
             </div>
-            <div class = "ranks background saturn">
-                <p class = "ranks rank"><b>Saturn</b></p>
-                <img class = "ranks icon" src = "image/saturn.png" width = 300px height = 300px>
-            </div>
+            <h class = "text-heading-small">Requirements</h>
+            <ul class = "list-unordered-container text-paragraph">
+                <li>
+                    <i data-feather="arrow-left" class = "image-icon-small-amber"></i>
+                    2x Dust Extractor
+                </li>
+                <li>
+                    <i data-feather="arrow-left" class = "image-icon-small-amber"></i>
+                    1x Uranium Extractor
+                </li>
+                <li>
+                    <i data-feather="arrow-left" class = "image-icon-small-amber"></i>
+                    2x Mob Simulation Chamber
+                </li>
+            </ul>
+            <h class = "text-heading-small">Rewards</h>
+            <ul class = "list-unordered-container text-paragraph">
+                <li>
+                    <i data-feather="arrow-right" class = "image-icon-small-amber"></i>
+                    /me
+                </li>
+                <li>
+                    <i data-feather="arrow-right" class = "image-icon-small-amber"></i>
+                    /nick
+                </li>
+                <li>
+                    <i data-feather="arrow-right" class = "image-icon-small-amber"></i>
+                    /dispose
+                </li>
+                <li>
+                    <i data-feather="arrow-right" class = "image-icon-small-amber"></i>
+                    /ender
+                </li>
+                <li>
+                    <i data-feather="arrow-right" class = "image-icon-small-amber"></i>
+                    Edit signs with shift right click
+                </li>
+            </ul>
         </div>
 
-        <div class = "ranks rank container">
-            <div class = "ranks background uranus description">
-                <ul class = "ranks description">
-                    <h class = "ranks title">Requirements</h>
-                    <li>2x Void Capacitor</li>
-                    <li>16x Void Panel</li>
-                    <li>8x Metal Singularity</li>
-                </ul>
-                <ul class = "ranks description">
-                    <h class = "ranks title">Rewards</h>
-                    <li>/hat</li>
-                    <li>/playercollision"</li>
-                    <li>Edit armor stands with shift right click</li>
-                    <li>Can use /colors in chat"</li>
-                </ul>
+        <div class = "pure-u-1 pure-u-md-2-5 pure-u-lg-1-5 pad-info-box">
+            <div class = "align-centre text-centre">
+                <img class = "ranks icon" src = "image/saturn.png" width = 100px height = 100px><br>
+                <h class = "text-heading-medium">Saturn</h><br>
             </div>
-            <div class = "ranks background uranus">
-                <p class = "ranks rank"><b>Uranus</b></p>
-                <img class = "ranks icon" src = "image/uranus.png" width = 300px height = 300px>
-            </div>
+            <h class = "text-heading-small">Requirements</h>
+            <ul class = "list-unordered-container text-paragraph">
+                <li>
+                    <i data-feather="arrow-left" class = "image-icon-small-amber"></i>
+                    2x Void Quarry
+                </li>
+                <li>
+                    <i data-feather="arrow-left" class = "image-icon-small-amber"></i>
+                    4x Reinforced Storage
+                </li>
+                <li>
+                    <i data-feather="arrow-left" class = "image-icon-small-amber"></i>
+                    16x Advanced Electric Smeltery
+                </li>
+                <li>
+                    <i data-feather="arrow-left" class = "image-icon-small-amber"></i>
+                    1x Singularity Constructor
+                </li>
+            </ul>
+            <h class = "text-heading-small">Rewards</h>
+            <ul class = "list-unordered-container text-paragraph">
+                <li>
+                    <i data-feather="arrow-right" class = "image-icon-small-amber"></i>
+                    /condense
+                </li>
+                <li>
+                    <i data-feather="arrow-right" class = "image-icon-small-amber"></i>
+                    /uncondense
+                </li>
+                <li>
+                    <i data-feather="arrow-right" class = "image-icon-small-amber"></i>
+                    7 homes
+                </li>
+            </ul>
         </div>
 
-        <div class = "ranks rank container">
-            <div class = "ranks background neptune description">
-                <ul class = "ranks description">
-                    <h class = "ranks title">Requirements</h>
-                    <li>2x Infinity Panel</li>
-                    <li>1x Infinity Matrix</li>
-                    <li>1x Infinity Dust Extractor</li>
-                    <li>1x Infinity Quarry</li>
-                    <li>1x Stargate Controller</li>
-                </ul>
-                <ul class = "ranks description">
-                    <h class = "ranks title">Rewards</h>
-                    <li>/feed</li>
-                    <li>/heal</li>
-                    <li>/notarget</li>
-                    <li>8 homes</li>
-                </ul>
+        <div class = "pure-u-1 pure-u-md-2-5 pure-u-lg-1-5 pad-info-box">
+            <div class = "align-centre text-centre">
+                <img class = "ranks icon" src = "image/uranus.png" width = 100px height = 100px><br>
+                <h class = "text-heading-medium">Uranus</h><br>
             </div>
-            <div class = "ranks background neptune">
-                <p class = "ranks rank"><b>Neptune</b></p>
-                <img class = "ranks icon" src = "image/neptune.png" width = 300px height = 300px>
-            </div>
+            <h class = "text-heading-small">Requirements</h>
+            <ul class = "list-unordered-container text-paragraph">
+                <li>
+                    <i data-feather="arrow-left" class = "image-icon-small-amber"></i>
+                    16x Void Panel
+                </li>
+                <li>
+                    <i data-feather="arrow-left" class = "image-icon-small-amber"></i>
+                    8x Metal Singularity
+                </li>
+            </ul>
+            <h class = "text-heading-small">Rewards</h>
+            <ul class = "list-unordered-container text-paragraph">
+                <li>
+                    <i data-feather="arrow-right" class = "image-icon-small-amber"></i>
+                    /hat
+                </li>
+                <li>
+                    <i data-feather="arrow-right" class = "image-icon-small-amber"></i>
+                    /playercollision
+                </li>
+                <li>
+                    <i data-feather="arrow-right" class = "image-icon-small-amber"></i>
+                    Edit armor stands with shift right clickn
+                </li>
+                <li>
+                    <i data-feather="arrow-right" class = "image-icon-small-amber"></i>
+                    Can use /colors in chat
+                </li>
+            </ul>
         </div>
+
+        <div class = "pure-u-1 pure-u-md-2-5 pure-u-lg-1-5 pad-info-box">
+            <div class = "align-centre text-centre">
+                <img class = "ranks icon" src = "image/neptune.png" width = 130px height = 100px><br>
+                <h class = "text-heading-medium">Neptune</h><br>
+            </div>
+            <h class = "text-heading-small">Requirements</h>
+            <ul class = "list-unordered-container text-paragraph">
+                <li>
+                    <i data-feather="arrow-left" class = "image-icon-small-amber"></i>
+                    2x Infinity Panel
+                </li>
+                <li>
+                    <i data-feather="arrow-left" class = "image-icon-small-amber"></i>
+                    1x Infinity Matrix
+                </li>
+                <li>
+                    <i data-feather="arrow-left" class = "image-icon-small-amber"></i>
+                    1x Infinity Dust Extractor
+                </li>
+                <li>
+                    <i data-feather="arrow-left" class = "image-icon-small-amber"></i>
+                    1x Infinity Quarry
+                </li>
+                <li>
+                    <i data-feather="arrow-left" class = "image-icon-small-amber"></i>
+                    1x Stargate Controller
+                </li>
+            </ul>
+            <h class = "text-heading-small">Rewards</h>
+            <ul class = "list-unordered-container text-paragraph">
+                <li>
+                    <i data-feather="arrow-right" class = "image-icon-small-amber"></i>
+                    /feed
+                </li>
+                <li>
+                    <i data-feather="arrow-right" class = "image-icon-small-amber"></i>
+                    /heal
+                </li>
+                <li>
+                    <i data-feather="arrow-right" class = "image-icon-small-amber"></i>
+                    /notarget
+                </li>
+                <li>
+                    <i data-feather="arrow-right" class = "image-icon-small-amber"></i>
+                    8 homes
+                </li>
+            </ul>
+        </div>
+    
     </div>
 
+    <script>
+        feather.replace({ class: 'feather', 'stroke-width': 1 })
+    </script>
 
-    <!-- SCRIPTS -->
-    <script src="script/switchtheme.js"></script>
 </body>

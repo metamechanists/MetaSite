@@ -1,87 +1,246 @@
 <head>
-    <link rel = "stylesheet" href = "style/main.css">
-    <link rel = "stylesheet" href = "style/dark.css">
-    <title>Plugins</title>
+    <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.6/build/grids-responsive-min.css" />
+    <script src="https://kit.fontawesome.com/6be673d481.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <link rel = "stylesheet" href = "style/body.css">
+    <link rel = "stylesheet" href = "style/align.css">
+    <link rel = "stylesheet" href = "style/text.css">
+    <link rel = "stylesheet" href = "style/images.css">
+    <link rel = "stylesheet" href = "style/menu.css">
+    <link rel = "stylesheet" href = "style/list.css">
     <link rel="icon" type = "image/png" href="image/logo.png">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Home</title>
 </head>
 
 
 <body>
-    <!-- THEME BUTTON -->
-    <button id = "themebutton" class = "theme button" onclick = "toggleTheme()">Switch Theme</button>
 
-
-    <!-- TOP MENU -->
-    <div class = "topmenu container banner">
-        <img src = "image/banner.png" class = "topmenu banner">
-    </div>
-    <div class = "topmenu container menu">
-        <button type = "button" class = "topmenu button" onclick="location.href='index.html';">
-            <img src = "image/Home.png" class = "topmenu icon"><br>Home</button>
-        <button type = "button" class = "topmenu button" onclick="location.href='news.html';">
-            <img src = "image/News.png" class = "topmenu icon"><br>News</button>
-        <button type = "button" class = "topmenu button" onclick="location.href='staff.html';">
-            <img src = "image/Staff.png" class = "topmenu icon"><br>Staff</button>
-        <button type = "button" class = "topmenu button" onclick="location.href='changelog.html';">
-            <img src = "image/Changelog.png" class = "topmenu icon"><br>Changelog</button>
-        <button type = "button" class = "topmenu button" onclick="location.href='plugins.html';">
-            <img src = "image/Plugins.png" class = "topmenu icon"><br>Plugins</button>
-        <button type = "button" class = "topmenu button" onclick="location.href='ranks.html';">
-            <img src = "image/Ranks.png" class = "topmenu icon"><br>Ranks</button>
-        <button type = "button" class = "topmenu button" onclick="location.href='rules.html';">
-            <img src = "image/Rules.png" class = "topmenu icon"><br>Rules</button>
+    <!-- MENU -->
+    <div class="menu-container">
+        <img src = "image/banner.png" class = "menu-heading">
+        <ul class="menu-list">
+            <li class="menu-item">
+                <i data-feather="home" class = "menu-icon"></i>
+                <a href="index.html" class="menu-text-active">Home</a>
+            
+            </li>
+            <li class="menu-item">
+                <i data-feather="mail" class = "menu-icon"></i>
+                <a href="news.html" class="menu-text-active">News</a>
+            
+            </li>
+            <li class="menu-item">
+                <i data-feather="user" class = "menu-icon"></i>
+                <a href="staff.html" class="menu-text-active">Staff</a>
+            
+            </li>
+            <li class="menu-item">
+                <i data-feather="chevrons-up" class = "menu-icon"></i>
+                <a href="ranks.html" class="menu-text-active">Ranks</a>
+            
+            </li>
+            <li class="menu-item">
+                <i data-feather="map" class = "menu-icon"></i>
+                <a href="https://map.metamechanists.org" class="menu-text-active">Map</a>
+            
+            </li>
+            <li class="menu-item">
+                <i data-feather="settings" class = "menu-icon"></i>
+                <a href="changelog.html" class="menu-text-active">Changelog</a>
+            
+            </li>
+            <li class="menu-item">
+                <i data-feather="list" class = "menu-icon"></i>
+                <a href="plugins.html" class="menu-text-active">Plugins</a>
+            
+            </li>
+            <li class="menu-item">
+                <i data-feather="bar-chart-2" class = "menu-icon"></i>
+                <a href="data.html" class="menu-text-wip">Data</a>
+            
+            </li>
+            <li class="menu-item">
+                <i data-feather="align-left" class = "menu-icon"></i>
+                <a href="rules.html" class="menu-text-active">Rules</a>
+            
+            </li>
+        </ul>
     </div>
 
 
     <!-- PLUGINS -->
-    <div class = "container main">
-        <h class = "heading big">Plugins</h><br>
-        <h class = "text monospace">Plugins running on the survival server only.</h><br><br>
-        <h class = "heading small">Standalone Plugins</h><br>
-        <ul class = "text monospace">
-            <li><b>CMI</b> - large general-purpose plugin adding teleports, homes, QoL commands, and much more</li>
-            <li><b>CMILib</b> - Dependency of CMI</li>
-            <li><b>CoreProtect</b> - logging plugin, primarily used to revert griefs</li>
-            <li><b>DiscordSRV</b> - handles <a href = "https://discord.com/invite/6Ew8BYxUtZ" class = "text link">Discord</a> chat, console, and rank syncing</li>
-            <li><b>GriefPrevention</b> - land claiming plugin</li>
-            <li><b>Harbor</b> - highly configurable sleeping plugin</li>
-            <li><b>InteractiveChat</b> - adds interactive messages such as [inv]</li>
-            <li><b>LuckPerms</b> - permission management plugin with a web interface</li>
-            <li><b>Aurelium Skills</b> - adds skills that you can level up to gain advantages like more damage in combat</li>
-            <li><b>MetaRank</b> - custom ranking plugin specifically designed for Slimefun centric ranks</li>
-            <li><b>PlaceholderAPI</b> - allows other plugins to use placeholders such as number of online players</li>
-            <li><b>Plan</b> - player analytics plugin</li>
-            <li><b>PvPManager</b> - allows for toggling PvP</li>
-            <li><b>Slimefun</b> - adds hundreds of new items</li>
-            <li><b>Spark</b> - performance analysis plugin</li>
-            <li><b>TABBukkitBridge</b> - bridges TAB plugin between the server and BungeeCord</li>
-            <li><b>Vault</b> - dependency of a lot of plugins</li>
-            <li><b>ViaBackwards</b> - allows clients to connect using version 1.12+</li>
-            <li><b>ViaVersion</b> - dependency of ViaBackwards</li>
-            <li><b>VotingPluging</b> - manages rewards for voting</li>
+    <div class = "pad-main">
+        <h class = "text-heading-big">PLUGINS</h><br>
+        <h class = "text-heading-medium">Standalone Plugins</h><br>
+        <ul class = "list-unordered-container text-paragraph">
+            <li>
+                <i data-feather="code" class = "image-icon-small-amber"></i>
+                <b>AureliumSkills</b> - MCMMO-like plugin which adds skills and abilities
+            </li>
+            <li>
+                <i data-feather="code" class = "image-icon-small-amber"></i>
+                <b>BanManager</b> - ban/warning plugin which syncs across servers
+            </li>
+            <li>
+                <i data-feather="code" class = "image-icon-small-amber"></i>
+                <b>CMI</b> - large general-purpose plugin adding teleports, homes, QoL commands, and much more
+            </li>
+            <li>
+                <i data-feather="code" class = "image-icon-small-amber"></i>
+                <b>CMILib</b> - Dependency of CMI
+            </li>
+            <li>
+                <i data-feather="code" class = "image-icon-small-amber"></i>
+                <b>CoreProtect</b> - logging plugin, primarily used to revert griefs
+            </li>
+            <li>
+                <i data-feather="code" class = "image-icon-small-amber"></i>
+                <b>DiscordSRV</b> - handles <a href = "https://discord.metamechanists.org" class = "text-link">Discord</a> chat, console, and rank syncing
+            </li>
+            <li>
+                <i data-feather="code" class = "image-icon-small-amber"></i>
+                <b>GriefPrevention</b> - land claiming plugin
+            </li>
+            <li>
+                <i data-feather="code" class = "image-icon-small-amber"></i>
+                <b>Harbor</b> - highly configurable sleeping plugin
+            </li>
+            <li>
+                <i data-feather="code" class = "image-icon-small-amber"></i>
+                <b>LuckPerms</b> - permission management plugin with a web interface
+            </li>
+            <li>
+                <i data-feather="code" class = "image-icon-small-amber"></i>
+                <b>MetaRank</b> - custom ranking plugin specifically designed for Slimefun centric ranks
+            </li>
+            <li>
+                <i data-feather="code" class = "image-icon-small-amber"></i>
+                <b>NerfPhantoms</b> - allows phantoms to be toggled for each player
+            </li>
+            <li>
+                <i data-feather="code" class = "image-icon-small-amber"></i>
+                <b>PlaceholderAPI</b> - allows other plugins to use placeholders such as number of online players
+            </li>
+            <li>
+                <i data-feather="code" class = "image-icon-small-amber"></i>
+                <b>Plan</b> - player analytics plugin
+            </li>
+            <li>
+                <i data-feather="code" class = "image-icon-small-amber"></i>
+                <b>ProtocolLib</b> - dependency of several plugins
+            </li>
+            <li>
+                <i data-feather="code" class = "image-icon-small-amber"></i>
+                <b>PvPManager</b> - allows for toggling PvP
+            </li>
+            <li>
+                <i data-feather="code" class = "image-icon-small-amber"></i>
+                <b>Slimefun</b> - adds hundreds of new items
+            </li>
+            <li>
+                <i data-feather="code" class = "image-icon-small-amber"></i>
+                <b>Spark</b> - performance analysis plugin
+            </li>
+            <li>
+                <i data-feather="code" class = "image-icon-small-amber"></i>
+                <b>Squaremap</b> - renders 2D map which can be accessed <a href = "https://map.metamechanists.org" class = "text-link">here</a>
+            </li>
+            <li>
+                <i data-feather="code" class = "image-icon-small-amber"></i>
+                <b>TABBukkitBridge</b> - bridges TAB plugin between the server and BungeeCord
+            </li>
+            <li>
+                <i data-feather="code" class = "image-icon-small-amber"></i>
+                <b>Vault</b> - dependency of a lot of plugins
+            </li>
+            <li>
+                <i data-feather="code" class = "image-icon-small-amber"></i>
+                <b>VotingPluging</b> - manages rewards for voting
+            </li>
         </ul>
-        <h class = "heading small">Slimefun Addons</h><br>
-        <ul class = "text monospace">
-            <li><b>DankTech</b> - adds backpacks with functionality such as auto-deleting specific items</li>
-            <li><b>DyedBackpacks</b> - adds dyed variants of Slimefun backpacks</li>
-            <li><b>EcoPower</b> - adds new ways to renewably generate power</li>
-            <li><b>ExoticGarden</b> - adds new plants and foods</li>
-            <li><b>ExtraHeads</b> - adds heads that randomly drop from mobs</li>
-            <li><b>ExtraTools</b> - adds more tools that can be made from Slimefun materials</li>
-            <li><b>FluffyMachines</b> - adds quality-of-life machines and items</li>
-            <li><b>FoxyyMachines</b> - adds miscallenous magic and technology items and machines</li>
-            <li><b>Galacitfun</b> - adds rockets, stargates, new planets, and other space stuff</li>
-            <li><b>HotbarPets</b> - adds pets that can be crafted and give you special abilities</li>
-            <li><b>InfinityExpansion</b> - massive end game expansion adding ridiculously powerful items and machines</li>
-            <li><b>Networks</b> - adds a digital item storage system, compatible with Infinity Expansion storage units</li>
-            <li><b>SlimeCustomizer</b> - plugin for creating custom machines</li>
-            <li><b>SlimeTinker</b> - allows you to create hugely customisable tools</li>
-            <li><b>SlimyTreeTaps</b> - adds a renewable source of plastic</li>
-            <li><b>SoulJars</b> - adds items that can be used to change the type of spawners</li>
+
+        <br>
+        <h class = "text-heading-medium">Slimefun Addons</h><br>
+        <ul class = "list-unordered-container text-paragraph">
+            <li>
+                <i data-feather="code" class = "image-icon-small-amber"></i>
+                <b>AlchimiaVitae</b> - alchemy plugin providing alternate recipes for some Slimefun items
+            </li>
+            <li>
+                <i data-feather="code" class = "image-icon-small-amber"></i>
+                <b>CrystamaeHistoria</b> - adds an extensive magic plugin with spells and a progression system
+            </li>
+            <li>
+                <i data-feather="code" class = "image-icon-small-amber"></i>
+                <b>DankTech</b> - adds backpacks with functionality such as auto-deleting specific items
+            </li>
+            <li>
+                <i data-feather="code" class = "image-icon-small-amber"></i>
+                <b>DyedBackpacks</b> - adds dyed variants of Slimefun backpacks
+            </li>
+            <li>
+                <i data-feather="code" class = "image-icon-small-amber"></i>
+                <b>EcoPower</b> - adds new ways to renewably generate power
+            </li>
+            <li>
+                <i data-feather="code" class = "image-icon-small-amber"></i>
+                <b>ExoticGarden</b> - adds new plants and foods
+            </li>
+            <li>
+                <i data-feather="code" class = "image-icon-small-amber"></i>
+                <b>ExtraHeads</b> - adds heads that randomly drop from mobs
+            </li>
+            <li>
+                <i data-feather="code" class = "image-icon-small-amber"></i>
+                <b>ExtraTools</b> - adds more tools that can be made from Slimefun materials
+            </li>
+            <li>
+                <i data-feather="code" class = "image-icon-small-amber"></i>
+                <b>FluffyMachines</b> - adds quality-of-life machines and items
+            </li>
+            <li>
+                <i data-feather="code" class = "image-icon-small-amber"></i>
+                <b>FoxyMachines</b> - adds miscallenous magic and technology items and machines
+            </li>
+            <li>
+                <i data-feather="code" class = "image-icon-small-amber"></i>
+                <b>Galacitfun</b> - adds rockets, stargates, new planets, and other space stuff
+            </li>
+            <li>
+                <i data-feather="code" class = "image-icon-small-amber"></i>
+                <b>InfinityExpansion</b> - massive end game expansion adding ridiculously powerful items and machines
+            </li>
+            <li>
+                <i data-feather="code" class = "image-icon-small-amber"></i>
+                <b>Networks</b> - adds a digital item storage system, compatible with Infinity Expansion storage units
+            </li>
+            <li>
+                <i data-feather="code" class = "image-icon-small-amber"></i>
+                <b>SlimeCustomizer</b> - plugin for creating custom machines
+            </li>
+            <li>
+                <i data-feather="code" class = "image-icon-small-amber"></i>
+                <b>SlimeTinker</b> - allows you to create hugely customisable tools
+            </li>
+            <li>
+                <i data-feather="code" class = "image-icon-small-amber"></i>
+                <b>SlimyTreeTaps</b> - adds a renewable source of plastic
+            </li>
+            <li>
+                <i data-feather="code" class = "image-icon-small-amber"></i>
+                <b>SoulJars</b> - adds items that can be used to change the type of spawners
+            </li>
+            <li>
+                <i data-feather="code" class = "image-icon-small-amber"></i>
+                <b>SFCalc</b> - adds commands to calculate the item requirements for Slimefun recipes
+            </li>
         </ul>
     </div>
 
+    <script>
+      feather.replace({ class: 'feather', 'stroke-width': 1 })
+    </script>
 
-    <!-- SCRIPTS -->
-    <script src="script/switchtheme.js"></script>
 </body>

@@ -1,0 +1,57 @@
+.menu-container {
+    height: 100%;
+    width: 230px;
+    float: left;
+    background-color: rgb(70, 70, 80);
+    position: fixed;
+}
+
+.menu-list {
+    margin-block-start: 5px;
+    padding-inline-start: 20px;
+}
+
+.menu-heading {
+    padding-left: 5px;
+    padding-top: 5px;
+    width: 220px;
+}
+
+.menu-item {
+    padding-left: -5px;
+    padding-top: 10px;
+    list-style-type: none;
+}
+
+.menu-text-active {
+    padding-left: 5px;
+    vertical-align: middle;
+    font-family:monospace;
+    font-size:25px;
+    letter-spacing: 0.0em;
+    color:rgb(214, 255, 214);
+    letter-spacing: 1px;
+    text-decoration: none;
+}
+
+.menu-text-wip {
+    padding-left: 5px;
+    vertical-align: middle;
+    font-family:monospace;
+    font-size:25px;
+    letter-spacing: 0.0em;
+    color:rgb(255, 214, 214);
+    letter-spacing: 1px;
+    text-decoration: none;
+}
+
+.menu-icon {
+    vertical-align: middle;
+    width: 40px;
+    height: 40px;
+    stroke: rgb(255, 255, 255);
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    fill: none;
+}

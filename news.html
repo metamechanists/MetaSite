@@ -1,64 +1,156 @@
 <head>
-    <link rel = "stylesheet" href = "style/main.css">
-    <link rel = "stylesheet" href = "style/dark.css">
-    <title>News</title>
+    <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.6/build/grids-responsive-min.css" />
+    <script src="https://kit.fontawesome.com/6be673d481.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <link rel = "stylesheet" href = "style/body.css">
+    <link rel = "stylesheet" href = "style/align.css">
+    <link rel = "stylesheet" href = "style/text.css">
+    <link rel = "stylesheet" href = "style/images.css">
+    <link rel = "stylesheet" href = "style/menu.css">
     <link rel="icon" type = "image/png" href="image/logo.png">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>News</title>
 </head>
 
 
 <body>
-    <!-- THEME BUTTON -->
-    <button id = "themebutton" class = "theme button" onclick = "toggleTheme()">Switch Theme</button>
 
-
-    <!-- TOP MENU -->
-    <div class = "topmenu container banner">
-        <img src = "image/banner.png" class = "topmenu banner">
-    </div>
-    <div class = "topmenu container menu">
-        <button type = "button" class = "topmenu button" onclick="location.href='index.html';">
-            <img src = "image/Home.png" class = "topmenu icon"><br>Home</button>
-        <button type = "button" class = "topmenu button" onclick="location.href='news.html';">
-            <img src = "image/News.png" class = "topmenu icon"><br>News</button>
-        <button type = "button" class = "topmenu button" onclick="location.href='staff.html';">
-            <img src = "image/Staff.png" class = "topmenu icon"><br>Staff</button>
-        <button type = "button" class = "topmenu button" onclick="location.href='changelog.html';">
-            <img src = "image/Changelog.png" class = "topmenu icon"><br>Changelog</button>
-        <button type = "button" class = "topmenu button" onclick="location.href='plugins.html';">
-            <img src = "image/Plugins.png" class = "topmenu icon"><br>Plugins</button>
-        <button type = "button" class = "topmenu button" onclick="location.href='ranks.html';">
-            <img src = "image/Ranks.png" class = "topmenu icon"><br>Ranks</button>
-        <button type = "button" class = "topmenu button" onclick="location.href='rules.html';">
-            <img src = "image/Rules.png" class = "topmenu icon"><br>Rules</button>
+    <!-- MENY -->
+    <div class="menu-container">
+        <img src = "image/banner.png" class = "menu-heading">
+        <ul class="menu-list">
+            <li class="menu-item">
+                <i data-feather="home" class = "menu-icon"></i>
+                <a href="index.html" class="menu-text-active">Home</a>
+            </li>
+            <li class="menu-item">
+                <i data-feather="mail" class = "menu-icon"></i>
+                <a href="news.html" class="menu-text-active">News</a>
+            </li>
+            <li class="menu-item">
+                <i data-feather="user" class = "menu-icon"></i>
+                <a href="staff.html" class="menu-text-active">Staff</a>
+            </li>
+            <li class="menu-item">
+                <i data-feather="chevrons-up" class = "menu-icon"></i>
+                <a href="ranks.html" class="menu-text-active">Ranks</a>
+            </li>
+            <li class="menu-item">
+                <i data-feather="map" class = "menu-icon"></i>
+                <a href="https://map.metamechanists.org" class="menu-text-active">Map</a>
+            </li>
+            <li class="menu-item">
+                <i data-feather="settings" class = "menu-icon"></i>
+                <a href="changelog.html" class="menu-text-active">Changelog</a>
+            </li>
+            <li class="menu-item">
+                <i data-feather="list" class = "menu-icon"></i>
+                <a href="plugins.html" class="menu-text-active">Plugins</a>
+            </li>
+            <li class="menu-item">
+                <i data-feather="bar-chart-2" class = "menu-icon"></i>
+                <a href="data.html" class="menu-text-wip">Data</a>
+            </li>
+            <li class="menu-item">
+                <i data-feather="align-left" class = "menu-icon"></i>
+                <a href="rules.html" class="menu-text-active">Rules</a>
+            </li>
+        </ul>
     </div>
 
 
     <!-- NEWS -->
-    <div class = "container main">
+    <div class = "pad-main">
 
-        <h class = "heading big">Aurelium Skills feedback wanted</h><br>
-        <h class = "text monospace"><i>02/02/2022 - Idra</i></p>
-        <p class = "text monospace">
-            I'm a bit late, but please welcome our new trial helper @Waffle_2256!!! They'll be acting as 
+        <h class = "text-heading-big">NEWS</h><br>
+
+        <h class = "text-heading-medium">Sorry about the crash</h><br>
+        <h class = "text-small-italic"><i>02/03/2022 - Idra</i></h>
+        <p class = "text-news-content">
+            Sorry about the crash yesterday... It seems that the server ran out of memory, but it's 
+            not entirely clear what caused this. I imagine that the chunk pregeneration had something 
+            to do with it. This is why TPS was so low leading up to the crash. Thankfully no data has 
+            been lost as far as I know, and chunk pregeneration has finished completely so there should 
+            hopefully be no more incidents.
+        </p>
+
+        <h class = "text-heading-medium">World pregeneration starting</h><br>
+        <h class = "text-small-italic"><i>28/02/2022 - Idra</i></h>
+        <p class = "text-news-content">
+            <i data-feather = "alert-octagon" class = "image-icon-small-red"></i>
+            Advance warning: TPS is going to be lower than usual for the next couple of days as we 
+            pregenerate chunks across all worlds. Once this is done, TPS should be much improved 
+            though, so please bear with us :)
+        </p>
+
+        <h class = "text-heading-medium">1.18.2 unable to connect</h><br>
+        <h class = "text-small-italic"><i>28/02/2022 - neutronstar01</i></h>
+        <p class = "text-news-content">
+            1.18.2 can't currently join the server. We are working on this but until then please join 
+            using a version between 1.12 and 1.18.1 The newer the better.
+        </p>
+        
+        <h class = "text-heading-medium">World border shrinking</h><br>
+        <h class = "text-small-italic"><i>23/02/2022 - Idra</i></h>
+        <p class = "text-news-content">
+            <i data-feather = "alert-octagon" class = "image-icon-small-red"></i>
+            Advance warning: The world border will be shrinking from 32k to 17k in 5 days (28/02/2022). 
+            The nether border will not be affected, but building portals more than roughly 2k blocks 
+            out will result in the end point appearing outside the world border. Building portals more 
+            than 2k blocks out is not advised. If you have anything more than 17k blocks from spawn on 
+            the X or Z axis, contact me. 
+        </p>
+
+
+        <h class = "text-heading-medium">Transcendence removal</h><br>
+        <h class = "text-small-italic"><i>23/02/2022 - Idra</i></h>
+        <p class = "text-news-content">
+            <i data-feather = "alert-octagon" class = "image-icon-small-red"></i>
+            Advance warning: TranscEndence will be removed in 5 days (28/02/2022) due to a it having 
+            a lot of issues that are outside of my control. I don't recommend you create any new items 
+            from TranscEndence from now until that date, as they'll be useless once the plugin has been 
+            removed. 
+        </p>
+
+        <h class = "text-heading-medium">Dynmap Up</h><br>
+        <h class = "text-small-italic"><i>17/02/2022 - Idra</i></h>
+        <p class = "text-news-content">
+            Dynmap is up :) Access it <a href = "https://map.metamechanists.org/" class = "text-link">here</a>.
+        </p>
+
+        <h class = "text-heading-medium">Happy Valentine's Day</h><br>
+        <h class = "text-small-italic"><i>14/02/2022 - BraydenLeungPro</i></h>
+        <p class = "text-news-content">
+            Happy Valentine's Day ❤️ to all those that are in the time zone of EST BST and all those are 
+            applicable -The Staff Team
+        </p>
+
+        <h class = "text-heading-medium">New staff member</h><br>
+        <h class = "text-small-italic"><i>02/02/2022 - Idra</i></h>
+        <p class = "text-news-content">
+            <i data-feather = "user-plus" class = "image-icon-small-green"></i>
+            I'm a bit late, but please welcome our new trial helper Waffle_2256!!! They'll be acting as 
             trial helper for the next 3 weeks, after which we will evaluate whether to keep them on the 
             staff team permanently.
         </p>
 
-        <h class = "text monospace"><i>31/01/2022 - redstonepowder</i></p>
-        <p class = "text monospace">
+        <h class = "text-heading-medium">Aurelium Skills feedback wanted</h><br>
+        <h class = "text-small-italic"><i>31/01/2022 - redstonepowder</i></h>
+        <p class = "text-news-content">
             Hello guys, <br>
             I'll be working on balancing the exp (again) for today, be sure to let me know if anything else 
             needs changing while I'm at it!<br>
             I'll need your feedback on what's good or not.
         </p>
 
-        <h class = "heading big">New polls</h><br>
-        <h class = "text monospace"><i>22/01/2022 - Idra</i></p>
-        <p class = "text monospace">
+        <h class = "text-heading-medium">New polls</h><br>
+        <h class = "text-small-italic"><i>22/01/2022 - Idra</i></h>
+        <p class = "text-news-content">
             Hi everyone,<br><br>
 
             I've uploaded a set of polls for people to vote on which can be found on 
-            <a href = "https://discord.com/invite/6Ew8BYxUtZ" class = "text link">Discord</a> in #polls. Feel 
+            <a href = "https://discord.com/invite/6Ew8BYxUtZ" class = "text-link">Discord</a> in #polls. Feel 
             free to vote on whatever you want and leave the other polls blank, but at least a couple of votes 
             would be greatly appreciated. This is your chance to get a say in the how the server is run! Feel 
             free to discuss your opinions in #general.<br><br>
@@ -70,9 +162,9 @@
             Thanks all :)
         </p>
 
-        <h class = "heading big">Metamadness starting soon</h><br>
-        <h class = "text monospace"><i>21/01/2022 - Aria_Night</i></p>
-        <p class = "text monospace">
+        <h class = "text-heading-medium">Metamadness starting soon</h><br>
+        <h class = "text-small-italic"><i>21/01/2022 - Aria_Night</i></h>
+        <p class = "text-news-content">
             Hey all you MetaM peeps! We'll be starting something new soon (hopefully next week): Metamadness! 
             This will happen once every week on Friday at 4pm CST / 5pm EST / 10pm GMT, but the time is subject 
             to change.  Every week we will be hosting a social event for all to come and compete against one 
@@ -80,9 +172,9 @@
             better! Come join in on the fun and the competition next Friday. See you there!<br><br>
         </p>
 
-        <h class = "heading big">Server Launch</h><br>
-        <h class = "text monospace"><i>15/01/2022 - Idra</i></p>
-        <p class = "text monospace">
+        <h class = "text-heading-medium">Server Launch</h><br>
+        <h class = "text-small-italic"><i>15/01/2022 - Idra</i></h>
+        <p class = "text-news-content">
             THE RESET IS FINALLY HERE! I'd like to extend my deepest thanks to the 
             entire staff team for all their support throughout this process, and for their extensive 
             efforts in testing the new server. Thanks to them, I've been able to patch an outrageous 
@@ -100,7 +192,7 @@
             Ranks are now based on Slimefun, and implemented using a custom plugin. 
             To rank up, you'll need to craft increasingly difficult sets of Slimefun items. 
             You can find out the requirements and rewards using /rank or on our website 
-            <a href = "ranks.html" class = "text link">here</a>. Also, our ranks are now
+            <a href = "ranks.html" class = "text-link">here</a>. Also, our ranks are now
             themed after celestial bodies. You'll start at Mercury and work your way up
             to Neptune.<br><br>
 
@@ -130,7 +222,7 @@
 
             <b>RULES</b><br>
             Rules have been updated! You can view the new rules in rules-and-info, at spawn, 
-            or on our website <a href = "rules.html" class = "text link">here</a><br><br>
+            or on our website <a href = "rules.html" class = "text-link">here</a><br><br>
 
 
             <b>LOBBY/SURVIVAL SYSTEM</b><br>
@@ -171,7 +263,7 @@
             <b>PLUGIN CHANGES</b><br>
             I've hugely reduced the plugin count. A lot of unecessary features have been
             removed, but some new stuff has also been added. A full list of plugins, old and new, can
-            be found on our website <a href = "plugins.html" class = "text link">here</a><br><br>
+            be found on our website <a href = "plugins.html" class = "text-link">here</a><br><br>
 
 
             <b>CONTENT CREATOR ROLES</b><br>
@@ -204,9 +296,9 @@
             points in the /shop.<br><br>
         </p>
 
-        <h class = "heading big">Server launch in 13.5 hours</h><br>
-        <h class = "text monospace"><i>15/01/2022 - Idra</i></p>
-        <p class = "text monospace">
+        <h class = "text-heading-medium">Server launch in 13.5 hours</h><br>
+        <h class = "text-small-italic"><i>15/01/2022 - Idra</i></h>
+        <p class = "text-news-content">
             Hi everyone,
 
             It's 3:30am and I really need to go to bed, but I've spent the last 2 days slaving away at the 
@@ -216,24 +308,24 @@
             (hopefully). 
         </p>
 
-        <h class = "heading big">Restoration update</h><br>
-        <h class = "text monospace"><i>14/01/2022 - Idra</i></p>
-        <p class = "text monospace">
+        <h class = "text-heading-medium">Restoration update</h><br>
+        <h class = "text-small-italic"><i>14/01/2022 - Idra</i></h>
+        <p class = "text-news-content">
             Quick update on restoration: I've rebuilt all the permissions and as far as I can tell all 
             the major issues have been fixed. I'm still dealing with a couple of particularly persistent 
             problems, but once those are ironed out we should be ready for server launch round 2.<br><br>
         </p>
 
-        <h class = "heading big">Large data loss delays server launch</h><br>
-        <h class = "text monospace"><i>08/01/2022 - Idra</i></p>
-        <p class = "text monospace">
+        <h class = "text-heading-medium">Large data loss delays server launch</h><br>
+        <h class = "text-small-italic"><i>08/01/2022 - Idra</i></h>
+        <p class = "text-news-content">
             All luckperms data has been lost. I have backups but I'm completely unable to restore them no 
             matter what I try. No ETA on server opening. Potentially several days or weeks.<br><br>
         </p>
 
-        <h class = "heading big">1.18 finally in sight</h><br>
-        <h class = "text monospace"><i>04/01/2022 - Idra</i></p>
-        <p class = "text monospace">
+        <h class = "text-heading-medium">1.18 finally in sight</h><br>
+        <h class = "text-small-italic"><i>04/01/2022 - Idra</i></h>
+        <p class = "text-news-content">
             Hi everyone,<br><br>
 
             As some of you might have noticed by now, Paper 1.18 went stable about an hour and a half 
@@ -256,9 +348,9 @@
             All the other existing rules apply! Please play fair. I'll see you on the 8th.<br><br>
         </p>
 
-        <h class = "heading big">Happy new year!</h><br>
-        <h class = "text monospace"><i>01/01/2022 - Idra</i></p>
-        <p class = "text monospace">
+        <h class = "text-heading-medium">Happy new year!</h><br>
+        <h class = "text-small-italic"><i>01/01/2022 - Idra</i></h>
+        <p class = "text-news-content">
             Happy new year, mortals!<br><Br>
 
             In other news, we're still waiting on paper 1.18 to go stable. I've tried setting up the server 
@@ -268,25 +360,25 @@
             can follow Paper development here https://papermc.io/downloads.<br><br>
         </p>
 
-        <h class = "heading big">Still no news on 1.18</h><br>
-        <h class = "text monospace"><i>18/12/2021 - Idra</i></p>
-        <p class = "text monospace">
+        <h class = "text-heading-medium">Still no news on 1.18</h><br>
+        <h class = "text-small-italic"><i>18/12/2021 - Idra</i></h>
+        <p class = "text-news-content">
             Hi all, still no updates on 1.18 I'm afraid. We're still waiting for paper to update, and even 
             the developers of paper don't have an ETA. I'll let you know if anything happens, and hopefully 
             once paper does update, we can start the anarchy event within a day or two.<br><br>
         </p>
 
-        <h class = "heading big">Log4shell patch</h><br>
-        <h class = "text monospace"><i>10/12/2021 - Idra</i></p>
-        <p class = "text monospace">
+        <h class = "text-heading-medium">Log4shell patch</h><br>
+        <h class = "text-small-italic"><i>10/12/2021 - Idra</i></h>
+        <p class = "text-news-content">
             Hi all, quick announcement about the exploit recently discovered - I updated the server 
             yesterday to use the latest paper version (where the exploit has been patched). It should 
             be completely safe to play on the server.<br><br>
         </p>
 
-        <h class = "heading big">Another update on 1.18</h><br>
-        <h class = "text monospace"><i>30/11/2021 - Idra</i></p>
-        <p class = "text monospace">
+        <h class = "text-heading-medium">Another update on 1.18</h><br>
+        <h class = "text-small-italic"><i>30/11/2021 - Idra</i></h>
+        <p class = "text-news-content">
             A couple of small updates.<br><br>
 
             1) I ran into multiple problems and large bugs with Sunlight. I considered moving back 
@@ -318,9 +410,9 @@
             Any questions, feel free to DM me.<br><br>
         </p>
 
-        <h class = "heading big">Another update on 1.18</h><br>
-        <h class = "text monospace"><i>30/11/2021 - Idra</i></p>
-        <p class = "text monospace">
+        <h class = "text-heading-medium">Another update on 1.18</h><br>
+        <h class = "text-small-italic"><i>30/11/2021 - Idra</i></h>
+        <p class = "text-news-content">
             A couple of small updates.<br><br>
 
             1) I ran into multiple problems and large bugs with Sunlight. I considered moving back 
@@ -352,9 +444,9 @@
             Any questions, feel free to DM me.<br><br>
         </p>
 
-        <h class = "heading big">Update on 1.18</h><br>
-        <h class = "text monospace"><i>28/10/2021 - Idra</i></p>
-        <p class = "text monospace">
+        <h class = "text-heading-medium">Update on 1.18</h><br>
+        <h class = "text-small-italic"><i>28/10/2021 - Idra</i></h>
+        <p class = "text-news-content">
             Hi everyone,<br><br>
 
             It's been a while since the last announcement I made regarding 1.18, so I thought 
@@ -373,7 +465,7 @@
             world, and hold new content that will be releasing tomorrow and the day after that. 
             Players will initially spawn here and will easily be able to travel to the survival 
             server. Chat will be maintained as one channel between both servers, both in-game 
-            and on <a href = "https://discord.com/invite/6Ew8BYxUtZ" class = "text link">Discord</a> (using separate bots).<br><br>
+            and on <a href = "https://discord.com/invite/6Ew8BYxUtZ" class = "text-link">Discord</a> (using separate bots).<br><br>
             
             This combined with bungeecord to link the servers will hopefully make this feel less 
             like a split of the current server, and more as an extension to it. To aid with this 
@@ -400,38 +492,38 @@
             Slimefun, SlimeTinker, SlimyTreeTaps, SoulJars<br><br>
         </p>
 
-        <h class = "heading big">New staff member</h><br>
-        <h class = "text monospace"><i>24/10/2021 - Idra</i></p>
-        <p class = "text monospace">
+        <h class = "text-heading-medium">New staff member</h><br>
+        <h class = "text-small-italic"><i>24/10/2021 - Idra</i></h>
+        <p class = "text-news-content">
             Welcome Eosophilian (aka Dawn) to the staff team! They'll be acting as trial helper for the 
             next 3 weeks.<br><br>
         </p>
 
-        <h class = "heading big">New staff member</h><br>
-        <h class = "text monospace"><i>14/10/2021 - Idra</i></p>
-        <p class = "text monospace">
+        <h class = "text-heading-medium">New staff member</h><br>
+        <h class = "text-small-italic"><i>14/10/2021 - Idra</i></h>
+        <p class = "text-news-content">
             Welcome PsychoGoddess to the staff team! They will be acting as a trial helper for the next 
             3 weeks.<br><br>
         </p>
 
-        <h class = "heading big">Halloween event part 2</h><br>
-        <h class = "text monospace"><i>08/10/2021 - Idra</i></p>
-        <p class = "text monospace">
+        <h class = "text-heading-medium">Halloween event part 2</h><br>
+        <h class = "text-small-italic"><i>08/10/2021 - Idra</i></h>
+        <p class = "text-news-content">
             Halloween event part 2 is up! The server will be shutting down 4 hours after this (01:00am BST, 
             19:00 CST) for 24-48 hours for a full backup and switch to linux, so come and 'enjoy' the 
             event while you can. <br><br>
         </p>
 
-        <h class = "heading big">Downtime begins</h><br>
-        <h class = "text monospace"><i>27/09/2021 - Idra</i></p>
-        <p class = "text monospace">
+        <h class = "text-heading-medium">Downtime begins</h><br>
+        <h class = "text-small-italic"><i>27/09/2021 - Idra</i></h>
+        <p class = "text-news-content">
             Downtime is now happening, and the server will be going down shortly. We'll be back up anywhere 
             from 12-48 hours from now (21:30 BST, 15:30 CST)<br><br>
         </p>
 
-        <h class = "heading big">Expect downtime soon</h><br>
-        <h class = "text monospace"><i>24/09/2021 - Void</i></p>
-        <p class = "text monospace">
+        <h class = "text-heading-medium">Expect downtime soon</h><br>
+        <h class = "text-small-italic"><i>24/09/2021 - Void</i></h>
+        <p class = "text-news-content">
             The server will be down for likely a full day or 2 next week as we're moving from windows to a 
             linux OS to solve some major file system problems. Also because I'm re-doing my ENTIRE network 
             infrastructure going full ubiquiti so I can segregate the network away from everything else. :) 
@@ -441,9 +533,9 @@
             updated so check back.<br><br>
         </p>
 
-        <h class = "heading big">Cargo node issues</h><br>
-        <h class = "text monospace"><i>19/09/2021 - redstonepowder</i></p>
-        <p class = "text monospace">
+        <h class = "text-heading-medium">Cargo node issues</h><br>
+        <h class = "text-small-italic"><i>19/09/2021 - redstonepowder</i></h>
+        <p class = "text-news-content">
             Hello, red here.<br><br>
 
             There appears to be a concerning amount of advanced output nodes that have been vanillized, 
@@ -452,9 +544,9 @@
             information into a ticket should you need a refund.<br><br>
         </p>
 
-        <h class = "heading big">Regex exploit explained</h><br>
-        <h class = "text monospace"><i>19/09/2021 - Idra</i></p>
-        <p class = "text monospace">
+        <h class = "text-heading-medium">Regex exploit explained</h><br>
+        <h class = "text-small-italic"><i>19/09/2021 - Idra</i></h>
+        <p class = "text-news-content">
             So, here's vaguely what happened earlier, though not particularly detailed because I don't 
             understand regex in enough detail to figure out exactly what happened.<br><br>
 
@@ -482,9 +574,9 @@
             the main thread has been stuck for so long, but for some reason it didn't in this instance. <br><br>
         </p>
 
-        <h class = "heading big">Compromises must be made</h><br>
-        <h class = "text monospace"><i>18/09/2021 - Idra</i></p>
-        <p class = "text monospace">
+        <h class = "text-heading-medium">Compromises must be made</h><br>
+        <h class = "text-small-italic"><i>18/09/2021 - Idra</i></h>
+        <p class = "text-news-content">
             I've recently felt burnt out with the server. This isn't what I want to do anymore. I've come to the 
             realisation that I simply can't put as much work into making this server run as I was hoping. 
             Yesterday, I had a long meeting with the rest of the staff team where we discussed how to run the 
@@ -522,7 +614,7 @@
             whitelisted. This will reduce our growth, but will also be excellent for maintaining a mature 
             playerbase and having a small quantity of long-term players rather than a large quantity of short-term 
             ones. We will provide clear directions for new players on how to apply, most likely using 
-            <a href = "https://discord.com/invite/6Ew8BYxUtZ" class = "text link">Discord</a> or 
+            <a href = "https://discord.com/invite/6Ew8BYxUtZ" class = "text-link">Discord</a> or 
             our server website.<br><br>
 
             6) There won't be a poll to reset for 1.18. I hate to make this decision, but resetting will allow 
@@ -539,9 +631,9 @@
             Thanks for your understanding. <br><br>
         </p>
 
-        <h class = "heading big">Compliation problems</h><br>
-        <h class = "text monospace"><i>11/09/2021 - Idra</i></p>
-        <p class = "text monospace">
+        <h class = "text-heading-medium">Compliation problems</h><br>
+        <h class = "text-small-italic"><i>11/09/2021 - Idra</i></h>
+        <p class = "text-news-content">
             Apologies for the downtime, there was an issue on my end (I'm still unsure what exactly) that resulted 
             in Slimefun recompiling on an older version that all addons are now incompatible with. I'm re-opening 
             the server for now, if anything is still wrong then let me know. Compressed Machines hasn't loaded 
@@ -553,16 +645,16 @@
             between now and midnight on Friday (CST). If you experience any issues, open a ticket ASAP.<br><br>
         </p>
 
-        <h class = "heading big">Extending the trial period</h><br>
-        <h class = "text monospace"><i>07/09/2021 - Idra</i></p>
-        <p class = "text monospace">
+        <h class = "text-heading-medium">Extending the trial period</h><br>
+        <h class = "text-small-italic"><i>07/09/2021 - Idra</i></h>
+        <p class = "text-news-content">
             We're extending the trial period for V3MON_ by a week. This will likely be the default from now on for 
             new moderators; 2 weeks as a trial helper before fully becoming a staff member<br><br>
         </p>
 
-        <h class = "heading big">Major changes to staff team structure</h><br>
-        <h class = "text monospace"><i>03/09/2021 - Idra</i></p>
-        <p class = "text monospace">
+        <h class = "text-heading-medium">Major changes to staff team structure</h><br>
+        <h class = "text-small-italic"><i>03/09/2021 - Idra</i></h>
+        <p class = "text-news-content">
             Just to clear up possible confusion we've made some changes to the structure of the staff team.<br><br>
 
             1) neutronstar01 is now an administrator!<br><br>
@@ -580,16 +672,16 @@
             decisions concerning building and events. <br><br>
         </p>
 
-        <h class = "heading big">New staff member</h><br>
-        <h class = "text monospace"><i>31/08/2021 - Idra</i></p>
-        <p class = "text monospace">
+        <h class = "text-heading-medium">New staff member</h><br>
+        <h class = "text-small-italic"><i>31/08/2021 - Idra</i></h>
+        <p class = "text-news-content">
             Welcome to our new helper V3M0N_! They will be acting as a trial helper for one week, then will officially 
             be part of the staff team.<br><br>
         </p>
 
-        <h class = "heading big">Turbine troubles</h><br>
-        <h class = "text monospace"><i>30/08/2021 - Idra</i></p>
-        <p class = "text monospace">
+        <h class = "text-heading-medium">Turbine troubles</h><br>
+        <h class = "text-small-italic"><i>30/08/2021 - Idra</i></h>
+        <p class = "text-news-content">
         I've recently discovered that dynatech hydro turbines have been taking ridiculous amounts of processing power, 
         along with some other more obscure machines. If you have hydro turbines, turn them in to me, redstonepowder, 
         neutronstar01 or Nethereasy and we will exchange them for generators that sum to produce the same amount of 
@@ -598,14 +690,14 @@
         any.<br><br>
         </p>
 
-        <h class = "heading big">A 1.18 reset?</h><br>
-        <h class = "text monospace"><i>23/08/2021 - Idra</i></p>
-        <p class = "text monospace">
+        <h class = "text-heading-medium">A 1.18 reset?</h><br>
+        <h class = "text-small-italic"><i>23/08/2021 - Idra</i></h>
+        <p class = "text-news-content">
             The chat continues to erupt into debate every time the topic of a reset comes up, so here's a Q&A to hopefully 
             address the most important questions. However, I want to emphasise that nothing is certain right now. 
             Everything I say here is subject to change.<br><br>
 
-            This is also available as a blog post on <a href = "https://metamechanists.enjin.com/" class = "text link">
+            This is also available as a blog post on <a href = "https://metamechanists.enjin.com/" class = "text-link">
             https://metamechanists.enjin.com/</a>.<br><br>
 
             <h class = "heading small">Will there be a reset? When?</h><br>
@@ -661,9 +753,9 @@
             world.<br><br>
         </p>
 
-        <h class = "heading big">Adios to lag machines</h><br>
-        <h class = "text monospace"><i>19/08/2021 - Idra</i></p>
-        <p class = "text monospace">
+        <h class = "text-heading-medium">Adios to lag machines</h><br>
+        <h class = "text-small-italic"><i>19/08/2021 - Idra</i></h>
+        <p class = "text-news-content">
             Server TPS is back to normal.<br><br>
 
             So.<br><br>
@@ -674,21 +766,21 @@
             Yeah, I'm not sure either...<br><br>
         </p>
 
-        <h class = "heading big">New staff member</h><br>
-        <h class = "text monospace"><i>15/08/2021 - Idra</i></p>
-        <p class = "text monospace">
+        <h class = "text-heading-medium">New staff member</h><br>
+        <h class = "text-small-italic"><i>15/08/2021 - Idra</i></h>
+        <p class = "text-news-content">
             Everyone welcome BraydenLeungPro to the staff team!!!<br><br>
         </p>
 
-        <h class = "heading big">Downtime almost over</h><br>
-        <h class = "text monospace"><i>14/08/2021 - Idra</i></p>
-        <p class = "text monospace">
+        <h class = "text-heading-medium">Downtime almost over</h><br>
+        <h class = "text-small-italic"><i>14/08/2021 - Idra</i></h>
+        <p class = "text-news-content">
             Downtime is almost over. Server will be back up shortly :)<br><br>
         </p>
 
-        <h class = "heading big">Downtime incoming</h><br>
-        <h class = "text monospace"><i>14/08/2021 - Idra</i></p>
-        <p class = "text monospace">
+        <h class = "text-heading-medium">Downtime incoming</h><br>
+        <h class = "text-small-italic"><i>14/08/2021 - Idra</i></h>
+        <p class = "text-news-content">
             Hi everyone,<br><br>
 
             I think I'm now fairly close to figuring out the cause of all the recent bugs, but experimentation will have to 
@@ -702,15 +794,15 @@
             The downtime will start at in 20 minutes, 1am BST (19:00 CST and 20:00 EST). Thanks for your patience.<br><br>
         </p>
 
-        <h class = "heading big">Hardware upgrade</h><br>
-        <h class = "text monospace"><i>10/08/2021 - Void</i></p>
-        <p class = "text monospace">
+        <h class = "text-heading-medium">Hardware upgrade</h><br>
+        <h class = "text-small-italic"><i>10/08/2021 - Void</i></h>
+        <p class = "text-news-content">
             Server upgrade complete! 16 core 32 thread CPU and 128gb of ram!<br><br>
         </p>
 
-        <h class = "heading big">Event starting soon</h><br>
-        <h class = "text monospace"><i>03/08/2021 - Idra</i></p>
-        <p class = "text monospace">
+        <h class = "text-heading-medium">Event starting soon</h><br>
+        <h class = "text-small-italic"><i>03/08/2021 - Idra</i></h>
+        <p class = "text-news-content">
             Hi everyone,<br><br>
 
             On August <b>3rd</b> (not 2nd, there was a miscommunication) we'll be opening a new halloween/fall/autumn themed 
@@ -719,9 +811,9 @@
             3pm GMT / 10am EST / 9am CST. We'll see you there :)<br><br>
         </p>
 
-        <h class = "heading big">Downtime over</h><br>
-        <h class = "text monospace"><i>23/07/2021 - Idra</i></p>
-        <p class = "text monospace">
+        <h class = "text-heading-medium">Downtime over</h><br>
+        <h class = "text-small-italic"><i>23/07/2021 - Idra</i></h>
+        <p class = "text-news-content">
             SERVER IS BACK UP AND UPDATED TO 1.17.1!<br><br>
 
             Resource world has been reset to allow for new chunks to generate with 1.17 content.<br><br>
@@ -729,17 +821,17 @@
             We have also made some major changes to the rules - please run /warp rules to see them.<br><br>
         </p>
 
-        <h class = "heading big">Downtime incoming</h><br>
-        <h class = "text monospace"><i>22/07/2021 - Idra</i></p>
-        <p class = "text monospace">
+        <h class = "text-heading-medium">Downtime incoming</h><br>
+        <h class = "text-small-italic"><i>22/07/2021 - Idra</i></h>
+        <p class = "text-news-content">
             Downtime will be starting at 8pm GMT (4pm EST) and hopefully finishing at 2am GMT (10pm EST) for a full server 
             backup and consecutive update to 1.17. Thanks for your patience.<br><br>
         </p>
 
 
-        <h class = "heading big">1.17 update</h><br>
-        <h class = "text monospace"><i>17/07/2021 - Idra</i></p>
-        <p class = "text monospace">
+        <h class = "text-heading-medium">1.17 update</h><br>
+        <h class = "text-small-italic"><i>17/07/2021 - Idra</i></h>
+        <p class = "text-news-content">
             It's likely that we will be updating to 1.17 at some point within the next 7 days. This will be a purely technical 
             update - nothing about the server will change (apart from the fact that 1.17 blocks/entities/etc will be accessible). 
             There will [hopefully] be no resets of any kind in the survival world with this update, and you will still be able 
@@ -752,55 +844,55 @@
             Please move anything you still have in the resource world out before this deadline.<br><br>
         </p>
 
-        <h class = "heading big">Downtime incoming</h><br>
-        <h class = "text monospace"><i>17/07/2021 - Idra</i></p>
-        <p class = "text monospace">
+        <h class = "text-heading-medium">Downtime incoming</h><br>
+        <h class = "text-small-italic"><i>17/07/2021 - Idra</i></h>
+        <p class = "text-news-content">
             Downtime will be starting at 8pm GMT (4pm EST) and hopefully finishing at 2am GMT (10pm EST) for a full server 
             backup and consecutive update to 1.17. Thanks for your patience.<br><br>
         </p>
 
-        <h class = "heading big">Microsoft updates cause rapid unexpected downtime (again)</h><br>
-        <h class = "text monospace"><i>14/07/2021 - Idra</i></p>
-        <p class = "text monospace">
+        <h class = "text-heading-medium">Microsoft updates cause rapid unexpected downtime (again)</h><br>
+        <h class = "text-small-italic"><i>14/07/2021 - Idra</i></h>
+        <p class = "text-news-content">
             Server is currently running windows updates, should be back shortly. Blame microsoft.<br><br>
         </p>
 
-        <h class = "heading big">Armorstand issues</h><br>
-        <h class = "text monospace"><i>10/07/2021 - Idra</i></p>
-        <p class = "text monospace">
+        <h class = "text-heading-medium">Armorstand issues</h><br>
+        <h class = "text-small-italic"><i>10/07/2021 - Idra</i></h>
+        <p class = "text-news-content">
             I've become aware of an issue with armourstands; when editing them, items they have equipped may disappear. Please 
             be wary of this, and don't equip any valuable items on armourstands.<br><br>
         </p>
 
-        <h class = "heading big">Builder applications close</h><br>
-        <h class = "text monospace"><i>07/07/2021 - Idra</i></p>
-        <p class = "text monospace">
+        <h class = "text-heading-medium">Builder applications close</h><br>
+        <h class = "text-small-italic"><i>07/07/2021 - Idra</i></h>
+        <p class = "text-news-content">
             Builder applications have been closed for now, however event assistant applications are still open - you can apply 
             at https://metamechanists.enjin.com/eventassistantapp :)<br><br>
         </p>
 
-        <h class = "heading big">Microsoft causes rapid unexpected downtime</h><br>
-        <h class = "text monospace"><i>07/07/2021 - Idra</i></p>
-        <p class = "text monospace">
+        <h class = "text-heading-medium">Microsoft causes rapid unexpected downtime</h><br>
+        <h class = "text-small-italic"><i>07/07/2021 - Idra</i></h>
+        <p class = "text-news-content">
             Server's back up. As per usual, blame microsoft ;)<br><br>
         </p>
 
-        <h class = "heading big">New builders (part 2)</h><br>
-        <h class = "text monospace"><i>05/07/2021 - Idra</i></p>
-        <p class = "text monospace">
+        <h class = "text-heading-medium">New builders (part 2)</h><br>
+        <h class = "text-small-italic"><i>05/07/2021 - Idra</i></h>
+        <p class = "text-news-content">
             Aaaand congratulations to our second new assistant builder Wyatt_Kimchi!<br><br>
         </p>
 
-        <h class = "heading big">New builders (part 1)</h><br>
-        <h class = "text monospace"><i>03/07/2021 - Idra</i></p>
-        <p class = "text monospace">
+        <h class = "text-heading-medium">New builders (part 1)</h><br>
+        <h class = "text-small-italic"><i>03/07/2021 - Idra</i></h>
+        <p class = "text-news-content">
             Congratulations to our new assistant builder DragonSky2005! We will be selecting one more builder, who will be announced 
             tomorrow :)<br><br>
         </p>
 
-        <h class = "heading big">Permission issues fixed</h><br>
-        <h class = "text monospace"><i>29/06/2021 - Idra</i></p>
-        <p class = "text monospace">
+        <h class = "text-heading-medium">Permission issues fixed</h><br>
+        <h class = "text-small-italic"><i>29/06/2021 - Idra</i></h>
+        <p class = "text-news-content">
             Hi everyone<br><br>
 
             I just wanted to apologise about the permissions breaking earlier. It looks to me like a plugin that our permission 
@@ -811,15 +903,15 @@
             they pop up.<br><br>
         </p>
 
-        <h class = "heading big">Resource world and end reset</h><br>
-        <h class = "text monospace"><i>24/06/2021 - Idra</i></p>
-        <p class = "text monospace">
+        <h class = "text-heading-medium">Resource world and end reset</h><br>
+        <h class = "text-small-italic"><i>24/06/2021 - Idra</i></h>
+        <p class = "text-news-content">
             Resource world + the end resetting tomorrow! Last chance to move any items out of those dimensions.<br><br>
         </p>
 
-        <h class = "heading big">Migration finally complete</h><br>
-        <h class = "text monospace"><i>23/06/2021 - Idra</i></p>
-        <p class = "text monospace">
+        <h class = "text-heading-medium">Migration finally complete</h><br>
+        <h class = "text-small-italic"><i>23/06/2021 - Idra</i></h>
+        <p class = "text-news-content">
             Hi everyone,<br><br>
 
             The server finished transferring a short while ago and we're ready to start it again. My apologies again for the 
@@ -837,24 +929,24 @@
             Again, sorry that this took so long, and thanks so much for your patience!<br><br>
         </p>
 
-        <h class = "heading big">Downtime extended (again)</h><br>
-        <h class = "text monospace"><i>20/06/2021 - Idra</i></p>
-        <p class = "text monospace">
+        <h class = "text-heading-medium">Downtime extended (again)</h><br>
+        <h class = "text-small-italic"><i>20/06/2021 - Idra</i></h>
+        <p class = "text-news-content">
             Downtime may take even longer than expected due to more technical difficulties. I'm currently unsure how long it'll 
             take, but in the best-case scenario it'll be around 19 hours from now, in the worst case scenario it'll be around 36 
             hours. Thanks for your patience so far :)<br><br>
         </p>
 
-        <h class = "heading big">Downtime extended</h><br>
-        <h class = "text monospace"><i>19/06/2021 - Idra</i></p>
-        <p class = "text monospace">
+        <h class = "text-heading-medium">Downtime extended</h><br>
+        <h class = "text-small-italic"><i>19/06/2021 - Idra</i></h>
+        <p class = "text-news-content">
             Downtime may take longer than expected due to bisect having awful download suppo- I mean, due to me being an idiot 
             and not contacting support about compressing large files sooner<br><br>
         </p>
 
-        <h class = "heading big">Migration incoming</h><br>
-        <h class = "text monospace"><i>19/06/2021 - Idra</i></p>
-        <p class = "text monospace">
+        <h class = "text-heading-medium">Migration incoming</h><br>
+        <h class = "text-small-italic"><i>19/06/2021 - Idra</i></h>
+        <p class = "text-news-content">
             Hi everyone,<br><br>
 
             We've received an  offer from a friend of ours for a significant hardware upgrade. To migrate the server, we will 
@@ -863,18 +955,18 @@
             afterwards :)<br><br>
         </p>
         
-        <h class = "heading big">Resource world reset</h><br>
-        <h class = "text monospace"><i>18/06/2021 - Idra</i></p>
-        <p class = "text monospace">
+        <h class = "text-heading-medium">Resource world reset</h><br>
+        <h class = "text-small-italic"><i>18/06/2021 - Idra</i></h>
+        <p class = "text-news-content">
         Hi everyone,<br><br>
 
         As per popular request, we'll be resetting the resource world and the end around a week from now. This is your chance to 
         retrieve any items you have there. No refunds!<br><br>
         </p>
 
-        <h class = "heading big">Multiblock plugin</h><br>
-        <h class = "text monospace"><i>08/06/2021 - Idra</i></p>
-        <p class = "text monospace">
+        <h class = "text-heading-medium">Multiblock plugin</h><br>
+        <h class = "text-small-italic"><i>08/06/2021 - Idra</i></h>
+        <p class = "text-news-content">
             For the past month or so, I've been developing a plugin that allows implementation of custom multiblocks. This will 
             be expanded hugely upon in the future, but I have developed the plugin to a stage where I am happy with installing 
             it on the server. For now, there are only two multiblocks: the large gold pan, and the large dust washer. These 
@@ -889,25 +981,25 @@
             investigate further. Thanks for reading :)<br><br>
         </p>
 
-        <h class = "heading big">Placeholders added</h><br>
-        <h class = "text monospace"><i>05/06/2021 - Idra</i></p>
-        <p class = "text monospace">
+        <h class = "text-heading-medium">Placeholders added</h><br>
+        <h class = "text-small-italic"><i>05/06/2021 - Idra</i></h>
+        <p class = "text-news-content">
             Chat placeholders have been added! The current list is [item], [inv], [echest], [bal], [pos], and [ping]. Type these 
             into the chat to see what they do. You can now also see a player's timezone, join date, SF researches, and playtime 
             by hovering over their name in chat.<br><br>
         </p>
 
-        <h class = "heading big">Compressed machines obliterated</h><br>
-        <h class = "text monospace"><i>04/06/2021 - Idra</i></p>
-        <p class = "text monospace">
+        <h class = "text-heading-medium">Compressed machines obliterated</h><br>
+        <h class = "text-small-italic"><i>04/06/2021 - Idra</i></h>
+        <p class = "text-news-content">
             The latest slimefun update removed a function that was being used by compressed smelteries. Slimefun was not happy 
             about this and basically deleted all the compressed smelteries. If you've lost anything, message me and I will 
             refund it.<br><br>
         </p>
 
-        <h class = "heading big">Lag prevention</h><br>
-        <h class = "text monospace"><i>31/05/2021 - Idra</i></p>
-        <p class = "text monospace">
+        <h class = "text-heading-medium">Lag prevention</h><br>
+        <h class = "text-small-italic"><i>31/05/2021 - Idra</i></h>
+        <p class = "text-news-content">
             Hi all,<br><br>
 
             Recently I've been running profiles to help determine the cause of recent server lag. The main (preventable) culprit 
@@ -916,9 +1008,9 @@
             intensive). Thanks in advance :)<br><br>
         </p>
 
-        <h class = "heading big">Slimefun incompatibilities</h><br>
-        <h class = "text monospace"><i>29/05/2021 - Idra</i></p>
-        <p class = "text monospace">
+        <h class = "text-heading-medium">Slimefun incompatibilities</h><br>
+        <h class = "text-small-italic"><i>29/05/2021 - Idra</i></h>
+        <p class = "text-news-content">
             Hi @Announcements , I think you deserve an explanation about the fiasco that happened earlier.<br><br>
 
             A couple of months ago, several slimefun addons broke after an incompatibility occurred with the latest version of 
@@ -947,9 +1039,9 @@
             If you have lost any items, please message me or an administrator, and we'll attempt to sort it out<br><br>
         </p>
         
-        <h class = "heading big">Community project finished</h><br>
-        <h class = "text monospace"><i>28/05/2021 - redstonepowder</i></p>
-        <p class = "text monospace">
+        <h class = "text-heading-medium">Community project finished</h><br>
+        <h class = "text-small-italic"><i>28/05/2021 - redstonepowder</i></h>
+        <p class = "text-news-content">
             Hello everyone! Ye olde man Jenkins here. Aka redstonepowder. The community project has been finished! If you want to 
             make use of it, use /warp commproj<br>
             I'd like to thank Bappo, Quincy, Neutronstar, George, Shelled, Brayden, Flint, Teddy and many others that came to 
@@ -959,9 +1051,9 @@
             Feel free to add your suggestions for what you want in the poll.<br><br>
         </p>
 
-        <h class = "heading big">ColouredEnderChests going adios</h><br>
-        <h class = "text monospace"><i>26/05/2021 - Idra</i></p>
-        <p class = "text monospace">
+        <h class = "text-heading-medium">ColouredEnderChests going adios</h><br>
+        <h class = "text-small-italic"><i>26/05/2021 - Idra</i></h>
+        <p class = "text-news-content">
             Hi everyone, sorry for the ping.<br><br>
 
             Recently we've uncovered a large problem with ColouredEnderChests which causes huge TPS drop when crafting large 
@@ -970,9 +1062,9 @@
             you.<br><br>
         </p>
 
-        <h class = "heading big">New marketplace opened</h><br>
-        <h class = "text monospace"><i>26/05/2021 - Idra</i></p>
-        <p class = "text monospace">
+        <h class = "text-heading-medium">New marketplace opened</h><br>
+        <h class = "text-small-italic"><i>26/05/2021 - Idra</i></h>
+        <p class = "text-news-content">
             Hi everyone,<br><br>
 
             Aria and I have spent the past few days building a new marketplace, as the old one was getting far too crowded. 
@@ -985,9 +1077,9 @@
             Beware that plots are now grouped, and can be purchased either individually or in groups.<br><br>
         </p>
 
-        <h class = "heading big">New staff member #2</h><br>
-        <h class = "text monospace"><i>24/05/2021 - Idra</i></p>
-        <p class = "text monospace">
+        <h class = "text-heading-medium">New staff member #2</h><br>
+        <h class = "text-small-italic"><i>24/05/2021 - Idra</i></h>
+        <p class = "text-news-content">
             Hi everyone, we've reviewed our final applications as promised and have decided on our new helper. Applications 
             will be open permanently, so if you wish to apply you may still do so. We will accept any new staff members who 
             meet the criteria.<br><br>
@@ -997,23 +1089,23 @@
             opportunities after this :)<br><br>
         </p>
 
-        <h class = "heading big">Spawner duplication fixed</h><br>
-        <h class = "text monospace"><i>22/05/2021 - Idra</i></p>
-        <p class = "text monospace">
+        <h class = "text-heading-medium">Spawner duplication fixed</h><br>
+        <h class = "text-small-italic"><i>22/05/2021 - Idra</i></h>
+        <p class = "text-news-content">
             We've finally found the problem causing the spawner duplication glitch. Electric spawners will now be 
             re-implemented.<br><br>
         </p>
 
-        <h class = "heading big">Warning about silk touch spawners</h><br>
-        <h class = "text monospace"><i>22/05/2021 - redstonepowder</i></p>
-        <p class = "text monospace">
+        <h class = "text-heading-medium">Warning about silk touch spawners</h><br>
+        <h class = "text-small-italic"><i>22/05/2021 - redstonepowder</i></h>
+        <p class = "text-news-content">
             Hello everyone, be advised, while silk touch spawners is enabled, it does NOT work on naturally generated 
             spawners. Notice NOT.<br><br>
         </p>
 
-        <h class = "heading big">New staff member #1</h><br>
-        <h class = "text monospace"><i>22/05/2021 - Idra</i></p>
-        <p class = "text monospace">
+        <h class = "text-heading-medium">New staff member #1</h><br>
+        <h class = "text-small-italic"><i>22/05/2021 - Idra</i></h>
+        <p class = "text-news-content">
             Hi everyone, we've decided to review applications and announce one of our new helpers slightly earlier. 
             However, we have decided to keep applications open permanently, so fear not if you haven't applied yet. 
             Another helper will be chosen and announced around 32 hours from now from the remaining pool of 
@@ -1022,18 +1114,18 @@
             Without further ado then, welcome to our first new helper neutronstar01!!!<br><br>
         </p>
 
-        <h class = "heading big">Staff applications open</h><br>
-        <h class = "text monospace"><i>16/05/2021 - Idra</i></p>
-        <p class = "text monospace">
+        <h class = "text-heading-medium">Staff applications open</h><br>
+        <h class = "text-small-italic"><i>16/05/2021 - Idra</i></h>
+        <p class = "text-news-content">
             Hi everyone,<br><br>
             
             A reminder that staff applications are open. We'll be closing these next week on Monday at 00:00 GMT, so 
             make sure you submit before Monday. Apply at https://metamechanists.enjin.com/staffapplication.<br><br>
         </p>
 
-        <h class = "heading big">New webstore</h><br>
-        <h class = "text monospace"><i>15/05/2021 - Idra</i></p>
-        <p class = "text monospace">
+        <h class = "text-heading-medium">New webstore</h><br>
+        <h class = "text-small-italic"><i>15/05/2021 - Idra</i></h>
+        <p class = "text-news-content">
             Hi everyone,<br><br>
             
             We've set up a webstore where you can purchase cosmetics or donate to support the server. Please do 
@@ -1042,9 +1134,9 @@
             [link removed]<br><br>
         </p>
 
-        <h class = "heading big">Community project update</h><br>
-        <h class = "text monospace"><i>12/05/2021 - redstonepowder</i></p>
-        <p class = "text monospace">
+        <h class = "text-heading-medium">Community project update</h><br>
+        <h class = "text-small-italic"><i>12/05/2021 - redstonepowder</i></h>
+        <p class = "text-news-content">
             Hi everyone,<br><br>
             
             Update: There's an outpost in the center of the perimeter, where you can safely set a home at. We'll 
@@ -1058,9 +1150,9 @@
             up the perimeter much easier.<br><br>
         </p>
 
-        <h class = "heading big">Community project</h><br>
-        <h class = "text monospace"><i>11/05/2021 - redstonepowder</i></p>
-        <p class = "text monospace">
+        <h class = "text-heading-medium">Community project</h><br>
+        <h class = "text-small-italic"><i>11/05/2021 - redstonepowder</i></h>
+        <p class = "text-news-content">
             Hello everyone Jenkins here, a.k.a redstonepowder.<br>
             I've been marking out an area with a community project in mind.  A public wither skeleton perimeter 
             to be more specific.<br><br>
@@ -1099,63 +1191,63 @@
             P.S: Special equipment will be provided later, because this announcement got rushed.<br><br>
         </p>
 
-        <h class = "heading big">Hosting provider issues</h><br>
-        <h class = "text monospace"><i>11/05/2021 - Idra</i></p>
-        <p class = "text monospace">
+        <h class = "text-heading-medium">Hosting provider issues</h><br>
+        <h class = "text-small-italic"><i>11/05/2021 - Idra</i></h>
+        <p class = "text-news-content">
             Sorry, looks like our host is having some problems, the server should be up again shortly<br><br>
         </p>
 
-        <h class = "heading big">Sign up to our website</h><br>
-        <h class = "text monospace"><i>09/05/2021 - Idra</i></p>
-        <p class = "text monospace">
+        <h class = "text-heading-medium">Sign up to our website</h><br>
+        <h class = "text-small-italic"><i>09/05/2021 - Idra</i></h>
+        <p class = "text-news-content">
             Hi all, please go sign up and link up on our Server site! https://metamechanists.enjin.com/<br>
             I've been asked about some staff application business, all that will go on within the website!<br><br>
         </p>
 
-        <h class = "heading big">RAM upgraded</h><br>
-        <h class = "text monospace"><i>07/05/2021 - Idra</i></p>
-        <p class = "text monospace">
+        <h class = "text-heading-medium">RAM upgraded</h><br>
+        <h class = "text-small-italic"><i>07/05/2021 - Idra</i></h>
+        <p class = "text-news-content">
             Server RAM has been upgraded. No more crashes, and lag should hopefully decrease massively :)<br><br>
         </p>
 
-        <h class = "heading big">Server crash</h><br>
-        <h class = "text monospace"><i>06/05/2021 - Idra</i></p>
-        <p class = "text monospace">
+        <h class = "text-heading-medium">Server crash</h><br>
+        <h class = "text-small-italic"><i>06/05/2021 - Idra</i></h>
+        <p class = "text-news-content">
             Sorry about the clusterfuck that was the server crash about 5 minutes ago. The server ran out of 
             RAM and decided to quit life. I will get this fixed ASAP (read: tomorrow)<br><br>
         </p>
 
-        <h class = "heading big">KeepInventory disabled</h><br>
-        <h class = "text monospace"><i>30/04/2021 - Idra</i></p>
-        <p class = "text monospace">
+        <h class = "text-heading-medium">KeepInventory disabled</h><br>
+        <h class = "text-small-italic"><i>30/04/2021 - Idra</i></h>
+        <p class = "text-news-content">
             KeepInventory will not be enabled for about 4-5 hours after the restart because it needs enabling 
             manually. Don't die in lava.<br><br>
         </p>
 
-        <h class = "heading big">Website upgrade, vote or else</h><br>
-        <h class = "text monospace"><i>29/04/2021 - _Flintlock</i></p>
-        <p class = "text monospace">
+        <h class = "text-heading-medium">Website upgrade, vote or else</h><br>
+        <h class = "text-small-italic"><i>29/04/2021 - _Flintlock</i></h>
+        <p class = "text-news-content">
             Hello everyone! 2 things,<br><br>
 
             1. We recently updated our Enjin site, https://metamechanists.enjin.com/ so do sign up and get 
             familiar! Our staff/builder/etc. apps will likely be posted there. (However most things will be 
-            communicated here on <a href = "https://discord.com/invite/6Ew8BYxUtZ" class = "text link">Discord</a> 
+            communicated here on <a href = "https://discord.com/invite/6Ew8BYxUtZ" class = "text-link">Discord</a> 
             as well, we'll see how it goes)<br><br>
 
             2. Please VOTEEEEEEE :D I mean you get goodies so why not :p<br><br>
         </p>
 
-        <h class = "heading big">Automatic startups</h><br>
-        <h class = "text monospace"><i>27/04/2021 - Idra</i></p>
-        <p class = "text monospace">
+        <h class = "text-heading-medium">Automatic startups</h><br>
+        <h class = "text-small-italic"><i>27/04/2021 - Idra</i></h>
+        <p class = "text-news-content">
             Server should now automatically try to start on every half-hour. If the server goes down again, 
             wait until the next xx:10 or xx:40 for it to start again. If it doesn't, assume that either I 
             messed something up horribly, or the host is having network issues.<br><br>
         </p>
 
-        <h class = "heading big">No griefing >:(</h><br>
-        <h class = "text monospace"><i>27/04/2021 - Idra</i></p>
-        <p class = "text monospace">
+        <h class = "text-heading-medium">No griefing >:(</h><br>
+        <h class = "text-small-italic"><i>27/04/2021 - Idra</i></h>
+        <p class = "text-news-content">
             Alright everyone, I was hoping I wouldn't need to make this announcement but here we are.<br><br>
 
             I'm aware there have been multiple griefing threats and that certain groups are 'teaming up' on 
@@ -1168,38 +1260,38 @@
             yourselves. Thank you.<br><br>
         </p>
 
-        <h class = "heading big">/spawner removal</h><br>
-        <h class = "text monospace"><i>25/04/2021 - Idra</i></p>
-        <p class = "text monospace">
+        <h class = "text-heading-medium">/spawner removal</h><br>
+        <h class = "text-small-italic"><i>25/04/2021 - Idra</i></h>
+        <p class = "text-news-content">
             As an advance warning - /spawner will be removed from available commands tomorrow<br><br>
         </p>
 
-        <h class = "heading big">Difficulty change</h><br>
-        <h class = "text monospace"><i>18/04/2021 - Idra</i></p>
-        <p class = "text monospace">
+        <h class = "text-heading-medium">Difficulty change</h><br>
+        <h class = "text-small-italic"><i>18/04/2021 - Idra</i></h>
+        <p class = "text-news-content">
             The difficulty has been set to hard in line with the poll sent out earlier on 
-            <a href = "https://discord.com/invite/6Ew8BYxUtZ" class = "text link">Discord</a>.<br><br>
+            <a href = "https://discord.com/invite/6Ew8BYxUtZ" class = "text-link">Discord</a>.<br><br>
         </p>
 
-        <h class = "heading big">*confusion*</h><br>
-        <h class = "text monospace"><i>18/04/2021 - Idra</i></p>
-        <p class = "text monospace">
+        <h class = "text-heading-medium">*confusion*</h><br>
+        <h class = "text-small-italic"><i>18/04/2021 - Idra</i></h>
+        <p class = "text-news-content">
             I'm not completely sure what happened last night; my best guess is chunk generating taking too 
             much RAM and crashing the server. AntiCheat was triggered but it doesn't look like it contributed 
             anything in the way of lag. Either way, I've enabled some automatic profiling configs so next time 
             it should be far easier to figure out what happened.<br><br>
         </p>
 
-        <h class = "heading big">Lag spikes fixed</h><br>
-        <h class = "text monospace"><i>15/04/2021 - Idra</i></p>
-        <p class = "text monospace">
+        <h class = "text-heading-medium">Lag spikes fixed</h><br>
+        <h class = "text-small-italic"><i>15/04/2021 - Idra</i></h>
+        <p class = "text-news-content">
             Lag spikes are probably fixed. It appears they were caused by a new plugin (LiteXpansion), should 
             be fine now.<br><br>
         </p>
 
-        <h class = "heading big">Lag, exploits, and bugs</h><br>
-        <h class = "text monospace"><i>15/04/2021 - Idra</i></p>
-        <p class = "text monospace">
+        <h class = "text-heading-medium">Lag, exploits, and bugs</h><br>
+        <h class = "text-small-italic"><i>15/04/2021 - Idra</i></h>
+        <p class = "text-news-content">
             Three things<br>
             1) The latest paper update broke backward compatibility. That is now fixed, and you can connect 
             with earlier versions again<br>
@@ -1209,17 +1301,17 @@
             3) Voting rewards should now be consistently working, though I had to remove a site<br><br>
         </p>
 
-        <h class = "heading big">Adios to Craftbook</h><br>
-        <h class = "text monospace"><i>10/04/2021 - Idra</i></p>
-        <p class = "text monospace">
+        <h class = "text-heading-medium">Adios to Craftbook</h><br>
+        <h class = "text-small-italic"><i>10/04/2021 - Idra</i></h>
+        <p class = "text-news-content">
             I recently did a timing profile to find out the cause of server lag. Craftbook is apparently 
             responsible for 6% of CPU usage per tick (the highest of any plugin), so removing it would 
             increase server performance by about 6%. I have therefore removed Craftbook. RIP.<br><br>
         </p>
 
-        <h class = "heading big">We are not 2b2t</h><br>
-        <h class = "text monospace"><i>10/04/2021 - Idra</i></p>
-        <p class = "text monospace">
+        <h class = "text-heading-medium">We are not 2b2t</h><br>
+        <h class = "text-small-italic"><i>10/04/2021 - Idra</i></h>
+        <p class = "text-news-content">
             Okay, enough is enough. This is not an anarchy server. I've written a script that allows you 
             to toggle 'protection,' which shows whether you wish to participate in raiding or not. Run 
             /protection to use it.<br>
@@ -1233,24 +1325,24 @@
             - Exceptions to these rules (eg: if two towns wish to go to war) should go through me first<br><br>
         </p>
 
-        <h class = "heading big">Server back up</h><br>
-        <h class = "text monospace"><i>08/04/2021 - Idra</i></p>
-        <p class = "text monospace">
+        <h class = "text-heading-medium">Server back up</h><br>
+        <h class = "text-small-italic"><i>08/04/2021 - Idra</i></h>
+        <p class = "text-news-content">
             The server's back up, there were some network issues in Amsterdam (where the server's hosted) 
             while I was sleeping. sorry about that!<br><br>
         </p>
 
-        <h class = "heading big">Market open</h><br>
-        <h class = "text monospace"><i>05/04/2021 - Idra</i></p>
-        <p class = "text monospace">
+        <h class = "text-heading-medium">Market open</h><br>
+        <h class = "text-small-italic"><i>05/04/2021 - Idra</i></h>
+        <p class = "text-news-content">
             The player market is open!<br>
             At /warp market you can buy from and sell to player shops, and build your own. Plot prices start 
             at $10,000. 15 plots are available in total.<br><br>
         </p>
 
-        <h class = "heading big">Lag, exploits, and bugs</h><br>
-        <h class = "text monospace"><i>15/04/2021 - Nethereasy</i></p>
-        <p class = "text monospace">
+        <h class = "text-heading-medium">Lag, exploits, and bugs</h><br>
+        <h class = "text-small-italic"><i>15/04/2021 - Nethereasy</i></h>
+        <p class = "text-news-content">
             We have now added a resource World which will be reset every month. If you wish to access it 
             you may by using the command /warp resource<br>
             You are able to rtp to a further location of this map and you can return to main world by 
@@ -1258,11 +1350,12 @@
             We ask that players that wish to do large scale terraforming, excavation, etc. For it to be 
             done in this world as it will not effect the main world where players will progress their town.
             Hope you all have a good time playing if any more suggestions are needed please done hesitate 
-            to make them in the suggestions part of the <a href = "https://discord.com/invite/6Ew8BYxUtZ" class = "text link">Discord</a>.<br><br>
+            to make them in the suggestions part of the <a href = "https://discord.com/invite/6Ew8BYxUtZ" class = "text-link">Discord</a>.<br><br>
         </p>
     </div>
 
-    
-    <!-- SCRIPTS -->
-    <script src="script/switchtheme.js"></script>
+    <script>
+        feather.replace({ class: 'feather', 'stroke-width': 1 })
+    </script>
+
 </body>
