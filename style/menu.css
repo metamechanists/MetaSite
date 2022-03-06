@@ -47,11 +47,65 @@
 
 .menu-icon {
     vertical-align: middle;
-    width: 20%;
+    width: 20px;
     height: 20px;
     stroke: rgb(255, 255, 255);
     stroke-width: 2;
     stroke-linecap: round;
     stroke-linejoin: round;
     fill: none;
+}
+
+.menu-toggle-container {
+    height: 50px;
+    width: 150px;
+    float: left;
+    background-color: rgb(85, 108, 129);
+}
+
+.menu-toggle-input {
+    display: none;
+}
+
+.menu-toggle-label {
+    position: fixed;
+    top: 6px;
+    left: 6px;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.menu-toggle-icon {
+    vertical-align: middle;
+    width: 40px;
+    height: 40px;
+    stroke: rgb(255, 255, 255);
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    fill: none;
+}
+
+@media screen and (max-width: 600px) {
+    .menu-toggle-input:checked ~ .menu-container {
+        transform: translate(0px);
+        transition: 0.5s;
+    }
+
+    .menu-toggle-input:not(:checked) ~ .menu-container {
+        transform: translate(-150px);
+        transition: 0.5s;
+    }
+}
+
+@media not screen and (max-width: 600px) {
+    .menu-toggle-label {
+        display: none;
+    }
+
+    .menu-toggle-container {
+        display: none;
+    }
 }
