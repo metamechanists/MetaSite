@@ -1,0 +1,165 @@
+<head>
+    <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.6/build/grids-responsive-min.css" />
+    <script src="https://kit.fontawesome.com/6be673d481.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <link rel = "stylesheet" href = "style/body.css">
+    <link rel = "stylesheet" href = "style/align.css">
+    <link rel = "stylesheet" href = "style/text.css">
+    <link rel = "stylesheet" href = "style/images.css">
+    <link rel = "stylesheet" href = "style/menu.css">
+    <link rel="icon" type = "image/png" href="image/logo.png">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tutorial</title>
+</head>
+
+
+<body>
+
+    <!-- MENU -->
+    <input class = "menu-toggle-input" type = "checkbox" id = "menu-toggle-input">
+    <label class = "menu-toggle-label" for = "menu-toggle-input">
+        <i data-feather="menu" class = "menu-toggle-icon"></i>
+    </label>
+
+    <div class="menu-container">
+
+        <div class = "menu-toggle-container"></div>
+
+        <img src = "image/banner.png" class = "menu-heading">
+        <ul class="menu-list">
+            <li class="menu-item">
+                <i data-feather="home" class = "menu-icon"></i>
+                <a href="index" class="menu-text-active">Home</a>
+            </li>
+            <li class="menu-item">
+                <i data-feather="mail" class = "menu-icon"></i>
+                <a href="news" class="menu-text-active">News</a>
+            </li>
+            <li class="menu-item">
+                <i data-feather="user" class = "menu-icon"></i>
+                <a href="staff" class="menu-text-active">Staff</a>
+            </li>
+            <li class="menu-item">
+                <i data-feather="chevrons-up" class = "menu-icon"></i>
+                <a href="ranks" class="menu-text-active">Ranks</a>
+            </li>
+            <li class="menu-item">
+                <i data-feather="map" class = "menu-icon"></i>
+                <a href="https://map.metamechanists.org" class="menu-text-active">Map</a>
+            </li>
+            <li class="menu-item">
+                <i data-feather="list" class = "menu-icon"></i>
+                <a href="plugins" class="menu-text-active">Plugins</a>
+            </li>
+            <li class="menu-item">
+                <i data-feather="bar-chart-2" class = "menu-icon"></i>
+                <a href="data" class="menu-text-wip">Data</a>
+            </li>
+            <li class="menu-item">
+                <i data-feather="align-left" class = "menu-icon"></i>
+                <a href="rules" class="menu-text-active">Rules</a>
+            </li>
+        </ul>
+    </div>
+
+    <!-- RULES -->
+    <div class = "pad-main">
+        
+        <i data-feather="settings" class = "image-icon-small-white"></i>
+        <h class = "text-paragraph"><b>UNDER CONSTRUCTION</b></h>
+        <i data-feather="settings" class = "image-icon-small-white"></i>
+        <h class = "text-paragraph"><b>This page is still under construction. Use any information from here at your own risk!</b></h>
+
+        <h class = "text-heading-big">TUTORIAL</h>
+        <br>
+        <h class = "text-paragraph">This page contains an extensive tutorial for Slimefun and the addons that we have on MetaMechanists.</h>
+        <br><br>
+
+        <h class = "text-heading-medium">Introduction</h>
+        <br><br>
+
+        <h class = "text-heading-small">What is Slimefun?</h>
+        <p class = "text-paragraph limit-width">
+            You may be familiar with modifications (AKA mods). Mods bring new content 
+            to the game: new mobs, landscape, machines, armour, you name it. However,
+            mods must be installed on your computer. You can't use mods on a server with
+            a vanilla client; instead, you must install a modloader (such as Forge or Fabric) and
+            then install the mods you wish to play with.
+            <br><br>
+            Slimefun is like a mod, but any vanilla client can join the server and use it.
+            Through a set of clever techniques and workarounds, Slimefun adds hundreds of
+            new blocks and items without requiring you to install anything. Of course, there
+            are some disadvantages to this: for example, Slimefun can't implement any new
+            textures, although there are some unofficial texture packs to do this.
+            <br><br>
+            One of the main reasons that Slimefun is so appealing is because it is very
+            coherent. It is relatively easy to create an addon for Slimefun due to a very
+            comprehensive API, and as a result, Slimefun has extensive community-created 
+            content in the form of addons. There are currently 54 plugins available (full 
+            list <a href = "https://github.com/Slimefun/Slimefun4/wiki/Addons" class = "text-link">here</a>),
+            adding everything from custom advancements to new planets to liquid alloying. The 
+            result of this is potentially hundreds of hours of varied content.
+            <br><br>
+            However, Slimefun can be a bit unintuitive to get into. This is why we've put this
+            guide together to hopefully provide some direction for those of you new to Slimefun.
+            Before you begin, beware that Slimefun is grindy, especially early game, and
+            requires some substantial dedication. It's therefore quite easy to get burnt 
+            out, and I recommend that if you start feeling frustrated or burnt out, do something
+            else until you're feeling ready to move on again. Go slowly, take your time, and
+            don't forget to ask around if you're stuck with something. 
+            <br><br>
+            Good luck!
+        </p>
+
+        <br>
+        <h class = "text-heading-small">The Slimefun Guide</h>
+        <p class = "text-paragraph limit-width">
+            The Slimefun Guide is a book that allows you to view the recipes and functions of
+            various items and machines. To access the SF guide, run /sf guide, and the guide 
+            will spawn into your inventory. Open the book by holding it and right clicking. 
+            Navigate by clicking the different icons, and exit by pressing esc.
+            <br><br>
+            The Slimefun Guide is divided into many categories, with each category containing 
+            many different items and machines. Some categories contain sub-categories of their own.
+            Before you are able to craft and use an item, you'll need to unlock it. Each item
+            needs a different number of XP levels to unlock, indicated when you hover over it.
+            To unlock an item, left click it. Try unlocking the Gold Pan:<br>
+            [IMAGE]
+            <br><br>
+        </p>
+
+        <br>
+        <br>
+        <h class = "text-heading-small">Multiblocks</h>
+        <p class = "text-paragraph limit-width">
+            Multiblocks are unique machines that must be built by placing blocks down instead 
+            of being crafted, amongst which the Enhanced Crafting Table is included. All 
+            multiblocks have their build recipes shown in the SF guidebook, a column in the 
+            guidebook is 3 blocks tall and 1 block wide, while a row is 1 block tall and 3 
+            blocks wide.
+
+            To create the Enhanced Crafting Table you will need to place a workbench on top of 
+            a dispenser. To confirm if you have built it correctly, right click on the crafting 
+            table, if the vanilla crafting gui appears, you have done it wrong.
+
+            To use the Enhanced Crafting Table right click the dispenser, place the items as
+            shown in the guidebook, exit the dispenser gui and then right click the crafting 
+            table. A successful craft will be accompanied by a click sound.
+            
+            Congratulations, you've taken the first step. 
+            <br><br>
+        </p>
+
+        <br>
+        <br>
+        <h class = "text-heading-small">Dusts</h>
+        <br>
+        <br>
+    </div>
+
+    <script>
+        feather.replace({ class: 'feather', 'stroke-width': 1 })
+    </script>
+
+</body>
