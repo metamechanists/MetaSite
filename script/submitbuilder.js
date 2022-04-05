@@ -188,6 +188,7 @@ function sendWebhookMessages(messages) {
 
   } else {
     indicateApplicationSubmitted();
+    showInterviewInformation();
   }
 }
 
