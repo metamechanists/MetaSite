@@ -61,69 +61,70 @@ const avatar_url = ""
 const errorContainer = document.getElementById("errorContainer");
 const progressContainer = document.getElementById("progressContainer");
 const successContainer = document.getElementById("successContainer");
-const interviewContainer = document.getElementById("successContainer");
+const interviewContainer = document.getElementById("interviewContainer");
 const progressParagraph = document.createElement("p");
 const submitButton = document.getElementsByName("submit-button")[0]
 
 
+function addParagraph(divName, text) {
+  const container = document.getElementById(divName);
+  const paragraph = document.createElement("p");
+  paragraph.innerHTML = text;
+  container.appendChild(paragraph);
+}
 
 function indicateApplicationIncomplete() {
   if (errorContainer.children.length == 0) {
-    const errorParagraph = document.createElement("p");
-    const errorText = document.createTextNode("You didn't answer all the questions. Make sure you answer all of them, then try again!");
-    errorParagraph.appendChild(errorText);
-    errorContainer.appendChild(errorParagraph);
+    addParagraph("errorContainer", "You didn't answer all the questions. Make sure you answer all of them, then try again!");
   }
-  document.getElementsByName("submit-button")[0].style.backgroundColor = "#602A27";
+
+  document.getElementsByName("submit-button")[0].style.backgroundColor = "#905050";
 }
 
 function indicateApplicationInProgress() {
-  const progressText = document.createTextNode("Please wait, submitting application...");
-  progressParagraph.appendChild(progressText);
-  progressContainer.appendChild(progressParagraph);
+  addParagraph("progressContainer", "Please wait, submitting application...");
 
-  submitButton.style.backgroundColor = "#905050"
-  submitButton.style.cursor = "not-allowed"
-  submitButton.disabled = true
+  submitButton.style.backgroundColor = "#909050";
+  submitButton.style.cursor = "not-allowed";
+  submitButton.disabled = true;
 }
 
 function indicateApplicationSubmitted() {
   progressContainer.remove();
-  const successParagraph = document.createElement("p");
-  const successText = document.createTextNode("Application submitted!");
-  successParagraph.appendChild(successText);
-  successContainer.appendChild(successParagraph);
+  submitButton.style.backgroundColor = "#505050";
+
+  addParagraph("successContainer", "Application submitted!");
 }
 
 function showInterviewInformation() {
-  const successParagraph = document.createElement("p");
-  const successText = document.createTextNode("Thanks for taking the time to apply, we appreciate it. You should hear back from us within \
-  72 hours. If you haven\'t heard from us by then, feel free to spam Idra#9838 on Discord. <br><br> \
+  addParagraph("interviewContainer", "Thanks for taking the time to apply, we appreciate it. You should hear back from us within \
+  72 hours. If you haven\'t heard from us by then, feel free to spam Idra#9838 on Discord.\n\n \
   \
   If your application is accepted, you\'ll go through one or two interviews with the staff team and the builders so we can make sure \
   you\'re the right match. This will be conducted in a voice channel (although you can either type or talk depending on your preference). \
-  If you\'re accepted, we\'ll be in touch to find a time that works for both you and us. <br><br> \
+  If you\'re accepted, we\'ll be in touch to find a time that works for both you and us.\n\n \
+  \
   Thanks again for applying!");
-  successParagraph.appendChild(successText);
-  successContainer.appendChild(successParagraph);
 }
 
 
 
 function checkApplicationComplete() {
+  let applicationComplete = true;
+
   for (var i = 0; i < variableIDs.length; i++) {
     element = document.getElementsByName(variableIDs[i])[0];
     
     if (element.value == "") {
       element.style.backgroundColor = "#602A27";
-      return false;
+      applicationComplete = false;
 
     } else {
       element.style.backgroundColor = "#161616";
     }
   }
 
-  return true;
+  return applicationComplete;
 }
 
 function formMessage(i) {
