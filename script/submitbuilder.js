@@ -174,6 +174,8 @@ function sendWebhookMessages(messages) {
     request.onreadystatechange = function() {
         if ((request.readyState == XMLHttpRequest.DONE)) {
           messages.shift();
+            sleep(300); // let's not get rate-limited
+            // this wouldn't be necessary if the connection between the discord server and void's machine wasn't so fast
             sendWebhookMessages(messages);
         }
     }
