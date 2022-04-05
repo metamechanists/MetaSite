@@ -4,7 +4,7 @@
 // please don't judge lmao
 
 
-var variableIDs = [
+const variableIDs = [
   'age', 
   'ableToVc', 
   'timezone', 
@@ -16,108 +16,183 @@ var variableIDs = [
   'tellUsAStory',
   'tellUsAboutYourself'];
 
-var variableNames = [
-  'How old are you?', 
-  'Are you comfortable with and able to voice chat? (this is not necessary, but encouraged)',
+const variableNames = [
+  'How old are you? You can give a range (eg: 14-16)', 
+  'Are you comfortable with talking in voice chat? This is not necessary, so don\'t feel pressured :)',
   'Timezone',
   'Minecraft username',
   'Discord username and tag',
-  'What experience do you have with building?',
-  'Talk about your building style a bit.',
-  'Attach some pictures of your past builds.',
-  'Tell us a story (yes, this is open-ended, you can write about whatever you want)',
+  'What experience do you have with building? This can include experience on past build teams, building competitions, your own projects, or anything else you can think of. What challenges did you face when building these projects and how did you solve them?',
+  'Talk about your building style a bit. Large or small scale? What are your strengths and weaknesses? What would you like to learn, and what doesn\'t appeal to you so much?',
+  'Attach some pictures of your past builds. You can upload them to any image hosting website. We recommend imgbb.com or imgur.com/upload',
+  'Tell us a story (yes, this is open-ended, write about whatever you want)',
   'Tell us about yourself. Introvert or extrovert? What\'s your opinion on the meaning of life? What\'s your favourite tea brand?']
 
-// https://stackoverflow.com/questions/951021/what-is-the-javascript-version-of-sleep
-function sleep(ms) {
-  return new Promise(resolve => setTimeout(resolve, ms));
+
+
+// https://www.sitepoint.com/delay-sleep-pause-wait/
+function sleep(milliseconds) {
+  const date = Date.now();
+  let currentDate = null;
+  do {
+    currentDate = Date.now();
+  } while (currentDate - date < milliseconds);
 }
+
 
 function loadFile(filePath) {
   var result = null;
   var xmlhttp = new XMLHttpRequest();
   xmlhttp.open("GET", filePath, false);
   xmlhttp.send();
-  if (xmlhttp.status==200) {
+  if (xmlhttp.status == 200) {
     result = xmlhttp.responseText;
   }
   return result;
 }
 
-function sendWebhookMessages(messages) {
-  const webhook = loadFile("webhook.txt");
-  const request = new XMLHttpRequest();
 
-  for (var i = 0; i < messages.length; i++) {
-    const params = {
-      username: "Idra\'s Minion",
-      avatar_url: "",
-      content: messages[i] + "_ _"
-    }
-    request.open("POST", webhook);
-    request.setRequestHeader('Content-type', 'application/json');
-    request.send(JSON.stringify(params));
-    sleep(10) // let's not get blocked by the API, shall we1
+
+//const webhook = loadFile("webhook.txt");
+const webhook = "https://discord.com/api/webhooks/960914711753424896/yyoYLZV0XiPtD2_TOIZx8zpYwTkMRpwYBzC1Hf3V44OA6Q2BBiOu0uORoYdtM4JG_Ur4"
+const username = "Idra\'s Minion"
+const avatar_url = ""
+
+const errorContainer = document.getElementById("errorContainer");
+const progressContainer = document.getElementById("progressContainer");
+const successContainer = document.getElementById("successContainer");
+const progressParagraph = document.createElement("p");
+const submitButton = document.getElementsByName("submit-button")[0]
+
+
+
+function indicateApplicationIncomplete() {
+  if (errorContainer.children.length == 0) {
+    const errorParagraph = document.createElement("p");
+    const errorText = document.createTextNode("You didn't answer all the questions. Make sure you answer all of them, then try again!");
+    errorParagraph.appendChild(errorText);
+    errorContainer.appendChild(errorParagraph);
   }
+  document.getElementsByName("submit-button")[0].style.backgroundColor = "#602A27";
 }
 
-function sendBuilderMessage() {
-  var applicationComplete = true;
+function indicateApplicationInProgress() {
+  const progressText = document.createTextNode("Please wait, submitting application...");
+  progressParagraph.appendChild(progressText);
+  progressContainer.appendChild(progressParagraph);
 
+  submitButton.style.backgroundColor = "#905050"
+  submitButton.style.cursor = "not-allowed"
+  submitButton.disabled = true
+}
+
+function indicateApplicationSubmitted() {
+  progressContainer.remove();
+  const successParagraph = document.createElement("p");
+  const successText = document.createTextNode("Application submitted!");
+  successParagraph.appendChild(successText);
+  successContainer.appendChild(successParagraph);
+  window.open("application-builder-submitted");
+}
+
+
+
+function checkApplicationComplete() {
   for (var i = 0; i < variableIDs.length; i++) {
     element = document.getElementsByName(variableIDs[i])[0];
+    
     if (element.value == "") {
       element.style.backgroundColor = "#602A27";
-      applicationComplete = false;
+      return false;
 
     } else {
       element.style.backgroundColor = "#161616";
     }
   }
 
-  const errorContainer = document.getElementById("errorContainer");
-  const successContainer = document.getElementById("successContainer");
+  return true;
+}
+
+function formMessage(i) {
+  var message = "**" + variableNames[i] + "**" + "\n";
+  let elements = document.getElementsByName(variableIDs[i]);
+
+  if (elements.length == 1) {
+    message += elements[0].value + "\n\n";
+
+  } else {
+    for (var e = 0; e < elements.length; e++) {
+      if (elements[e].checked) {
+        message += elements[e].value + "\n\n";
+      }
+    }
+  }
+
+  return message;
+}
+
+function formMessages() {
+  var date = new Date();
+  var dateFormatted = date.toLocaleString();
+  var messages = ["```BUILDER APPLICATION - " + dateFormatted + "```"];
+
+  for (var i = 0; i < variableIDs.length; i++) {
+    let message = formMessage(i);
+    messages.push(message);
+  }
+
+  return messages;
+}
+
+
+
+function formWebhookRequest(message) {
+  let request = new XMLHttpRequest();
+  request.open("POST", webhook);
+  request.setRequestHeader('Content-type', 'application/json');
+  return request;
+}
+
+function sendWebhookMessages(messages) {
+  
+  if (messages.length > 0) {
+    let request = formWebhookRequest(messages[0]);
+
+    request.onreadystatechange = function() {
+        if ((request.readyState == XMLHttpRequest.DONE)) {
+          messages.shift();
+            sendWebhookMessages(messages);
+        }
+    }
+
+    const params = {
+      username: username,
+      avatar_url: avatar_url,
+      content: messages[0] + "_ _"
+    }
+
+    request.send(JSON.stringify(params));
+
+  } else {
+    indicateApplicationSubmitted();
+  }
+}
+
+
+
+function sendBuilderMessage() {
+  var applicationComplete = checkApplicationComplete();
 
   if (!applicationComplete) {
-    if (errorContainer.children.length == 0) {
-      const errorParagraph = document.createElement("p");
-      const errorText = document.createTextNode("You didn't answer all the questions. Make sure you answer all of them, then try again!");
-      errorParagraph.appendChild(errorText);
-      errorContainer.appendChild(errorParagraph);
-    }
-    document.getElementsByName("submit-button")[0].style.backgroundColor = "#602A27"
+    indicateApplicationIncomplete();
     return;
   }
   
   errorContainer.remove();
 
-  const successParagraph = document.createElement("p");
-  const successText = document.createTextNode("Application submitted!");
-  successParagraph.appendChild(successText);
-  successContainer.appendChild(successParagraph);
+  indicateApplicationInProgress();
 
-  document.getElementsByName("submit-button")[0].style.backgroundColor = "#161616"
-
-  var date = new Date();
-  var dateFormatted = date.toLocaleString();
-  var messages = ["```BUILDER APPLICATION - " + dateFormatted + "```"]
-
-  for (var i = 0; i < variableIDs.length; i++) {
-    var message = "**" + variableNames[i] + "**" + "\n";
-    let elements = document.getElementsByName(variableIDs[i]);
-    if (elements.length == 1) {
-      message += elements[0].value + "\n\n";
-
-    } else {
-      for (var e = 0; e < elements.length; e++) {
-        if (elements[e].checked) {
-          message += elements[e].value + "\n\n";
-        }
-      }
-    }
-    messages.push(message);
-  }
+  let messages = formMessages();
 
   sendWebhookMessages(messages);
-  window.open("application-builder-submitted");
 }

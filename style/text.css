@@ -47,6 +47,14 @@
     margin-block-start: 2px;
 }
 
+.text-progress {
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:1.1em;
+    letter-spacing: 0.0em;
+    color:rgb(250, 200, 100);
+    margin-block-start: 2px;
+}
+
 .text-centre {
     text-align: center;
 }
