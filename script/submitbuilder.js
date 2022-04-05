@@ -1,6 +1,6 @@
 
 // You're looking at my terible javascript?
-// Most of this was written at 3am, and it's basically my first time doing javascript
+// Most of this was written at 3am, and it's basically my first time doing JS
 // please don't judge lmao
 
 
@@ -40,19 +40,22 @@ function loadFile(filePath) {
   return result;
 }
 
+const webhook = loadFile("webhook.txt");
+
 function sendWebhookMessage(message) {
   const params = {
     username: "Idra\'s Minion",
     avatar_url: "",
     content:  message
   }
+  const request = new XMLHttpRequest();
+  request.open("POST", webhook);
+  request.setRequestHeader('Content-type', 'application/json');
   request.send(JSON.stringify(params));
 }
 
 function sendBuilderMessage() {
-  //const webhook = loadFile("webhook.txt");
   var applicationComplete = true;
-  var theme = document.getElementsByTagName('link')[1]; 
 
   for (var i = 0; i < variableIDs.length; i++) {
     element = document.getElementsByName(variableIDs[i])[0];
@@ -88,14 +91,10 @@ function sendBuilderMessage() {
 
   document.getElementsByName("submit-button")[0].style.backgroundColor = "#161616"
 
-  const request = new XMLHttpRequest();
-  request.open("POST", webhook);
-  request.setRequestHeader('Content-type', 'application/json');
-
   var date = new Date();
   var dateFormatted = date.toLocaleString();
   var headerMessage = "```BUILDER APPLICATION - " + dateFormatted + "```"
-  sendWebhookMessage(message)
+  sendWebhookMessage(headerMessage)
 
   for (var i = 0; i < variableIDs.length; i++) {
     message = "**" + variableNames[i] + "**" + "\n";
