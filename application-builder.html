@@ -1,0 +1,212 @@
+<head>
+    <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.6/build/grids-responsive-min.css" />
+    <script src="https://kit.fontawesome.com/6be673d481.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <link rel = "stylesheet" href = "style/body.css">
+    <link rel = "stylesheet" href = "style/align.css">
+    <link rel = "stylesheet" href = "style/text.css">
+    <link rel = "stylesheet" href = "style/images.css">
+    <link rel = "stylesheet" href = "style/menu.css">
+    <link rel = "stylesheet" href = "style/list.css">
+    <link rel = "stylesheet" href = "style/application.css">
+    <link rel="icon" type = "image/png" href="image/logo.png">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Builder Application</title>
+</head>
+
+<body>
+    <!-- MENU -->
+    <input class = "menu-toggle-input" type = "checkbox" id = "menu-toggle-input">
+    <label class = "menu-toggle-label" for = "menu-toggle-input">
+        <i data-feather="menu" class = "menu-toggle-icon"></i>
+    </label>
+
+    <div class="menu-container">
+
+        <div class = "menu-toggle-container"></div>
+
+        <img src = "image/banner.png" class = "menu-heading">
+        <ul class="menu-list">
+            <li class="menu-item">
+                <i data-feather="home" class = "menu-icon"></i>
+                <a href="index" class="menu-text-active">Home</a>
+            </li>
+            <li class="menu-item">
+                <i data-feather="mail" class = "menu-icon"></i>
+                <a href="news" class="menu-text-active">News</a>
+            </li>
+            <li class="menu-item">
+                <i data-feather="user" class = "menu-icon"></i>
+                <a href="staff" class="menu-text-active">Staff</a>
+            </li>
+            <li class="menu-item">
+                <i data-feather="chevrons-up" class = "menu-icon"></i>
+                <a href="ranks" class="menu-text-active">Ranks</a>
+            </li>
+            <li class="menu-item">
+                <i data-feather="map" class = "menu-icon"></i>
+                <a href="https://map.metamechanists.org" class="menu-text-active">Map</a>
+            </li>
+            <li class="menu-item">
+                <i data-feather="list" class = "menu-icon"></i>
+                <a href="plugins" class="menu-text-active">Plugins</a>
+            </li>
+            <li class="menu-item">
+                <i data-feather="bar-chart-2" class = "menu-icon"></i>
+                <a href="data" class="menu-text-wip">Data</a>
+            </li>
+            <li class="menu-item">
+                <i data-feather="align-left" class = "menu-icon"></i>
+                <a href="rules" class="menu-text-active">Rules</a>
+            </li>
+        </ul>
+    </div>
+
+    <!-- APPLICATION INFO -->
+
+
+    <!--APPLCATION INFO-->
+    <div class = "pad-main">
+        
+        <h class = "text-heading-big">Builder Application</h><br>
+        <h class = "text-heading-medium">What will you be doing?</h>
+        <p class = "text-paragraph limit-width">
+            So you're interested in become a builder? Great! Our builders are involved in constructing spawns and minigames. 
+            Although we have just finished our third and likely final spawn, there is plenty of work to be done improving the
+            spawns and building new minigames for our weekly events. There are currently several interesting projects on the 
+            TODO list, but there is comparatively little pressure to get them done, so you'll be building in a relaxed atmosphere 
+            with pleasant people.<br><br>
+
+            Aria_Night (aka QueenOfCurry) heads the build team and organises projects, but you will still have plenty of flexibility
+            to work on what you want.
+        </p>
+        <br>
+
+        <h class = "text-heading-medium">Requirements<br></h>
+        <h class = "text-paragraph limit-width">
+            A couple of preliminaries. Please make sure that you meet all these requirements before applying.
+        </h>
+        <ul class = "list-unordered-container text-paragraph limit-width">
+            <li>
+                <i data-feather="check" class = "image-icon-small-green"></i>
+                You must be over 13.
+            </li>
+            <li>
+                <i data-feather="check" class = "image-icon-small-green"></i>
+                You must have at least one day of playtime on the server (you can find this in the statistics menu).
+            </li>
+            <li>
+                <i data-feather="check" class = "image-icon-small-green"></i>
+                You must have joined our <a href = "https://discord.metamechanists.org" class = "text-link">Discord</a>, 
+                as most of our communication happens there.
+            </li>
+            <li>
+                <i data-feather="check" class = "image-icon-small-green"></i>
+                You must be able to join a voicechat and listen. If you don't want to talk, that's fine, but much of 
+                our communication happens over voicechat.
+            </li>
+        </ul>
+        <br>
+        
+        <h class = "text-heading-medium">Application<br></h>
+        <form action = "application-builder-submitted.html">
+
+            <div class = "application-container">
+                <h class = "text-heading-small">How old are you?<br></h>
+                <label class = "application-label">13-15
+                    <input class = "application-radio-input" type = "radio" value = "13-15" name = "age">
+                    <span class = "application-radio-checkmark"></span>
+                </label>
+
+                <label class = "application-label">16-18
+                    <input class = "application-radio-input" type = "radio" value = "16-18" name = "age">
+                    <span class = "application-radio-checkmark"></span>
+                </label>
+
+                <label class = "application-label">19-21
+                    <input class = "application-radio-input" type = "radio" value = "19-21" name = "age">
+                    <span class = "application-radio-checkmark"></span>
+                </label>
+                
+                <label class = "application-label">22+
+                    <input class = "application-radio-input" type = "radio" value = "22+" name = "age">
+                    <span class = "application-radio-checkmark"></span>
+                </label>
+            </div>
+
+            <div class = "application-container">
+                <h class = "text-heading-small">Are you comfortable with/able to talk in voice chat? This is not necessary, so don't feel pressured :)<br></h>
+                <label class = "application-label">yes
+                    <input class = "application-radio-input" type = "radio" value = "yes" name = "ableToVc">
+                    <span class = "application-radio-checkmark"></span>
+                </label>
+
+                <label class = "application-label">no
+                    <input class = "application-radio-input" type = "radio" value = "no" name = "ableToVc">
+                    <span class = "application-radio-checkmark"></span>
+                </label>
+            </div>
+
+            <div class = "application-container">
+                <h class = "text-heading-small">Timezone</h><br>
+                <input class = "application-text-short" type = "text" name = "timezone"><br>
+            </div>
+
+            <div class = "application-container">
+                <h class = "text-heading-small">Minecraft username</h><br>
+                <input class = "application-text-short" type = "text" name = "minecraftUsername"><br>
+            </div>
+
+            <div class = "application-container">
+                <h class = "text-heading-small"><a href = "https://discord.metamechanists.org" class = "text-link">Discord</a> username and tag</h><br>
+                <input class = "application-text-short" type = "text" name = "discordUsername"><br>
+            </div>
+
+            <div class = "application-container">
+                <h class = "text-heading-small">What experience do you have with building?</h><br>
+                <textarea class = "application-text-long" type = "text" name = "buildingExperience"></textarea><br>
+            </div>
+
+            <div class = "application-container">
+                <h class = "text-heading-small">Talk about your building style a bit.</h><br>
+                <textarea class = "application-text-long" type = "text" name = "buildingStyle"></textarea><br>
+            </div>
+
+            <div class = "application-container">
+                <h class = "text-heading-small">Attach some pictures of your past builds. You can upload them to any image hosting website. We recommend 
+                    <a class = "text-link" target="_blank" href = "https://imgbb.com">imgbb.com</a> or 
+                    <a class = "text-link" target="_blank" href = "https://imgur.com/upload">imgur.com/upload</a></h><br>
+                <textarea class = "application-text-long" type = "text" name = "buildingPictures"></textarea><br>
+            </div>
+
+            <div class = "application-container">
+                <h class = "text-heading-small">Tell us a story (yes, this is open-ended, you can write about whatever you want)</h><br>
+                <textarea class = "application-text-long" type = "text" name = "tellUsAStory"></textarea><br>
+            </div>
+
+            <div class = "application-container">
+                <h class = "text-heading-small">Tell us about yourself. Introvert or extrovert? What's your opinion on the meaning of life? What's your favourite tea brand?</h><br>
+                <textarea class = "application-text-long" type = "text" name = "tellUsAboutYourself"></textarea><br>
+            </div>
+        </form>
+
+        <div class = "text-error" id = "errorContainer">
+        </div>
+
+        <div class = "text-success" id = "successContainer">
+        </div>
+
+        <button class = "application-submit" onclick = "sendBuilderMessage()" name = "submit-button">SUBMIT</button>
+        <br><br><br><br>
+
+    </div>
+
+
+    <!-- SCRIPTS -->
+    <script src="script/submitbuilder.js"></script>
+    <script>
+        feather.replace({ class: 'feather', 'stroke-width': 1 })
+    </script>
+
+</body>

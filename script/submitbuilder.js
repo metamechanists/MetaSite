@@ -1,3 +1,9 @@
+
+// You're looking at my terible javascript?
+// Most of this was written at 3am, and it's basically my first time doing javascript
+// please don't judge lmao
+
+
 var variableIDs = [
   'age', 
   'ableToVc', 
@@ -34,29 +40,28 @@ function loadFile(filePath) {
   return result;
 }
 
-function sendStarMessage() {
-  const webhook = loadFile("webhook.txt");
+function sendWebhookMessage(message) {
+  const params = {
+    username: "Idra\'s Minion",
+    avatar_url: "",
+    content:  message
+  }
+  request.send(JSON.stringify(params));
+}
+
+function sendBuilderMessage() {
+  //const webhook = loadFile("webhook.txt");
   var applicationComplete = true;
   var theme = document.getElementsByTagName('link')[1]; 
 
   for (var i = 0; i < variableIDs.length; i++) {
     element = document.getElementsByName(variableIDs[i])[0];
     if (element.value == "") {
-      
-      if (theme.getAttribute('href') == 'style/dark.css') {
-        element.style.backgroundColor = "#602A27";
-      } else {
-        element.style.backgroundColor = "#ffd7d7";
-      }
+      element.style.backgroundColor = "#602A27";
       applicationComplete = false;
 
     } else {
-      
-      if (theme.getAttribute('href') == 'style/dark.css') {
-        element.style.backgroundColor = "#161616";
-      } else {
-        element.style.backgroundColor = "#e7e7e7";
-      }
+      element.style.backgroundColor = "#161616";
     }
   }
 
@@ -66,13 +71,14 @@ function sendStarMessage() {
   if (!applicationComplete) {
     if (errorContainer.children.length == 0) {
       const errorParagraph = document.createElement("p");
-      const errorText = document.createTextNode("You didn't answer all the questions.");
+      const errorText = document.createTextNode("You didn't answer all the questions. Make sure you answer all of them, then try again!");
       errorParagraph.appendChild(errorText);
       errorContainer.appendChild(errorParagraph);
     }
+    document.getElementsByName("submit-button")[0].style.backgroundColor = "#602A27"
     return;
   }
-
+  
   errorContainer.remove();
 
   const successParagraph = document.createElement("p");
@@ -80,16 +86,19 @@ function sendStarMessage() {
   successParagraph.appendChild(successText);
   successContainer.appendChild(successParagraph);
 
+  document.getElementsByName("submit-button")[0].style.backgroundColor = "#161616"
+
   const request = new XMLHttpRequest();
   request.open("POST", webhook);
   request.setRequestHeader('Content-type', 'application/json');
 
   var date = new Date();
   var dateFormatted = date.toLocaleString();
-  var message = "```STAR APPLICATION - " + dateFormatted + " UK TIME```"
+  var headerMessage = "```BUILDER APPLICATION - " + dateFormatted + "```"
+  sendWebhookMessage(message)
 
   for (var i = 0; i < variableIDs.length; i++) {
-    message += "**" + variableNames[i] + "**" + "\n";
+    message = "**" + variableNames[i] + "**" + "\n";
     let elements = document.getElementsByName(variableIDs[i]);
     if (elements.length == 1) {
       message += elements[0].value + "\n\n";
@@ -101,14 +110,8 @@ function sendStarMessage() {
         }
       }
     }
+    sendWebhookMessage(message)
   }
 
-  const params = {
-    username: "Idra\'s Minion",
-    avatar_url: "",
-    content:  message
-  }
-
-  request.send(JSON.stringify(params));
-  window.open("application-star-submitted.html");
+  window.open("application-builder-submitted.html");
 }
