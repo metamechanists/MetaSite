@@ -28,6 +28,10 @@ var variableNames = [
   'Tell us a story (yes, this is open-ended, you can write about whatever you want)',
   'Tell us about yourself. Introvert or extrovert? What\'s your opinion on the meaning of life? What\'s your favourite tea brand?']
 
+// https://stackoverflow.com/questions/951021/what-is-the-javascript-version-of-sleep
+function sleep(ms) {
+  return new Promise(resolve => setTimeout(resolve, ms));
+}
 
 function loadFile(filePath) {
   var result = null;
@@ -40,18 +44,21 @@ function loadFile(filePath) {
   return result;
 }
 
-const webhook = loadFile("webhook.txt");
-
-function sendWebhookMessage(message) {
-  const params = {
-    username: "Idra\'s Minion",
-    avatar_url: "",
-    content:  message
-  }
+function sendWebhookMessages(messages) {
+  const webhook = loadFile("webhook.txt");
   const request = new XMLHttpRequest();
   request.open("POST", webhook);
   request.setRequestHeader('Content-type', 'application/json');
-  request.send(JSON.stringify(params));
+
+  for (var i = 0; i < messages.length; i++) {
+    const params = {
+      username: "Idra\'s Minion",
+      avatar_url: "",
+      content: messages[i] + "_ _"
+    }
+    request.send(JSON.stringify(params));
+    sleep(10) // let's not get API blocked shall we
+  }
 }
 
 function sendBuilderMessage() {
@@ -93,11 +100,10 @@ function sendBuilderMessage() {
 
   var date = new Date();
   var dateFormatted = date.toLocaleString();
-  var headerMessage = "```BUILDER APPLICATION - " + dateFormatted + "```"
-  sendWebhookMessage(headerMessage)
+  var messages = ["```BUILDER APPLICATION - " + dateFormatted + "```"]
 
   for (var i = 0; i < variableIDs.length; i++) {
-    message = "**" + variableNames[i] + "**" + "\n";
+    var message = "**" + variableNames[i] + "**" + "\n";
     let elements = document.getElementsByName(variableIDs[i]);
     if (elements.length == 1) {
       message += elements[0].value + "\n\n";
@@ -109,8 +115,9 @@ function sendBuilderMessage() {
         }
       }
     }
-    sendWebhookMessage(message)
+    messages.push(message);
   }
 
-  window.open("application-builder-submitted.html");
+  sendWebhookMessages(messages);
+  window.open("application-builder-submitted");
 }
