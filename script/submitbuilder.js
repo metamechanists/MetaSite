@@ -47,8 +47,6 @@ function loadFile(filePath) {
 function sendWebhookMessages(messages) {
   const webhook = loadFile("webhook.txt");
   const request = new XMLHttpRequest();
-  request.open("POST", webhook);
-  request.setRequestHeader('Content-type', 'application/json');
 
   for (var i = 0; i < messages.length; i++) {
     const params = {
@@ -56,8 +54,10 @@ function sendWebhookMessages(messages) {
       avatar_url: "",
       content: messages[i] + "_ _"
     }
+    request.open("POST", webhook);
+    request.setRequestHeader('Content-type', 'application/json');
     request.send(JSON.stringify(params));
-    sleep(10) // let's not get API blocked shall we
+    sleep(10) // let's not get blocked by the API, shall we1
   }
 }
 
