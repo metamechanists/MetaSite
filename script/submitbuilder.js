@@ -61,6 +61,7 @@ const avatar_url = ""
 const errorContainer = document.getElementById("errorContainer");
 const progressContainer = document.getElementById("progressContainer");
 const successContainer = document.getElementById("successContainer");
+const interviewContainer = document.getElementById("successContainer");
 const progressParagraph = document.createElement("p");
 const submitButton = document.getElementsByName("submit-button")[0]
 
@@ -92,7 +93,19 @@ function indicateApplicationSubmitted() {
   const successText = document.createTextNode("Application submitted!");
   successParagraph.appendChild(successText);
   successContainer.appendChild(successParagraph);
-  window.open("application-builder-submitted");
+}
+
+function showInterviewInformation() {
+  const successParagraph = document.createElement("p");
+  const successText = document.createTextNode("Thanks for taking the time to apply, we appreciate it. You should hear back from us within \
+  72 hours. If you haven\'t heard from us by then, feel free to spam Idra#9838 on Discord. <br><br> \
+  \
+  If your application is accepted, you\'ll go through one or two interviews with the staff team and the builders so we can make sure \
+  you\'re the right match. This will be conducted in a voice channel (although you can either type or talk depending on your preference). \
+  If you\'re accepted, we\'ll be in touch to find a time that works for both you and us. <br><br> \
+  Thanks again for applying!");
+  successParagraph.appendChild(successText);
+  successContainer.appendChild(successParagraph);
 }
 
 
