@@ -53,10 +53,9 @@ function loadFile(filePath) {
 
 
 
-//const webhook = loadFile("webhook.txt");
-const webhook = "https://discord.com/api/webhooks/960914711753424896/yyoYLZV0XiPtD2_TOIZx8zpYwTkMRpwYBzC1Hf3V44OA6Q2BBiOu0uORoYdtM4JG_Ur4"
-const username = "Idra\'s Minion"
-const avatar_url = ""
+const webhook = loadFile("webhook.txt");
+const username = "Idra\'s Minion";
+const avatar_url = "";
 
 const errorContainer = document.getElementById("errorContainer");
 const progressContainer = document.getElementById("progressContainer");
