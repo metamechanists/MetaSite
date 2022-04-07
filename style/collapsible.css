@@ -1,0 +1,27 @@
+.collapsible-heading-small {
+    background-color: transparent;
+    outline: transparent;
+    border-width: 0;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.collapsible-heading-small:hover {
+    color: rgb(129, 247, 255);
+    transition: 0.3s;
+}
+
+.collapsible-div {
+    display: none;
+}
+
+.collapsible-icon {
+    vertical-align: middle;
+    width: 30px;
+    height: 30px;
+    stroke: rgb(255, 255, 255);
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    fill: none;
+}

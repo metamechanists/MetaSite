@@ -7,6 +7,7 @@
     <link rel = "stylesheet" href = "style/text.css">
     <link rel = "stylesheet" href = "style/images.css">
     <link rel = "stylesheet" href = "style/menu.css">
+    <link rel = "stylesheet" href = "style/collapsible.css">
     <link rel="icon" type = "image/png" href="image/logo.png">
     
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -69,98 +70,182 @@
 
     <!-- RULES -->
     <div class = "pad-main">
-        
-        <i data-feather="settings" class = "image-icon-small-white"></i>
-        <h class = "text-paragraph"><b>UNDER CONSTRUCTION</b></h>
-        <i data-feather="settings" class = "image-icon-small-white"></i>
-        <h class = "text-paragraph"><b>This page is still under construction. Use any information from here at your own risk!</b></h>
 
         <h class = "text-heading-big">TUTORIAL</h>
+        <p class = "text-paragraph">
+            This is still a major work-in-progress! 
+        </p>
+
+        <h class = "text-heading-medium">Introduction to Slimefun</h>
         <br>
-        <h class = "text-paragraph">This page contains an extensive tutorial for Slimefun and the addons that we have on MetaMechanists.</h>
-        <br><br>
 
-        <h class = "text-heading-medium">Introduction</h>
-        <br><br>
+        <button class = "collapsible-heading-small text-heading-small" onclick = "toggleCollapsible('what-is-slimefun')">
+            <i data-feather = "chevron-right" class = "collapsible-icon" id = "what-is-slimefun-icon"></i>What is Slimefun?
+        </button>
+        <div class = "text-paragraph limit-width collapsible-div" id = "what-is-slimefun-div">
+            Slimefun is like a mod, but you don't need to install anything to join a server 
+            and use it. The code runs entirely on the server. Through some clever workarounds,
+            Slimefun adds hundreds of new blocks and items without requiring you to install 
+            anything. Of course, there are some disadvantages to this approach: for example, 
+            Slimefun can't implement any new textures, although there are some unofficial 
+            texture packs to do this. There are more bugs than you'd expect from a mod, as
+            sometimes the workarounds required can get quite complicated and unpredictable.
+            <br><br>
 
-        <h class = "text-heading-small">What is Slimefun?</h>
-        <p class = "text-paragraph limit-width">
-            You may be familiar with modifications (AKA mods). Mods bring new content 
-            to the game: new mobs, landscape, machines, armour, you name it. However,
-            mods must be installed on your computer. You can't use mods on a server with
-            a vanilla client; instead, you must install a modloader (such as Forge or Fabric) and
-            then install the mods you wish to play with.
+            That being said, one of the main reasons that Slimefun is so appealing is because 
+            it is very coherent. It is relatively easy to create an addon for Slimefun due to a 
+            very comprehensive API, and as a result, Slimefun has extensive community-created 
+            content in the form of addons. There are currently 54 addons available (full 
+            list <a href = "https://github.com/Slimefun/Slimefun4/wiki/Addons" class = "text-link">here</a>)
+            adding everything from custom advancements to new planets to liquid alloying, and
+            most of them seamlessly integrate into one another, providing hundreds of hours
+            of coherent and interesting content.<br>
+            <img class = "image-1-2-width image-pad" src = "image/tutorial/introduction-message.png">
             <br><br>
-            Slimefun is like a mod, but any vanilla client can join the server and use it.
-            Through a set of clever techniques and workarounds, Slimefun adds hundreds of
-            new blocks and items without requiring you to install anything. Of course, there
-            are some disadvantages to this: for example, Slimefun can't implement any new
-            textures, although there are some unofficial texture packs to do this.
-            <br><br>
-            One of the main reasons that Slimefun is so appealing is because it is very
-            coherent. It is relatively easy to create an addon for Slimefun due to a very
-            comprehensive API, and as a result, Slimefun has extensive community-created 
-            content in the form of addons. There are currently 54 plugins available (full 
-            list <a href = "https://github.com/Slimefun/Slimefun4/wiki/Addons" class = "text-link">here</a>),
-            adding everything from custom advancements to new planets to liquid alloying. The 
-            result of this is potentially hundreds of hours of varied content.
-            <br><br>
+
             However, Slimefun can be a bit unintuitive to get into. This is why we've put this
-            guide together to hopefully provide some direction for those of you new to Slimefun.
-            Before you begin, beware that Slimefun is grindy, especially early game, and
-            requires some substantial dedication. It's therefore quite easy to get burnt 
-            out, and I recommend that if you start feeling frustrated or burnt out, do something
-            else until you're feeling ready to move on again. Go slowly, take your time, and
-            don't forget to ask around if you're stuck with something. 
+            guide together; hopefully we'll be able to provide some direction for those of you 
+            new to Slimefun. Before you begin, beware that Slimefun is grindy, especially early 
+            game, and requires some substantial dedication. While it's not exactly 
+            <a href = "https://github.com/GTNewHorizons/GT-New-Horizons-Modpack" class = "text-link">GTNH</a>,
+            it's still quite easy to get burnt out, and I recommend that if you start feeling 
+            frustrated or burnt out, do something else until you're feeling ready to move on again. 
+            Go slowly, take your time, and don't forget to ask around if you're stuck with something. 
             <br><br>
-            Good luck!
-        </p>
 
+            Alright, enough talking. Let's jump into it.
+        </div>
         <br>
-        <h class = "text-heading-small">The Slimefun Guide</h>
-        <p class = "text-paragraph limit-width">
-            The Slimefun Guide is a book that allows you to view the recipes and functions of
-            various items and machines. To access the SF guide, run /sf guide, and the guide 
-            will spawn into your inventory. Open the book by holding it and right clicking. 
-            Navigate by clicking the different icons, and exit by pressing esc.
+
+        <button class = "collapsible-heading-small text-heading-small" onclick = "toggleCollapsible('the-slimefun-guide')">
+            <i data-feather = "chevron-right" class = "collapsible-icon" id = "the-slimefun-guide-icon"></i>The Slimefun Guide
+        </button>
+        <div class = "text-paragraph limit-width collapsible-div" id = "the-slimefun-guide-div">
+            The Slimefun Guide is a book that lets you view the recipes and functions of
+            various items and machines. To access the SF guide, run <b>/sf guide</b>, and the 
+            guide will spawn into your inventory. Open the guide's interface by holding the
+            book and right clicking. Alternatively, you can open the interface by running
+            just <b>/sf openguide</b>. Once you're there, you'll see lots of icons that
+            indicate different categories - hover on each item to see the category name,
+            and click the item to enter the category. You can also navigate between pages
+            of categories using the two black/lime glass panes at the bottom of the guide.<br>
+            <img class = "image-1-1-width image-pad" src = "image/tutorial/slimefun-guide.png">
             <br><br>
-            The Slimefun Guide is divided into many categories, with each category containing 
-            many different items and machines. Some categories contain sub-categories of their own.
-            Before you are able to craft and use an item, you'll need to unlock it. Each item
-            needs a different number of XP levels to unlock, indicated when you hover over it.
-            To unlock an item, left click it. Try unlocking the Gold Pan:<br>
-            [IMAGE]
+
+            Once you're inside a category, you'll instantly be greeted with a wall of barriers.
+            Each barrier indicates a specific item, but you won't be able to craft any of the
+            items yet because they must be unlocked. The name of the item will be shown when
+            you hover over its corresponding barrier. Every item needs a different number of XP 
+            levels to unlock, which are indicated when you hover over it. To unlock an item, 
+            left click it. Try unlocking the <span class = "text-sf-item">Gold Pan</span> in 
+            the <span class = "text-sf-item">Tools</span> category.<br>
+            <img class = "image-1-1-width image-pad" src = "image/tutorial/gold-pan-1.png">
             <br><br>
-        </p>
 
+            PS: You can also view recipes for items within recipes. For example, if you click on
+            the stone while viewing the <span class = "text-sf-item">Gold Pan</span> recipe,
+            the guide will show you the recipe for making stone. This will be really useful later
+            on when we're dealing with recipes with tens of layers of crafting to them!
+        </div>
         <br>
-        <br>
-        <h class = "text-heading-small">Multiblocks</h>
-        <p class = "text-paragraph limit-width">
-            Multiblocks are unique machines that must be built by placing blocks down instead 
-            of being crafted, amongst which the Enhanced Crafting Table is included. All 
-            multiblocks have their build recipes shown in the SF guidebook, a column in the 
-            guidebook is 3 blocks tall and 1 block wide, while a row is 1 block tall and 3 
-            blocks wide.
 
-            To create the Enhanced Crafting Table you will need to place a workbench on top of 
-            a dispenser. To confirm if you have built it correctly, right click on the crafting 
-            table, if the vanilla crafting gui appears, you have done it wrong.
-
-            To use the Enhanced Crafting Table right click the dispenser, place the items as
-            shown in the guidebook, exit the dispenser gui and then right click the crafting 
-            table. A successful craft will be accompanied by a click sound.
+        <button class = "collapsible-heading-small text-heading-small" onclick = "toggleCollapsible('multiblocks')">
+            <i data-feather = "chevron-right" class = "collapsible-icon" id = "multiblocks-icon"></i>Multiblocks
+        </button>
+        <div class = "text-paragraph limit-width collapsible-div" id = "multiblocks-div">
+            Now we're ready to try and craft a <span class = "text-sf-item">Gold Pan</span>.
+            However, you can't just craft Slimefun items in a regular crafting table: you'll
+            need to build special structures known as 'multiblocks' to craft them. For example,
+            if you click on the <span class = "text-sf-item">Gold Pan</span> and hover over the
+            crafting table, you'll see that the required multiblock for crafting a
+            <span class = "text-sf-item">Gold Pan</span> is an 
+            <span class = "text-sf-item">Enhanced Crafting Table</span>.<br>
+            <img class = "image-1-1-width image-pad" src = "image/tutorial/gold-pan-2.png">
+            <br><br>
             
-            Congratulations, you've taken the first step. 
+            Multiblocks are unique machines that must be built by placing blocks down instead 
+            of being crafted. All multiblocks have their build recipes shown in the guide. Try
+            navigating to the <span class = "text-sf-item">Enhanced Crafting Table</span> under
+            <span class = "text-sf-item">Basic Machines</span> and looking at the recipe. Here's
+            what the recipe corresponds to when built in-world:<br>
+            <img class = "image-1-1-width image-pad" src = "image/tutorial/enhanced-crafting-table.png">
             <br><br>
-        </p>
 
+            Try building this, and verify that you've constructed it correctly by right clicking the
+            <span class = "text-sf-item">Crafting Table</span>. A message should appear in chat
+            telling you that the machine inventory is empty. Now let's craft the 
+            <span class = "text-sf-item">Gold Pan</span>. Navigate to the
+            <span class = "text-sf-item">Gold Pan</span> in the Slimefun Guide (under
+            <span class = "text-sf-item">Basic Machines</span>) and have a look at its recipe.
+            Now we'll need to place the recipe inside the dispenser, like this:<br>
+            <img class = "image-1-1-width image-pad" src = "image/tutorial/gold-pan-3.png">
+            <br><br>
+
+            Now right click the crafting table. A <span class = "text-sf-item">Gold Pan</span>
+            should have appeared in the dispenser. Congratulations, you've crafted your first
+            Slimefun item! I recommend you have a look around the guide and find some other
+            useful items to craft. Keep in mind that a lot of machines and items will require
+            components that you can't craft yet!
+        </div>
         <br>
-        <br>
-        <h class = "text-heading-small">Dusts</h>
-        <br>
-        <br>
+        
+        <button class = "collapsible-heading-small text-heading-small" onclick = "toggleCollapsible('learning-metallurgy')">
+            <i data-feather = "chevron-right" class = "collapsible-icon" id = "learning-metallurgy-icon"></i>Learning Metallurgy
+        </button>
+        <div class = "text-paragraph limit-width collapsible-div" id = "learning-metallurgy-div">
+            And now, the masochism begins.<br><br>
+            
+            To advance from the stone age (and to start building electric machines), you're going to 
+            need to learn how to create metals and alloys. For this, we're going to need to build a
+            <span class = "text-sf-item">Smeltery</span> from <span class = "text-sf-item">Basic Machines</span>.
+            Go ahead and build one using the guide, and note that you need to have a fire underneath the 
+            dispenser. Netherrack will be useful here to make sure that said fire doesn't go out
+            (though note that the fire will go out after you've processed a few recipe). If you don't have 
+            <span class = "text-sf-item">Nether Bricks</span> or <span class = "text-sf-item">Netherrack</span> 
+            yet, you can build a <span class = "text-sf-item">Makeshift Smeltery</span> instead for now.<br>
+            <img class = "image-1-1-width image-pad" src = "image/tutorial/smeltery.png">
+            <br><br>
+
+            Okay, now we're going to need to collect some dusts to alloy with. Dusts form the foundation
+            of metallurgy in Slimefun. To collect dusts, you'll need to hold that
+            <span class = "text-sf-item">Gold Pan</span> you made earlier in your hand, and right click
+            gravel with it. You'll receive <span class = "text-sf-item">Clay</span>, 
+            <span class = "text-sf-item">Flint</span>, <span class = "text-sf-item">Iron Nuggets</span>, and 
+            occasionally, <span class = "text-sf-item">Sifted Ore</span>. Once you've collected at least
+            half a stack of sifted ore (you're going to need stacks upon stacks upon stacks of it in the
+            future), we're going to need to wash the <span class = "text-sf-item">Sifted Ore</span> into dusts.
+            <br><br>
+
+            To do this we'll need another multiblock: the <span class = "text-sf-item">Ore Washer</span>.
+            Construct an <span class = "text-sf-item">Ore Washer</span>, and place the
+            <span class = "text-sf-item">Sifted Ore</span> into the dispenser. Right click the fence to
+            process the <span class = "text-sf-item">Sifted Ore</span> into dusts. In the case of copper, iron,
+            and gold dust, you'll be able to use an <span class = "text-sf-item">Ore Crusher</span> to convert
+            ore directly into dust at a 1:2 ratio.
+            <br><br>
+
+            Now that we know how to make dusts, we can start doing some metallurgy. The first thing to know
+            is that you can convert dusts into ingots by placing dust into a <span class = "text-sf-item">Smeltery</span> 
+            and right clicking the fence above the dispenser. Slimefun has an ingot equivalent for each dust (apart
+            from iron and gold). Note that Slimefun actually implements <span class = "text-sf-item">Copper Ingots</span> 
+            separately from the vanilla <span class = "text-sf-item">Copper Ingots</span>. This is largely
+            due to historic reasons, as Slimefun already implemented its own 
+            <span class = "text-sf-item">Copper Ingots</span> prior to them being added to vanilla, and
+            switching to using the vanilla ingots would be very difficult at this point.
+            <br><br>
+
+            Secondly, you can combine multiple metals to create an alloy. Try making some
+            <span class = "text-sf-item">Nickel</span> to practice. <span class = "text-sf-item">Nickel</span> can be 
+            found in the <span class = "text-sf-item">Resources</span> section. It'll soon become apparent that
+            you're going to need to make a <i>lot</i> of nickel, and in fact you will spend a lot of time
+            collecting dust and alloying early game. In mid game, you'll be able to automate dust production
+            and alloying completely, but for now you're stuck with doing it manually.
+        </div>
+        <br><br>
+
     </div>
+
+    <script src = "script/collapsible.js"></script>
 
     <script>
         feather.replace({ class: 'feather', 'stroke-width': 1 })

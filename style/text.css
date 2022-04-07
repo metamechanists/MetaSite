@@ -7,14 +7,14 @@
 
 .text-heading-medium {
     font-family:monospace;
-    font-size:2em;
+    font-size:2.6em;
     color:rgb(212, 169, 76);
     letter-spacing: 3px;
 }
 
 .text-heading-small {
     font-family:monospace;
-    font-size:1.3em; 
+    font-size:1.7em; 
     color:rgb(76, 192, 228);
     letter-spacing: 1px;
 }
@@ -75,4 +75,8 @@
     padding-bottom: 30px;
     margin-block-start: 4px;
     max-width: 1000px;
+}
+
+.text-sf-item {
+    color:rgb(231, 169, 88)
 }

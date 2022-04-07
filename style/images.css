@@ -53,6 +53,22 @@
   justify-content: center;
 }
 
-.image-collage {
+.image-1-1-width {
   width: 99%
+}
+
+.image-3-4-width {
+  width: 75%
+}
+
+.image-1-2-width {
+  width: 49%
+}
+
+.image-1-4-width {
+  width: 24%
+}
+
+.image-pad {
+  padding-top: 10px;
 }
