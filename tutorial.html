@@ -76,6 +76,8 @@
             This is still a major work-in-progress! 
         </p>
 
+
+
         <h class = "text-heading-medium">Introduction to Slimefun</h>
         <br>
 
@@ -242,6 +244,125 @@
             and alloying completely, but for now you're stuck with doing it manually.
         </div>
         <br><br>
+
+
+
+        <h class = "text-heading-medium">Logistics</h>
+        <br>
+
+        <button class = "collapsible-heading-small text-heading-small" onclick = "toggleCollapsible('cargo-basics')">
+            <i data-feather = "chevron-right" class = "collapsible-icon" id = "cargo-basics-icon"></i>Cargo Basics
+        </button>
+        <div class = "text-paragraph limit-width collapsible-div" id = "cargo-basics-div">
+            Sooner or later, you're going to find yourself needing to move large quantities of items from point A to point B.
+            This is where cargo becomes useful. 'But Idra, why not just use hoppers??!?!?!' Good question. Firstly, hoppers are
+            too slow to move the thousands of items per minute that you will be producing once you reach endgame. Secondly, 
+            hoppers can't actually interact with Slimefun machines, making them practically useless in the context of Sliefun.
+            <br><br>
+
+            Cargo is quite unintuitive, so we recommend you to craft at least a couple of all the following components before you 
+            follow this section of the tutorial. The cargo system is comprised of only four key items, but contained within those
+            four items is huge potential for automation:<br><br>
+            
+            <b> <span class = "text-sf-item-heading">Cargo Manager</span></b><br>
+            A Cargo Manager is required for a system to be established. It connects all the other components together, so not 
+            having (exactly) one of these in your system will render all other components useless.
+            <br><br>
+            
+            <b> <span class = "text-sf-item-heading">Cargo Node (Connector)</span></b><br>
+            Connector nodes extends the cargo network, allowing you to connect more components to the system.
+            <br><br>
+
+            <b> <span class = "text-sf-item-heading">Cargo Node (input)</span></b><br>
+            Input nodes takes items from the container/machine they are attached to and send their items to <span class = "text-sf-item">Output Nodes.</span>
+            <br><br>
+
+            <b> <span class = "text-sf-item-heading">Cargo Node (output)</span></b><br>
+            Output nodes receive items from <span class = "text-sf-item">Input Nodes</span> and output their items in the container/machine they are attached to.
+            The <span class = "text-sf-item">Advanced Output Nodes</span> will allow you to whitelist or blacklist what it receives.
+            <br><br>
+
+            Now that you know what each piece does, it's time for the details. Start by placing a 
+            <span class = "text-sf-item">Cargo Manager</span>, the centerpiece of your system. 
+            In order for your cargo nodes to connect to the system, they need to be within range of a 
+            <span class = "text-sf-item">Cargo Manager</span> or <span class = "text-sf-item">Connector Node</span>. The range extends 
+            6 blocks out from the <span class = "text-sf-item">Cargo Manager</span> or <span class = "text-sf-item">Connector Node</span>
+            in all 6 cardinal directions:
+            <img class = "image-1-2-width image-pad" src = "image/tutorial/cargo-node-range.png">
+            <br><br>
+        </div>
+        <br>
+
+        <button class = "collapsible-heading-small text-heading-small" onclick = "toggleCollapsible('cargo-input-nodes')">
+            <i data-feather = "chevron-right" class = "collapsible-icon" id = "cargo-input-nodes-icon"></i>Cargo Input Nodes
+        </button>
+        <div class = "text-paragraph limit-width collapsible-div" id = "cargo-input-nodes-div">
+            With the basics of how to connect nodes to your system down, let's start moving items around. First, place down a container or machine
+            and attach an <span class = "text-sf-item">Input Node</span> to its side (you can't attach them on top or bottom). Make sure 
+            that the <span class = "text-sf-item">Input Node</span> is within range of your system. Right click the node to bring up its settings 
+            interface. You'll see a couple of different options.
+            <br><br>
+
+            <b><span class = "text-sf-item-heading">Whitelist/Blacklist</span></b><br>
+            The node can be toggled between whitelist and blacklist mode using the <span class = "text-sf-item">White Wool</span>button. In 
+            whitelist mode, the node will only take items from the attached container/machine that are present in the 3x3 grid in the interface. In
+            blacklist mode, the node will take items from the attached container/machine that are <i>not</i> present in the 3x3 grid. If you want the
+            node to take everything inside the container/machine, you can just enable blacklist mode and leave the 3x3 grid empty.
+            <br><br>
+
+            <b><span class = "text-sf-item-heading">Smart Filling</span></b><br>
+            Smart Filling mode can be toggled with the <span class = "text-sf-item">Book and Quill</span>button. Smart filling node isn't important 
+            until you start setting up autocrafters, but if smart filling node is enabled, the node will only send items to output nodes if the
+            containers/machines that each output node is attached to do not contain more than a stack of items. 
+            <br><br>
+
+            <b><span class = "text-sf-item-heading">Round Robin</span></b><br>
+            Round Robin mode can be toggled with the <span class = "text-sf-item">Energy Regulator</span>button. If round robin mode is disabled,
+            every time the system ticks, the node will check each output node in the network in turn and attempt to send items to it. The next 
+            tick, the node will start from the same node and check each node in turn again. This may result in some nodes receiving lots of items,
+            while some nodes don't receive many at all. Round robin mode solves this by trying to distribute the items evenly to all connected
+            output nodes.
+            <br><br>
+
+            <b><span class = "text-sf-item-heading">Channels</span></b><br>
+            Each input or output node uses a specific channel. The chanel can be viewed by hovering over the
+            <span class = "text-sf-item">Wool</span> in the interface, and adjusted by clicking the two buttons next to the 
+            <span class = "text-sf-item">Wool</span>. If two nodes are not on the same channel, they will not send items to each other. This
+            lets you effectively have several different cargo systems in one - for example, you could have one channel for disposal, one channel
+            for autocrafting, one channel for a sorting system, and so on.
+            <br><br>
+        </div>
+        <br>
+
+        <button class = "collapsible-heading-small text-heading-small" onclick = "toggleCollapsible('cargo-output-nodes')">
+            <i data-feather = "chevron-right" class = "collapsible-icon" id = "cargo-output-nodes-icon"></i>Cargo Output Nodes
+        </button>
+        <div class = "text-paragraph limit-width collapsible-div" id = "cargo-output-nodes-div">
+            Now that we have an <span class = "text-sf-item">Input Node</span>, we'll need an <span class = "text-sf-item">Output Node</span> 
+            to move items to. Attach an <span class = "text-sf-item">Output Node</span> to the side of a container/machine, and right click to
+            open the interface.
+            <br><br>
+
+            You'll see that there's only one option this time, which is the channel. We've already covered channels in the
+            <span class = "text-sf-item">Input Node</span> section.
+            <br><br>
+
+            The <span class = "text-sf-item">Advanced Output Nodes</span> will allow you to whitelist or blacklist what they receive, but are
+            a bit more complicated to work with. However, they are definitely worth it once you start scaling up, as otherwise managing the flow
+            of items can get very complicated very quickly.
+            <br><br>
+
+            Place down another container/machine and attach an <span class = "text-sf-item">Output Node</span> on its side. Make sure that both the
+            <span class = "text-sf-item">Input Node</span> and <span class = "text-sf-item">Output Node</span> are on the channel. As usual, also
+            make sure that the output node is within range of your system.
+            <br><br>
+
+            If everything is set up correctly, the contents of the first container should be constantly moved into the second container. That's about
+            all there is to cargo - there are a few more niche things you can do with it, but those are beyond the scope of this tutorial, and we'll
+            leave it to you to find them. Good luck automating!
+            <br><br>
+        </div>
+        <br>
 
     </div>
 
