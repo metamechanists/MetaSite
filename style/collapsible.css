@@ -25,3 +25,13 @@
     stroke-linejoin: round;
     fill: none;
 }
+
+.collapsible-div-padding {
+    padding-left: 35px;
+    padding-top: 30px;
+    padding-bottom: 35px;
+}
+
+.collapsible-div-coloured {
+    background-color: rgb(50, 50, 50);
+}

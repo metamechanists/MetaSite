@@ -1,0 +1,131 @@
+<head>
+    <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.6/build/grids-responsive-min.css" />
+    <script src="https://kit.fontawesome.com/6be673d481.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <link rel = "stylesheet" href = "style/body.css">
+    <link rel = "stylesheet" href = "style/align.css">
+    <link rel = "stylesheet" href = "style/text.css">
+    <link rel = "stylesheet" href = "style/images.css">
+    <link rel = "stylesheet" href = "style/menu.css">
+    <link rel = "stylesheet" href = "style/collapsible.css">
+    <link rel = "stylesheet" href = "style/gallery.css">
+    <link rel="icon" type = "image/png" href="image/logo.png">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Gallery</title>
+</head>
+
+
+<body>
+
+    <!-- MENU -->
+    <input class = "menu-toggle-input" type = "checkbox" id = "menu-toggle-input">
+    <label class = "menu-toggle-label" for = "menu-toggle-input">
+        <i data-feather="menu" class = "menu-toggle-icon"></i>
+    </label>
+
+    <div class="menu-container">
+
+        <div class = "menu-toggle-container"></div>
+
+        <img src = "image/banner.png" class = "menu-heading">
+        <ul class="menu-list">
+            <li class="menu-item">
+                <i data-feather="home" class = "menu-icon"></i>
+                <a href="index" class="menu-text-active">Home</a>
+            </li>
+            <li class="menu-item">
+                <i data-feather="mail" class = "menu-icon"></i>
+                <a href="news" class="menu-text-active">News</a>
+            </li>
+            <li class="menu-item">
+                <i data-feather="user" class = "menu-icon"></i>
+                <a href="staff" class="menu-text-active">Staff</a>
+            </li>
+            <li class="menu-item">
+                <i data-feather="chevrons-up" class = "menu-icon"></i>
+                <a href="ranks" class="menu-text-active">Ranks</a>
+            </li>
+            <li class="menu-item">
+                <i data-feather="map" class = "menu-icon"></i>
+                <a href="https://map.metamechanists.org" class="menu-text-active">Map</a>
+            </li>
+            <li class="menu-item">
+                <i data-feather="list" class = "menu-icon"></i>
+                <a href="plugins" class="menu-text-active">Plugins</a>
+            </li>
+            <li class="menu-item">
+                <i data-feather="bar-chart-2" class = "menu-icon"></i>
+                <a href="data" class="menu-text-wip">Data</a>
+            </li>
+            <li class="menu-item">
+                <i data-feather="align-left" class = "menu-icon"></i>
+                <a href="rules" class="menu-text-active">Rules</a>
+            </li>
+            <li class="menu-item">
+                <i data-feather="file-text" class = "menu-icon"></i>
+                <a href="application-builder" class="menu-text-active">Apply</a>
+            </li>
+        </ul>
+    </div>
+
+    <!-- GALLERY -->
+    <div class = "pad-main">
+        <h class = "text-heading-big">GALLERY</h>
+        <br><br>
+
+        <p class = "text-paragraph limit-width">
+            Anyone can upload screenshots from the server here for everyone else to see.
+        </p>
+
+        <button class = "collapsible-heading-small text-heading-small" onclick = "toggleCollapsible('click-to-upload')">
+            <i data-feather = "chevron-right" class = "collapsible-icon" id = "click-to-upload-icon"></i>Click to upload
+        </button>
+        <div class = "text-paragraph limit-width collapsible-div collapsible-div-coloured collapsible-div-padding" id = "click-to-upload-div">
+            <p class = "text-paragraph limit-width">
+                Screenshots from MetaMechanists only please!
+            </p>
+            <label class="gallery-upload-label" for="upload">
+                <div class="gallery-upload-div">
+                    Select Images
+                </div>
+            </label>
+            <input class="gallery-upload-button" class="upload-button" type="file" id="upload" accept="image/jpeg, image/png, image/jpg">
+        </div>
+
+        <br><br>
+
+        <div class="gallery-div">
+            <div class="gallery-image-div">
+                <img class="gallery-image-image" src="gallery/CosmicExplorationChart.png">
+                <p class="gallery-image-name">CosmicExplorationChart.png</p>
+            </div>
+
+            <div class="gallery-image-div">
+                <img class="gallery-image-image" src="gallery/GateData.png">
+            </div>
+
+            <div class="gallery-image-div">
+                <img class="gallery-image-image" src="gallery/OSTRICH.drawio.png">
+            </div>
+
+            <div class="gallery-image-div">
+                <img class="gallery-image-image" src="gallery/16 cores.PNG">
+            </div>
+
+            <div class="gallery-image-div">
+                <img class="gallery-image-image" src="gallery/redwithmonkey.PNG">
+            </div>
+
+            <div class="gallery-image-div">
+                <img class="gallery-image-image" src="gallery/WMap.PNG">
+            </div>
+        </div>
+    </div>
+
+    <script src = "script/collapsible.js"></script>
+    <script>
+        feather.replace({ class: 'feather', 'stroke-width': 1 })
+    </script>
+
+</body>

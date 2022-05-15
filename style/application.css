@@ -71,9 +71,12 @@
     font-family: monospace;
     font-size:30px;
     cursor:pointer;
-}
-
-.application-submit {
     background-color: #509050;
     color: #e7e7e7;
+    transition-duration: 0.2s;
+}
+
+.application-submit:hover {
+    background-color: #52b352;
+    transition-duration: 0.2s;
 }
