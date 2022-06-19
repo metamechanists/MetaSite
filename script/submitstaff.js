@@ -25,12 +25,17 @@ const variableNames = [
   'Timezone',
   'Minecraft username',
   'Discord username and tag',
-  'What experience do you have with building? This can include experience on past build teams, building competitions, your own projects, or anything else you can think of. What challenges did you face when building these projects and how did you solve them?',
+  'What experience do you have with moderation? This doesn\'t have to be in Minecraft. What challenges did you face and how did you solve them? What did your role in moderation involve?',
   'Talk about your building style a bit. Large or small scale? What are your strengths and weaknesses? What would you like to learn, and what doesn\'t appeal to you so much?',
-  'Attach some pictures of your past builds. You can upload them to any image hosting website. We recommend imgbb.com or imgur.com/upload',
-  'Tell us a story (yes, this is open-ended, write about whatever you want)',
+  'Do you have any experience with Minecraft development or administration? Do you enjoy development/administration? What aspects are you good at, and what aspects could you improve upon?',
+  'Player A has built a large obsidian tower just outside Player B\'s (claimed) base. Player B is initially annoyed about the tower, but eventually decides that he likes it. As a staff member, would you give any consequences to player A, and if so, what consequences would you give them?',
+  'Player A, after erecting his tower, goes mining. You\'re watching him in vanish and suspect he might be X-raying. How might you recognise an X-rayer, and if you conclude him to be X-raying, what consequence would you give him?',
+  'After this ordeal, Player B is visited by Player C, who set a home at Player B\'s base. Player B doesn\'t like this, and rudely asks player C to delete it. Player C, enraged, starts swearing at PLayer B in public chat. Player B responds in kind, and the two continue hurling insults at each other for several minutes. You arrive onto the scene right as the argument is at its most heated. Unfortunately, no other staff members are online at the time. How do you go about defusing the situation, determining what exactly happened, and handing out appropriate consequences?',
+  'A build team member and a staff team member have a disagreement with each other and end up having an argument in voice chat before one of them leaves in a huff and blocks/ignores the other team member. As another staff member, how could you help to repair the relationship between them? What should both of them do to repair the relationship with each other?',
+  'You\'re a staff member helping to run a PvP tournament event with two other staff members. There are almost twice as many people as expected, and there are multiple issues with the arena causing unfair gameplay and allowing spectators to fight each other while not in the arena. Several people are complaining about the event, and chat is starting to get heated.The two other team members are struggling to manage the event. You\'re an administrator with access to all commands. You know how to fix the arena, but you don\'t know how long it\'ll take. You can also help with matchmaking or calming chat down. How do you decide what to do in this situation? What would be the most effective strategies, and why?',
+  'Alright, last scenario. Advertising is difficult. One idea we\'ve come up with recently is referral rewards: if Player A invites Player B, Player A gets a reward. How could you go about implementing a system like this? How would you verify that Player B was actually invited by player A, automatically? What rewards should Player A get? Should Player B get any rewards? What are some issues that might come with this system, and how could you mitigate them?',
   'Tell us about yourself. Introvert or extrovert? What\'s your opinion on the meaning of life? What\'s your favourite tea brand?']
-
+  
 
 
 // https://www.sitepoint.com/delay-sleep-pause-wait/
