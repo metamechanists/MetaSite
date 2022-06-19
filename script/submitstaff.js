@@ -9,10 +9,14 @@ const variableIDs = [
   'timezone', 
   'minecraftUsername', 
   'discordUsername', 
-  'buildingExperience', 
-  'buildingStyle',
-  'buildingPictures',
-  'tellUsAStory',
+  'moderationExperience', 
+  'administrationExperience',
+  'scenario1',
+  'scenario2',
+  'scenario3',
+  'scenario4',
+  'scenario5',
+  'scenario6',
   'tellUsAboutYourself'];
 
 const variableNames = [
