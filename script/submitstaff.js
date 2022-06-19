@@ -107,7 +107,7 @@ function showInterviewInformation() {
   addParagraph("interviewContainer", "Thanks for taking the time to apply, we appreciate it. You should hear back from us within \
   72 hours. If you haven\'t heard from us by then, feel free to spam Idra#9838 on Discord.\n\n \
   \
-  If your application is accepted, you\'ll go through one or two interviews with the staff team and the builders so we can make sure \
+  If your application is accepted, you\'ll go through one or two interviews with the staff team so we can make sure \
   you\'re the right match. This will be conducted in a voice channel (although you can either type or talk depending on your preference). \
   If you\'re accepted, we\'ll be in touch to find a time that works for both you and us.\n\n \
   \
@@ -155,7 +155,7 @@ function formMessage(i) {
 function formMessages() {
   var date = new Date();
   var dateFormatted = date.toLocaleString();
-  var messages = ["```BUILDER APPLICATION - " + dateFormatted + "```"];
+  var messages = ["```STAFF APPLICATION - " + dateFormatted + "```"];
 
   for (var i = 0; i < variableIDs.length; i++) {
     let message = formMessage(i);
@@ -204,7 +204,7 @@ function sendWebhookMessages(messages) {
 
 
 
-function sendBuilderMessage() {
+function sendStaffMessage() {
   var applicationComplete = checkApplicationComplete();
 
   if (!applicationComplete) {
