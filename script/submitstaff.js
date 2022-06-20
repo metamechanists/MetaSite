@@ -26,7 +26,6 @@ const variableNames = [
   'Minecraft username',
   'Discord username and tag',
   'What experience do you have with moderation? This doesn\'t have to be in Minecraft. What challenges did you face and how did you solve them? What did your role in moderation involve?',
-  'Talk about your building style a bit. Large or small scale? What are your strengths and weaknesses? What would you like to learn, and what doesn\'t appeal to you so much?',
   'Do you have any experience with Minecraft development or administration? Do you enjoy development/administration? What aspects are you good at, and what aspects could you improve upon?',
   'Player A has built a large obsidian tower just outside Player B\'s (claimed) base. Player B is initially annoyed about the tower, but eventually decides that he likes it. As a staff member, would you give any consequences to player A, and if so, what consequences would you give them?',
   'Player A, after erecting his tower, goes mining. You\'re watching him in vanish and suspect he might be X-raying. How might you recognise an X-rayer, and if you conclude him to be X-raying, what consequence would you give him?',
