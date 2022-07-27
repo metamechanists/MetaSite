@@ -7,17 +7,15 @@
     <link rel = "stylesheet" href = "style/text.css">
     <link rel = "stylesheet" href = "style/images.css">
     <link rel = "stylesheet" href = "style/menu.css">
-    <link rel = "stylesheet" href = "style/collapsible.css">
-    <link rel = "stylesheet" href = "style/gallery.css">
+    <link rel = "stylesheet" href = "style/list.css">
+    <link rel = "stylesheet" href = "style/application.css">
     <link rel="icon" type = "image/png" href="image/logo.png">
     
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Gallery</title>
+    <title>Staff Application</title>
 </head>
 
-
 <body>
-
     <!-- MENU -->
     <input class = "menu-toggle-input" type = "checkbox" id = "menu-toggle-input">
     <label class = "menu-toggle-label" for = "menu-toggle-input">
@@ -69,61 +67,26 @@
         </ul>
     </div>
 
-    <!-- GALLERY -->
-    <div class = "pad-main">
-        <h class = "text-heading-big">GALLERY</h>
-        <br><br>
 
+    <!--APPLCATION INFO-->
+    <div class = "pad-main">
+        
+        <h class = "text-heading-big">Applications</h><br>
+        <h class = "text-heading-medium">Builders</h>
         <p class = "text-paragraph limit-width">
-            Anyone can upload screenshots from the server here for everyone else to see.
+            We're always looking for new talent to join our build team. Previous experience helps, but a passion for building is all it takes, so if you enjoy building, why not give it a shot?<br>
+            <i data-feather="check-circle" class = "image-icon-small-green"></i> <h class = "text-success"> Position open indefinitely </h> <br>
+            <i data-feather="link" class = "image-icon-small-green"></i> <a href = "application-builder" class = "text-success"><u>Click here to apply</u></a>
         </p>
 
-        <button class = "collapsible-heading-small text-heading-small" onclick = "toggleCollapsible('click-to-upload')">
-            <i data-feather = "chevron-right" class = "collapsible-icon" id = "click-to-upload-icon"></i>Click to upload
-        </button>
-        <div class = "text-paragraph limit-width collapsible-div collapsible-div-coloured collapsible-div-padding" id = "click-to-upload-div">
-            <p class = "text-paragraph limit-width">
-                Screenshots from MetaMechanists only please!
-            </p>
-            <label class="gallery-upload-label" for="upload">
-                <div class="gallery-upload-div">
-                    Select Images
-                </div>
-            </label>
-            <input class="gallery-upload-button" class="upload-button" type="file" id="upload" accept="image/jpeg, image/png, image/jpg">
-        </div>
-
-        <br><br>
-
-        <div class="gallery-div">
-            <div class="gallery-image-div">
-                <img class="gallery-image-image" src="gallery/CosmicExplorationChart.png">
-                <p class="gallery-image-name">CosmicExplorationChart.png</p>
-            </div>
-
-            <div class="gallery-image-div">
-                <img class="gallery-image-image" src="gallery/GateData.png">
-            </div>
-
-            <div class="gallery-image-div">
-                <img class="gallery-image-image" src="gallery/OSTRICH.drawio.png">
-            </div>
-
-            <div class="gallery-image-div">
-                <img class="gallery-image-image" src="gallery/16 cores.PNG">
-            </div>
-
-            <div class="gallery-image-div">
-                <img class="gallery-image-image" src="gallery/redwithmonkey.PNG">
-            </div>
-
-            <div class="gallery-image-div">
-                <img class="gallery-image-image" src="gallery/WMap.PNG">
-            </div>
-        </div>
+        <h class = "text-heading-medium">Staff Members</h>
+        <p class = "text-paragraph limit-width">
+            Staff members are crucial to the server's day-to-day operation. We operate with a flexible, largely horizontal leadership structure where every member is given freedom to play their strengths. If you think you'd be enjoy being a staff member, go ahead and apply!<br>
+            <i data-feather="check-circle" class = "image-icon-small-green"></i> <h class = "text-success"> Position open indefinitely </h> <br>
+            <i data-feather="link" class = "image-icon-small-green"></i> <a href = "application-staff" class = "text-success"><u>Click here to apply</u></a>
+        </p>
     </div>
 
-    <script src = "script/collapsible.js"></script>
     <script>
         feather.replace({ class: 'feather', 'stroke-width': 1 })
     </script>
