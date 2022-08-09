@@ -35,7 +35,6 @@
 .gallery-image-div {
     background-color: rgb(50, 50, 50);
     background-clip: content-box;
-    width: 370px;
     padding-left: 10px;
     padding-top: 15px;
     display: block;
@@ -54,6 +53,7 @@
     width: 90%;
     padding-left: 5%;
     padding-top: 5%;
+    padding-bottom: 5%;
 }
 
 .gallery-image-name {

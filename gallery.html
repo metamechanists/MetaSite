@@ -55,10 +55,6 @@
                 <a href="plugins" class="menu-text-active">Plugins</a>
             </li>
             <li class="menu-item">
-                <i data-feather="bar-chart-2" class = "menu-icon"></i>
-                <a href="data" class="menu-text-wip">Data</a>
-            </li>
-            <li class="menu-item">
                 <i data-feather="align-left" class = "menu-icon"></i>
                 <a href="rules" class="menu-text-active">Rules</a>
             </li>
@@ -74,56 +70,61 @@
         <h class = "text-heading-big">GALLERY</h>
         <br><br>
 
-        <p class = "text-paragraph limit-width">
-            Anyone can upload screenshots from the server here for everyone else to see.
-        </p>
+        <!--<p class = "text-paragraph limit-width">-->
+        <!--    Anyone can upload screenshots from the server here for everyone else to see.-->
+        <!--</p>-->
+<!---->
+        <!--<button class = "collapsible-heading-small text-heading-small" onclick = "toggleCollapsible('click-to-upload')">-->
+        <!--    <i data-feather = "chevron-right" class = "collapsible-icon" id = "click-to-upload-icon"></i>Click to upload-->
+        <!--</button>-->
+        <!--<div class = "text-paragraph limit-width collapsible-div collapsible-div-coloured collapsible-div-padding" id = "click-to-upload-div">-->
+        <!--    <p class = "text-paragraph limit-width">-->
+        <!--        Screenshots from MetaMechanists only please!-->
+        <!--    </p>-->
+        <!--    <label class="gallery-upload-label" for="upload">-->
+        <!--        <div class="gallery-upload-div">-->
+        <!--            Select Images-->
+        <!--        </div>-->
+        <!--    </label>-->
+        <!--    <input class="gallery-upload-button" class="upload-button" type="file" id="upload" accept="image/jpeg, image/png, image/jpg">-->
+        <!--</div>-->
+<!---->
+        <!--<br><br>-->
 
-        <button class = "collapsible-heading-small text-heading-small" onclick = "toggleCollapsible('click-to-upload')">
-            <i data-feather = "chevron-right" class = "collapsible-icon" id = "click-to-upload-icon"></i>Click to upload
-        </button>
-        <div class = "text-paragraph limit-width collapsible-div collapsible-div-coloured collapsible-div-padding" id = "click-to-upload-div">
-            <p class = "text-paragraph limit-width">
-                Screenshots from MetaMechanists only please!
-            </p>
-            <label class="gallery-upload-label" for="upload">
-                <div class="gallery-upload-div">
-                    Select Images
-                </div>
-            </label>
-            <input class="gallery-upload-button" class="upload-button" type="file" id="upload" accept="image/jpeg, image/png, image/jpg">
-        </div>
-
-        <br><br>
-
-        <div class="gallery-div">
+        <div class="gallery-div" id = "gallery-div">
             <div class="gallery-image-div">
-                <img class="gallery-image-image" src="gallery/CosmicExplorationChart.png">
-                <p class="gallery-image-name">CosmicExplorationChart.png</p>
+                <img class="gallery-image-image" src="gallery/1.png">
+                <p class="gallery-image-text">
+                    Great Ninja Challenge event
+                </p>
             </div>
 
             <div class="gallery-image-div">
-                <img class="gallery-image-image" src="gallery/GateData.png">
+                <img class="gallery-image-image" src="gallery/2.png">
             </div>
 
             <div class="gallery-image-div">
-                <img class="gallery-image-image" src="gallery/OSTRICH.drawio.png">
+                <img class="gallery-image-image" src="gallery/3.png" >
             </div>
 
             <div class="gallery-image-div">
-                <img class="gallery-image-image" src="gallery/16 cores.PNG">
+                <img class="gallery-image-image" src="gallery/4.png">
             </div>
 
             <div class="gallery-image-div">
-                <img class="gallery-image-image" src="gallery/redwithmonkey.PNG">
+                <img class="gallery-image-image" src="gallery/5.png">
             </div>
 
             <div class="gallery-image-div">
-                <img class="gallery-image-image" src="gallery/WMap.PNG">
+                <img class="gallery-image-image" src="gallery/6.png">
             </div>
         </div>
     </div>
 
+    <h2>Popup</h2>
+
     <script src = "script/collapsible.js"></script>
+    <script src = "script/gallery.js"></script>
     <script>
         feather.replace({ class: 'feather', 'stroke-width': 1 })
     </script>
