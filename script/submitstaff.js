@@ -21,7 +21,7 @@ const variableIDs = [
 
 const variableNames = [
   'How old are you? You can give a range (eg: 14-16)', 
-  'Are you comfortable with talking in voice chat? This is not necessary, so don\'t feel pressured :)',
+  'Are you comfortable with talking in voice chat?',
   'Timezone',
   'Minecraft username',
   'Discord username and tag',

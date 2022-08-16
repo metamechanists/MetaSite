@@ -70,6 +70,80 @@
 
         <h class = "text-heading-big">NEWS</h><br>
 
+        <h class = "text-heading-medium">DEATH #3</h><br>
+        <h class = "text-small-italic"><i>16/08/2022 - Idra</i></h>
+        <p class = "text-news-content">
+            Hello @everyone.<br><br>
+
+            See above two announcements for context to this announcement. The last backup is unfortunately <b>20 days old (2022-07-27)</b>, which means that everyone would lose a huge amount of progress by restoring it. We now have two options. In either scenario, we will be giving out compensation such as unlocking all researches for all current players, although note that we will not be able to individually compensate players. Please vote thoughtfully - you will need to join <a href = "https://discord.com/invite/6Ew8BYxUtZ" class = "text-link">Discord</a> to cast your vote. There is no set deadline for this poll, but we will wait at least a couple of days before coming to a final decision.<br><br>
+
+            <b>Reset the server</b><br>
+            - In this scenario, we will most likely make some large changes to the server when it restarts<br>
+            - We have not decided on exactly what these changes would be, but to give an example, they may involve custom terrain generation or a custom Slimefun version<br><br>
+
+            <b>Restore the backup from 3 weeks ago</b><br>
+            - Note that we **would not** be able to recover any items or builds.<br><br>
+
+            On behalf of the entire staff team:<br>
+            I know this is extremely frustrating. We all understand, and we are exhausting all our available resources to fix it. This is unfortunately a worst case scenario, and we are doing everything we can to cushion the blow, but unfortunately there's only so much we can do. It's completely understandable to be upset, just please keep in mind how difficult it has been for us to arrive at this ultimatum.<br><br>
+
+            <i>Read on for more detailed information.</i><br><br><br>
+
+
+            <b>So... WTF happened? (technical explanation)</b><br>
+            Simple human error. I tried to extract an archive containing an old server backup on the server machine. Normally, this would have been fine, but 1) I made a mistake in taking the previous backup, which doubled its file size, and 2) the archive I was trying to extract was unusually large (300 GB, just under double the current server size). This meant that less space was free than I expected, and also that the archive would take up more space than I expected. When these two were combined, the machine didn't have enough disk space left to store the extracted file.<br><br>
+
+            However, this didn't stop the extraction program from trying, and it continued trying to extract the file right up until there was no disk space left on the machine. This was an absolute disaster for the Minecraft servers. Minecraft, and any plugins running on the server, continuously attempts to save data to disk. For example, when you place a block, Minecraft needs to save that change to disk. The same applies for most plugins. In this scenario, Minecraft and most of the plugins tried to save some data seemingly at the same time as the disk space ran out.<br><br>
+
+            This means that they managed to write some data to the disk, but then disk space ran out, and they were abruptly stopped from doing so. So, we ended up with a huge number of files that had incomplete data written to them. With the scale at which this happened, it was practically impossible to fix these files (ie: by deleting corrupted entries).<br><br>
+
+            The servers themselves also did not take kindly to running out of disk space. Both servers crashed very quickly after the incident. They then attempted to restart - the Lobby failed, and the process was completely frozen. Survival started, but I quickly shut it down, fearing that it might just make the corruption worse.<br><br>
+
+            Unfortunately, Slimefun does back up data, but only saves backups for the last two server shutdowns. Since the servers shut down twice after the incident, both backups contained corrupted data, so we were unable to use them to restore missing Slimefun data. Had this been the case, we may have been able to avoid the worst, though the details are unclear.<br><br>
+
+            Additionally, as stated above, the backup from 5 days ago evidently did not actually archive the server properly, but how this happened is not currently known.<br><br><br>
+
+
+            <b>What are we doing to prevent this in the future?</b><br>
+            Previously, we were doing manual backups every two weeks or so. Unfortunately this was not enough, and in hindsight we should have realised this sooner. <br><br>
+
+            We are now setting up a smarter backup system that will backup the server automatically on a schedule. From now on, we'll be keeping backups from the last month, last week, and the two lasts days.<br><br>
+
+            As an example, if the date is "September 16th 2022", the saved backups will be from<br>
+            - August 31st (Last Month)<br>
+            - September 10th (Last Week)<br>
+            - September 15th (Yesterday)<br>
+            - and September 16th (Current Day)<br><br>
+
+
+            Conclusion<br>
+            Thank you to everyone for your patience with this. Once again, we understand how frustrating this is, and we are doing everything in our power to ensure this is handled as smoothly as possible. Thank you everyone for your cooperation <3
+        </p>
+
+        <h class = "text-heading-medium">DEATH #2</h><br>
+        <h class = "text-small-italic"><i>16/08/2022 - Idra</i></h>
+        <p class = "text-news-content">
+            We've discovered the situating is a lot worse than we thought. The backup from 5 days ago evidently did not actually archive the server properly (out of ALL the backups it had to be this one *sigh*). How this happens is not currently known. More information to follow shortly.
+        </p>
+
+        <h class = "text-heading-medium">DEATH #1</h><br>
+        <h class = "text-small-italic"><i>16/08/2022 - Idra</i></h>
+        <p class = "text-news-content">
+            Hi everyone... I'm afraid we've run into some severe file corruption issues. However, the verdict is that there is no option left: we will be restoring a full backup from 5 days ago (2022-08-11). The server will be down for the next two hours or so while we safely back up the current state of the server and restore the backup. More details will come later.
+        </p>
+
+        <h class = "text-heading-medium">New staff member</h><br>
+        <h class = "text-small-italic"><i>14/08/2022 - Idra</i></h>
+        <p class = "text-news-content">
+            The trial period for JustAHuman has ended and he's now a full staff member!
+        </p>
+
+        <h class = "text-heading-medium">No 1.19.2 update for us</h><br>
+        <h class = "text-small-italic"><i>11/08/2022 - Idra</i></h>
+        <p class = "text-news-content">
+            <s>We're now running 1.19.2 - chat reporting is disabled as promised (I didn't really have much say in this anyway, since BungeeCord still isn't even capable of handling chat reports).</s> Yeah nevermind, we're staying on 1.19 because it's proving completely impossible to update. Not like we're missing literally anything by not updating anyway...
+        </p>
+
         <h class = "text-heading-medium">Goodbye Brayden</h><br>
         <h class = "text-small-italic"><i>31/07/2022 - Idra</i></h>
         <p class = "text-news-content">
