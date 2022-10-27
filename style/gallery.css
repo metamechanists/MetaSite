@@ -26,34 +26,33 @@
 }
 
 .gallery-div {
-    column-width: 400px;
+    column-width: 500px;
     column-fill: balance;
     column-gap: 0px;
-    width: 80%;
+    width: 99%;
 }
 
 .gallery-image-div {
     background-color: rgb(50, 50, 50);
     background-clip: content-box;
-    padding-left: 10px;
-    padding-top: 15px;
+    padding-left: 5px;
+    padding-top: 5px;
     display: block;
     margin: 0;
 /*    vertical-align: top;*/
-    transition-duration: 0.2s;
 }
 
-.gallery-image-div:hover {
+/*.gallery-image-div:hover {
     background-color: rgb(59, 59, 59);
     cursor: pointer;
     transition-duration: 0.2s;
-}
+}*/
 
 .gallery-image-image {
-    width: 90%;
-    padding-left: 5%;
-    padding-top: 5%;
-    padding-bottom: 5%;
+    width: 95%;
+    padding-left: 2.5%;
+    padding-top: 2.5%;
+    padding-bottom: 2.5%;
 }
 
 .gallery-image-name {
