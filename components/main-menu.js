@@ -22,12 +22,12 @@ class MainMenu extends HTMLElement {
                       Home
                   </a>
 
-                  <a href="rules">
+                  <a href="server-rules">
                       <img src="image/icons/format-list-bulleted-square.svg">
                       Rules
                   </a>
 
-                  <a href="ranks">
+                  <a href="server-ranks">
                       <img src="image/icons/chevron-triple-up.svg">
                       Ranks
                   </a>
@@ -37,17 +37,17 @@ class MainMenu extends HTMLElement {
                       Map
                   </a>
 
-                  <a href="history">
+                  <a href="server-history">
                       <img src="image/icons/progress-clock.svg">
                       History
                   </a>
 
-                  <a href="staff">
+                  <a href="server-staff">
                       <img src="image/icons/account-heart.svg">
                       Staff
                   </a>
 
-                  <a href="application">
+                  <a href="server-application">
                     <img src="image/icons/file-document.svg">
                     Applications
                   </a>
