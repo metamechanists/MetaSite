@@ -14,7 +14,7 @@ class MainMenu extends HTMLElement {
               <img src = "image/banner.png" class = "main-menu-heading-image">
 
               <hr class="main-menu-divider">
-              <h class="main-menu-section-title">MISCELLANEOUS</h>
+              <h class="main-menu-section-title">SERVER</h>
 
               <ul class="main-menu-list main-menu-list-item main-menu-icon main-menu-text menu-divider">
                   <a href="index">
@@ -74,7 +74,7 @@ class MainMenu extends HTMLElement {
               </ul>
 
               <hr class="main-menu-divider">
-              <h class="main-menu-section-title">SLIMEFUN</h>
+              <h class="main-menu-section-title">PLUGINS</h>
 
               <ul class="main-menu-list main-menu-list-item main-menu-icon main-menu-text menu-divider">
                   <a href="plugins-aurelium-skills">
