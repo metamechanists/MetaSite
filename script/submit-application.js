@@ -1,5 +1,15 @@
-// pls no ddos
-const webhook = "https://discord.com/api/webhooks/919722214474022992/GVdY5MnqYFQorgwS0lV1z35bt-4XorOFtZqMd4YB8D51OqSFGJHzjLbErv0GDfQbyjHj"
+function loadFile(filePath) {
+  var result = null;
+  var xmlhttp = new XMLHttpRequest();
+  xmlhttp.open("GET", filePath, false);
+  xmlhttp.send();
+  if (xmlhttp.status == 200) {
+    result = xmlhttp.responseText;
+  }
+  return result;
+}
+
+const webhook = loadFile("webhook.txt");
 
 const username = "Idra\'s Minion";
 const avatar_url = "";
