@@ -1,0 +1,71 @@
+<head>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.6/build/grids-responsive-min.css"/>
+    
+    <link rel="stylesheet" href="style/body.css">
+    <link rel="stylesheet" href="style/background.css">
+    <link rel="stylesheet" href="style/text.css">
+
+    <link rel="stylesheet" href="style/components/main-menu.css">
+    <link rel="stylesheet" href="style/components/wiki-box.css">
+    <link rel="stylesheet" href="style/components/wiki-quote.css">
+    <link rel="stylesheet" href="style/components/wiki-info.css">
+    <link rel="stylesheet" href="style/components/wiki-warning.css">
+    
+    <link rel="icon" type = "image/png" href="image/logo.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Plugins - Resource Worlds</title>
+</head>
+
+<body class="background-wiki">
+    <main-menu></main-menu>
+
+    <div class="content-main">
+        <div class="content-section">
+            <h class="text-heading-big">Resource Worlds</h>
+        </div>
+        
+        <wiki-box>
+            <h1>
+                Skills, stats, & abilities
+            </h1>
+
+            <br>
+
+            <wiki-warning>
+                Don't build anything that you don't want to lose in the resource worlds! The resource worlds are often reset, and although there is at least a couple of days' notice, no refunds are given for anything you may lose to a resource world reset.
+            </wiki-warning>
+
+            <p>
+                The Overworld, Nether, and End tend to get ruined over time due to large-scale resource harvesting. In particular, the End tends to get looted of all elytra until not a single end city is left unraided. For this reason, we have a second set of worlds known as 'Resource Worlds.' These worlds are specifically for you to go and rip up with TNT and overpowered Slimefun tools - just don't build anything permanent there, because the worlds are reset every so often!
+            </p>
+
+            <p>
+                To get to the resource worlds:
+            </p>
+
+            <ul>
+                <li>
+                    Resource Overworld - /rw tp
+                </li>
+                <li>
+                    Resource Nether - /rw tp nether
+                </li>
+                <li>
+                    Resource End - /rw tp end    
+                </li>
+            </ul>
+        </wiki-box>
+    </div>
+    
+    <script src="components/main-menu.js"></script>
+    <script src="components/wiki-box.js"></script>
+    <script src="components/wiki-quote.js"></script>
+    <script src="components/wiki-info.js"></script>
+    <script src="components/wiki-warning.js"></script>
+
+    <script>
+        feather.replace({ class: 'feather', 'stroke-width': 1 })
+    </script>
+
+</body>

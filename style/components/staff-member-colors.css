@@ -1,0 +1,31 @@
+.Owner {
+    color:#ff0000;
+}
+
+.Host {
+    color:#91244f;
+}
+
+.Admin {
+    color:#d33956;
+}
+
+.Moderator {
+    color:#ee7f92;
+}
+
+.HeadDeveloper {
+    color:#16f72d;
+}
+
+.Developer {
+    color:#a6ed87;
+}
+
+.HeadBuilder {
+    color:#f85bb7;
+}
+
+.Builder {
+    color:#e792d5;
+}

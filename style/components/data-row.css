@@ -1,0 +1,40 @@
+.data-row div {
+    display: inline-block;
+}
+
+.data-row-key {
+    float: left;
+    font-family:monospace;
+    font-size:1.2em;
+    font-weight: 100;
+    letter-spacing: 0.1em;
+    color:rgb(255, 255, 255);
+}
+
+.data-row-value {
+    float: left;
+    font-family:monospace;
+    font-size:1.2em;
+    font-weight: 100;
+    letter-spacing: 0.1em;
+    padding-left: 10px;
+}
+
+.data-row-value-normal {
+    color:rgb(60, 206, 184);
+}
+
+.data-row-value-good {
+    color:rgb(99, 194, 95);
+}
+
+.data-row-value-bad {
+    color:rgb(211, 73, 73);
+}
+
+.data-row-icon {
+    float: left;
+    width: 17px;
+    height: 17px;
+    padding-right: 5px;
+}

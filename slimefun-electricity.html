@@ -1,0 +1,85 @@
+<head>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.6/build/grids-responsive-min.css"/>
+    
+    <link rel="stylesheet" href="style/body.css">
+    <link rel="stylesheet" href="style/background.css">
+    <link rel="stylesheet" href="style/text.css">
+
+    <link rel="stylesheet" href="style/components/main-menu.css">
+    <link rel="stylesheet" href="style/components/wiki-box.css">
+    <link rel="stylesheet" href="style/components/wiki-quote.css">
+    <link rel="stylesheet" href="style/components/wiki-info.css">
+    <link rel="stylesheet" href="style/components/wiki-warning.css">
+    
+    <link rel="icon" type = "image/png" href="image/logo.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Slimefun - Electricity</title>
+</head>
+
+<body class="background-wiki">
+    <main-menu></main-menu>
+
+    <div class="content-main">
+        <div class="content-section">
+            <h class="text-heading-big">Electricity</h>
+        </div>
+        
+        <wiki-box>
+            <wiki-warning>
+                To unlock Electricity in the Slimefun guide, you'll first have to unlock all the Basic Machines. Also, make sure you have a steady supply of dusts before starting electricity, since electric machines usually take a lot of components to craft.
+            </wiki-warning>
+
+            <p>
+                There are five different types of components in any electric grid (also known as an electric network) in Slimefun:
+            </p>
+            
+            <ul>
+                <li>
+                    The Energy Regulator is the centerpiece of the network. You need exactly one of these to form an electric network.
+                </li>
+
+                <li>
+                    Energy Connectors extend the reach of your electric network.
+                </li>
+
+                <li>
+                    Capacitors store electricity.
+                </li>
+
+                <li>
+                    Generators (such as Solar Generator, Coal Generator) generate electricity.
+                </li>
+
+                <li>
+                    Consumers (such as Electric Furnace, Electric Dust Washer) use electricity to do something.
+                </li>
+            </ul>
+
+            <wiki-info>
+                All electric components must be within reach of a Regulator, Capacitor, or Connector to function.
+            </wiki-info>
+
+            <p>
+                Energy Regulators, Energy Connectors, and Capacitors can all extend the reach of the network by 7 blocks in every cardinal direction:
+            </p>
+
+            <img src="image/wiki/energy-range.png">
+            
+            <p>
+                That's all there is to it!
+            </p>
+        </wiki-box>
+    </div>
+    
+    <script src="components/main-menu.js"></script>
+    <script src="components/wiki-box.js"></script>
+    <script src="components/wiki-quote.js"></script>
+    <script src="components/wiki-info.js"></script>
+    <script src="components/wiki-warning.js"></script>
+
+    <script>
+        feather.replace({ class: 'feather', 'stroke-width': 1 })
+    </script>
+
+</body>

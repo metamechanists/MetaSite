@@ -1,0 +1,18 @@
+Universal
+StaffPlusPlus - https://staffplusplus.org/
+
+Bungee
+BungeeCord - https://ci.md-5.net/job/BungeeCord/
+CMIB - https://www.zrips.net/cmib/
+LuckPerms - https://luckperms.net/download
+
+Lobby + Survival
+Paper - https://papermc.io/downloads
+ArtMap - https://gitlab.com/BlockStack/ArtMap
+CMI - https://www.spigotmc.org/resources/cmi-298-commands-insane-kits-portals-essentials-economy-mysql-sqlite-much-more.3742/
+
+Survival
+CoreProtect - https://modrinth.com/plugin/coreprotect/version/21.3
+ExecutableItems - https://www.spigotmc.org/resources/custom-items-free-executable-items.77578/
+GriefPrevention - https://ci.appveyor.com/project/RoboMWM39862/griefprevention/build/artifacts
+Terra - https://modrinth.com/plugin/terra/

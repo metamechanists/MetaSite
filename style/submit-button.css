@@ -1,0 +1,16 @@
+.application-submit {
+    border:0px;
+    width:300px;
+    height:60px;
+    font-family: monospace;
+    font-size:30px;
+    cursor:pointer;
+    background-color: #509050;
+    color: #e7e7e7;
+    transition-duration: 0.2s;
+}
+
+.application-submit:hover {
+    background-color: #52b352;
+    transition-duration: 0.2s;
+}

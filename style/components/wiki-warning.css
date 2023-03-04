@@ -1,0 +1,49 @@
+.wiki-warning {
+    display: inline-block;
+    position: relative;
+    width: 80%;
+    background-color: rgb(118, 0, 0, 0.7);
+    border-radius: 0.7rem;
+    margin-bottom: 15px;
+    margin-left: 20px;
+}
+
+.wiki-warning p {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size:1.0em;
+    letter-spacing: 0.0em;
+    color:rgb(255, 255, 255);
+    margin-block-start: 2px;
+}
+
+.wiki-warning-icon-div {
+    height: 100%;
+    position:absolute;
+    width: 5%;
+    min-height: 5%;
+    float: left;
+    border-radius: 0.7rem 0 0 0.7rem;
+    background-color: rgb(167, 22, 22, 0.7);
+}
+
+.wiki-warning-icon-image {
+    width: 85%;
+    padding: 7.5%;
+    filter: invert(100%)
+}
+
+.wiki-warning-text-div {
+    position:absolute;
+    left: 5%;
+    width: 83%;
+    min-height: 5%;
+    float: left;
+    padding: 6px;
+    margin-left: 8px;
+    position: relative;
+}
+
+.wiki-warning-text-content {
+    font-family: monospace;
+    font-size: 0.85rem;
+}

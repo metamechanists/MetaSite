@@ -1,0 +1,119 @@
+<head>
+    <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.6/build/grids-responsive-min.css" />
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <link rel="stylesheet" href="style/body.css">
+    <link rel="stylesheet" href="style/background.css">
+    <link rel="stylesheet" href="style/text.css">
+
+    <link rel="stylesheet" href="style/components/rank-box.css">
+    <link rel="stylesheet" href="style/components/rank-requirement.css">
+    <link rel="stylesheet" href="style/components/rank-reward.css">
+    <link rel="stylesheet" href="style/components/main-menu.css">
+
+    <link rel="icon" type = "image/png" href="image/logo.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ranks</title>
+</head>
+
+
+<body class="background-ranks">
+    <main-menu></main-menu>
+
+    <div class="content-main background-dark-blue">
+        <rank-box title="Mercury" icon="image/rank/mercury.png">
+            <rank-requirement requirement="N/A"></rank-requirement>
+            <rank-reward reward="Default Permissions"></rank-reward>
+        </rank-box>
+
+        <rank-box title="Venus" icon="image/rank/venus.png">
+            <rank-requirement requirement="1x Gold Pan"></rank-requirement>
+            <rank-requirement requirement="1x Diamond"></rank-requirement>
+            <rank-requirement requirement="1x Automatic Ignition Chamber"></rank-requirement>
+            <rank-reward reward="Access to Venus crate"></rank-reward>
+            <rank-reward reward="3 homes"></rank-reward>
+            <rank-reward reward="Keep experience on death"></rank-reward>
+            <rank-reward reward="Change your chat name with /nick"></rank-reward>
+            <rank-reward reward="Easily get rid of items with /dispose"></rank-reward>
+            <rank-reward reward="Swap paintings with shift right click"></rank-reward>
+        </rank-box>
+
+        <rank-box title="Earth" icon="image/rank/earth.png">
+            <rank-requirement requirement="16x Electromagnet"></rank-requirement>
+            <rank-requirement requirement="16x Reinforced Alloy Ingot"></rank-requirement>
+            <rank-requirement requirement="1x Power Crystal"></rank-requirement>
+            <rank-reward reward="Access to Earth crate"></rank-reward>
+            <rank-reward reward="4 homes"></rank-reward>
+            <rank-reward reward="Equip any item as a /hat"></rank-reward>
+            <rank-reward reward="Turn nuggets to ingots to blocks with /condense"></rank-reward>
+            <rank-reward reward="Turn blocks to ingots to nuggets with /uncondense"></rank-reward>
+            <rank-reward reward="Open workstations with /workbench, /cartographytable, /anvil, /grindstone, and /loom"></rank-reward>
+            <rank-reward reward="Use the NoMobDamage, NoMobSpawns, NoMobSpawnsType, NoMonsters, and NoMonsterSpawns claim flags"></rank-reward>
+        </rank-box>
+
+        <rank-box title="Mars" icon="image/rank/mars.png">
+            <rank-requirement requirement="1x Electric Gold Pan II"></rank-requirement>
+            <rank-requirement requirement="1x Electric Dust Washer II"></rank-requirement>
+            <rank-requirement requirement="1x Network Controller"></rank-requirement>
+            <rank-reward reward="Access to Mars crate"></rank-reward>
+            <rank-reward reward="5 homes"></rank-reward>
+            <rank-reward reward="Keep inventory on death"></rank-reward>
+            <rank-reward reward="Sate your hunger with /feed"></rank-reward>
+            <rank-reward reward="Change your own time with /ptime"></rank-reward>
+            <rank-reward reward="Change your own weather with /pweather"></rank-reward>
+            <rank-reward reward="Use the PlayerTime and PlayerWeather claim flags"></rank-reward>
+        </rank-box>
+
+        <rank-box title="Jupiter" icon="image/rank/jupiter.png">
+            <rank-requirement requirement="1x Dust Extractor"></rank-requirement>
+            <rank-requirement requirement="1x Uranium Extractor"></rank-requirement>
+            <rank-reward reward="Access to Jupiter crate"></rank-reward>
+            <rank-reward reward="6 homes"></rank-reward>
+            <rank-reward reward="Edit signs with shift right click"></rank-reward>
+            <rank-reward reward="Use colors in books and signs"></rank-reward>
+            <rank-reward reward="Open an enderchest with /ender"></rank-reward>
+        </rank-box>
+
+        <rank-box title="Saturn" icon="image/rank/saturn.png">
+            <rank-requirement requirement="4x Singularity Constructor"></rank-requirement>
+            <rank-requirement requirement="1x Void Quarry"></rank-requirement>
+            <rank-requirement requirement="1x Void Panel"></rank-requirement>
+            <rank-reward reward="Access to Saturn crate"></rank-reward>
+            <rank-reward reward="8 homes"></rank-reward>
+            <rank-reward reward="Edit armor stands with shift right click"></rank-reward>
+            <rank-reward reward="Use colors in your nickname"></rank-reward>
+            <rank-reward reward="Repair vanilla items with /repair"></rank-reward>
+            <rank-reward reward="Use the ProtectNamedMobs claim flag"></rank-reward>
+        </rank-box>
+
+        <rank-box title="Uranus" icon="image/rank/uranus.png">
+            <rank-requirement requirement="1x Infinity Matrix"></rank-requirement>
+            <rank-requirement requirement="1x Infinity Panel"></rank-requirement>
+            <rank-reward reward="Access to Uranus crate"></rank-reward>
+            <rank-reward reward="10 homes"></rank-reward>
+            <rank-reward reward="Restore your health with /heal"></rank-reward>
+            <rank-reward reward="Use colors in chat"></rank-reward>
+            <rank-reward reward="Stop mobs from targeting you with /notarget"></rank-reward>
+            <rank-reward reward="Use the NoExplosionDamage, NoFallDamage, and NoFireDamage claim flags"></rank-reward>
+        </rank-box>
+
+        <rank-box title="Neptune" icon="image/rank/neptune.png">
+            <rank-requirement requirement="64x Infinity Singularity"></rank-requirement>
+            <rank-reward reward="Access to Neptune crate"></rank-reward>
+            <rank-reward reward="Infinite homes"></rank-reward>
+            <rank-reward reward="Become invulnerable to all damage with /god"></rank-reward>
+            <rank-reward reward="Automatically build symmetrically with /mirror"></rank-reward>
+            <rank-reward reward="Create map images with /image"></rank-reward>
+        </rank-box>
+    </div>
+
+    <script src="components/main-menu.js"></script>
+    <script src="components/rank-box.js"></script>
+    <script src="components/rank-reward.js"></script>
+    <script src="components/rank-requirement.js"></script>
+
+    <script>
+        feather.replace({ class: 'feather', 'stroke-width': 1 })
+    </script>
+
+</body>
