@@ -1,0 +1,70 @@
+/* COLORS */
+.background-black {
+    background-color: rgb(25, 26, 30, 0.75);
+}
+
+.background-dark-gray {
+    background-color: rgba(48, 48, 51, 0.8);
+}
+
+.background-gray {
+    background-color: rgb(47, 51, 58, 0.8);
+}
+
+.background-dark-blue {
+    background-color: rgb(31, 37, 57, 0.8);
+}
+
+.background-light-blue {
+    background-color: rgb(42, 57, 79, 0.8);
+}
+
+.background-dark-green {
+    background-color: rgba(25, 31, 24, 0.8);
+}
+
+.background-dark-yellow {
+    background-color: rgba(42, 40, 24, 0.8);
+}
+
+.background-dark-red {
+    background-color: rgb(32, 1, 1, 0.8);
+}
+
+
+/* MISC */
+.background-index {
+    background-image: url("../image/background/index.png");
+}
+
+.background-rules {
+    background-image: url("../image/background/rules.png");
+}
+
+.background-ranks {
+    background-image: url("../image/background/ranks.png");
+}
+
+.background-history {
+    background-image: url("../image/background/history.png");
+}
+
+.background-staff {
+    background-image: url("../image/background/staff.png");
+}
+
+.background-application {
+    background-image: url("../image/background/application.png");
+}
+
+.background-application-moderator {
+    background-image: url("../image/background/application-moderator.png");
+}
+
+.background-application-developer {
+    background-image: url("../image/background/application-developer.png");
+}
+
+.background-application-builder {
+    background-image: url("../image/background/application-builder.png");
+}

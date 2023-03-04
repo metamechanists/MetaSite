@@ -1,0 +1,9 @@
+.rank-reward-arrow {
+  width: 15px;
+  height: 15px;
+  stroke: rgb(44, 255, 51);
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  fill: none;
+}

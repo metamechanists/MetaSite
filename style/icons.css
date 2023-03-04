@@ -1,0 +1,28 @@
+.icon-small {
+  width: 15px;
+  height: 15px;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  fill: none;
+}
+
+.icon-white {
+  stroke: rgb(255, 255, 255);
+}
+
+.icon-blue {
+  stroke: rgb(33, 147, 223);
+}
+
+.icon-green {
+  stroke: rgb(50, 230, 50);
+}
+
+.icon-amber {
+  stroke: rgb(255, 181, 44);
+}
+
+.icon-red {
+  stroke: rgb(230, 50, 50);
+}

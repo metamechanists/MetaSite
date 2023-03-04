@@ -1,175 +1,87 @@
 <head>
-    <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.6/build/grids-responsive-min.css" />
-    <script src="https://kit.fontawesome.com/6be673d481.js" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/feather-icons"></script>
-    <link rel = "stylesheet" href = "style/body.css">
-    <link rel = "stylesheet" href = "style/align.css">
-    <link rel = "stylesheet" href = "style/text.css">
-    <link rel = "stylesheet" href = "style/images.css">
-    <link rel = "stylesheet" href = "style/menu.css">
-    <link rel="icon" type = "image/png" href="image/logo.png">
+    <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.6/build/grids-responsive-min.css"/>
     
+    <link rel="stylesheet" href="style/body.css">
+    <link rel="stylesheet" href="style/background.css">
+    <link rel="stylesheet" href="style/text.css">
+
+    <link rel="stylesheet" href="style/components/main-menu.css">
+    <link rel="stylesheet" href="style/components/feature-box.css">
+    <link rel="stylesheet" href="style/components/data-row.css">
+    
+    <link rel="icon" type = "image/png" href="image/logo.png">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Home</title>
 </head>
 
 
-<body>
+<body class="background-index">
+    <main-menu></main-menu>
 
-    <!-- MENU -->
-    <!-- MENU -->
-    <input class = "menu-toggle-input" type = "checkbox" id = "menu-toggle-input">
-    <label class = "menu-toggle-label" for = "menu-toggle-input">
-        <i data-feather="menu" class = "menu-toggle-icon"></i>
-    </label>
-
-    <div class="menu-container">
-
-        <div class = "menu-toggle-container"></div>
-
-        <img src = "image/banner.png" class = "menu-heading">
-        <ul class="menu-list">
-            <li class="menu-item">
-                <i data-feather="home" class = "menu-icon"></i>
-                <a href="index" class="menu-text-active">Home</a>
-            </li>
-            <li class="menu-item">
-                <i data-feather="image" class = "menu-icon"></i>
-                <a href="gallery" class="menu-text-active">Gallery</a>
-            </li>
-            <li class="menu-item">
-                <i data-feather="mail" class = "menu-icon"></i>
-                <a href="https://wiki.metamechanists.org/" class="menu-text-active">Wiki</a>
-            </li>
-            <li class="menu-item">
-                <i data-feather="user" class = "menu-icon"></i>
-                <a href="staff" class="menu-text-active">Staff</a>
-            </li>
-            <li class="menu-item">
-                <i data-feather="chevrons-up" class = "menu-icon"></i>
-                <a href="ranks" class="menu-text-active">Ranks</a>
-            </li>
-            <li class="menu-item">
-                <i data-feather="map" class = "menu-icon"></i>
-                <a href="https://map.metamechanists.org" class="menu-text-active">Map</a>
-            </li>
-            <li class="menu-item">
-                <i data-feather="file-text" class = "menu-icon"></i>
-                <a href="application" class="menu-text-active">Apply</a>
-            </li>
-        </ul>
-    </div>
-
-    <!-- HOME -->
-    <div class = "pad-main">
-
-        <div class = "pure-g">
-            <h class = "text-heading-big">WELCOME</h>
-            <br><br>
-            <img src = "image/collage.jpg" class = "image-1-1-width">
+    <div class="content-main">
+        <div class="content-section background-gray">
+            <h class="text-heading-big">Welcome</h>
         </div>
+        
+        <div class="content-section background-dark-blue content-pad-top" id="featureboxes">
+            <feature-box icon="settings" title="Slimefun">
+                Slimefun adds 500+ new items, no downloads required. Design huge factories, become invincible, go to space, and eventually automate everything.
+            </feature-box>
 
-        <div class = "pure-u-1 pure-u-md-2-5 pure-u-lg-1-5 pad-info-box">
-            <div class = "align-centre text-centre">
-                <i data-feather = "cpu" class = "image-icon-big"></i><br>
-                <h class = "text-heading-medium">SLIMEFUN<br></h>
-            </div>
-            <p class = "text-paragraph text-centre">
-                Slimefun adds 500+ new items, no downloads required. Design huge factories, 
-                become invincible, go to space, build cool stuff. The end goal? Automate 
-                everything.
-            </p>
-        </div>
+            <feature-box icon="plus-square" title="Addons">
+                Play with the latest and greatest Slimefun addons, including Infinity Expansion, Networks, Galactifun, SlimeTinker, and 10+ more.
+            </feature-box>
 
-        <div class = "pure-u-1 pure-u-md-2-5 pure-u-lg-1-5 pad-info-box">
-            <div class = "align-centre text-centre">
-                <i data-feather = "book-open" class = "image-icon-big"></i><br>
-                <h class = "text-heading-medium">TRANSPARENCY<br></h>
-            </div>
-            <p class = "text-paragraph text-centre">
-                A changelog and roadmap can be found on <a href = "https://discord.com/invite/6Ew8BYxUtZ" class = "text-link">Discord</a>. 
-                A full list of addons and plugins can be found in-game with /plugins and /sf versions.
-            </p>
-            <br>
-        </div>
+            <feature-box icon="code" title="Custom Coded">
+                Our development team adds new features regularly, from new machines, to QoL features, to custom rank systems.
+            </feature-box>
 
-        <div class = "pure-u-1 pure-u-md-2-5 pure-u-lg-1-5 pad-info-box">
-            <div class = "align-centre text-centre">
-                <i data-feather = "chevrons-up" class = "image-icon-big"></i><br>
-                <h class = "text-heading-medium">RANKS<br></h>
-            </div>
-            <p class = "text-paragraph text-centre">
-                Rank up to unlock new commands and abilities, such as coloured chat.
-                Craft increasingly difficult Slimefun items to rank up.
-                Find out more by using /rank in-game.
-            </p>
-            <br>
-        </div>
+            <feature-box icon="search" title="Transparency">
+                A changelog and roadmap can be found on <a href = "https://discord.com/invite/6Ew8BYxUtZ" class = "text-link">Discord</a>. A full list of addons and plugins can be found in-game with /plugins and /sf versions.
+            </feature-box>
 
-        <div class = "pure-u-1 pure-u-md-2-5 pure-u-lg-1-5 pad-info-box">
-            <div class = "align-centre text-centre">
-                <i data-feather = "award" class = "image-icon-big"></i><br>
-                <h class = "text-heading-medium">EVENTS<br></h>
-            </div>
-            <p class = "text-paragraph text-centre">
-                Events every week, both PvP & non PvP, with prizes.
-                Murder your frenemies in our custom minigames world.
-            </p>
-            <br>
-        </div>
+            <feature-box icon="chevrons-up" title="Ranks">
+                Rank up to unlock new commands and abilities, such as coloured chat. Craft increasingly difficult Slimefun items to rank up. Find out more with /rank in-game.
+            </feature-box>
 
-        <div class = "pure-u-1 pure-u-md-2-5 pure-u-lg-1-5 pad-info-box">
-            <div class = "align-centre text-centre">
-                <i data-feather = "server" class = "image-icon-big"></i><br>
-                <h class = "text-heading-medium">HARDWARE<br></h>
-            </div>
-            <p class = "text-paragraph text-centre">
+            <feature-box icon="server" title="Hardware">
                 16 cores | 4.7 GHz | 128 GB <br>
-                We place very few restrictions on logistics or energy systems. Automate to your 
-                heart's content.
-            </p>
-            <br>
+                We place very few restrictions on logistics or energy systems. Automate to your heart's content.
+            </feature-box>
+
+            <feature-box icon="calendar" title="Events">
+                Events every week, both PvP & non PvP, with prizes. Battle your frenemies to the death in our custom minigames world.
+            </feature-box>
+            
+            <feature-box icon="user-plus" title="Join Now">
+                Drop by and get started at <b>play.metamechanists.org</b>, or join our <a href="https://discord.metamechanists.org" class = "text-link">Discord</a>.
+            </feature-box>
         </div>
 
-        <div class = "pure-u-1 pure-u-md-2-5 pure-u-lg-1-5 pad-info-box">
-            <div class = "align-centre text-centre">
-                <i data-feather = "plus-circle" class = "image-icon-big"></i><br>
-                <h class = "text-heading-medium">ADDONS<br></h>
-            </div>
-            <p class = "text-paragraph text-centre">
-                Play with the latest Slimefun addons, including Infinity Expansion, Networks, 
-                Galactifun, SlimeTinker, and many more.
-            </p>
-            <br>
-        </div>
+        <div class = "content-section content-pad-top content-pad-bottom background-black data-row">
+            <data-row 
+            name="status" icon="power" key="Status&nbsp;" value="N/A">
+            </data-row>
 
-        <div class = "pure-u-1 pure-u-md-2-5 pure-u-lg-1-5 pad-info-box">
-            <div class = "align-centre text-centre">
-                <i data-feather = "sliders" class = "image-icon-big"></i><br>
-                <h class = "text-heading-medium">MAINTENANCE<br></h>
-            </div>
-            <p class = "text-paragraph text-centre">
-                The server is consistently maintained and updated to keep content interesting.
-                As of 09/08/2022, we've fixed 68 issues. A full
-                changelog can be found on <a href = "https://discord.com/invite/6Ew8BYxUtZ" class = "text-link">Discord</a>.
-            </p>
-            <br>
-        </div>
+            <data-row 
+            name="address" icon="link" key="Address" value="play.metamechanists.org">
+            </data-row>
 
-        <div class = "pure-u-1 pure-u-md-2-5 pure-u-lg-1-5 pad-info-box">
-            <div class = "align-centre text-centre">
-                <i data-feather = "user-plus" class = "image-icon-big"></i><br>
-                <h class = "text-heading-medium">SOUND GOOD?<br></h>
-            </div>
-            <p class = "text-paragraph text-centre">
-                Drop by and get started.<br>
-                <b>IP:</b> play.metamechanists.org<br>
-                <b>Map:</b> <a href = "https://map.metamechanists.org" class = "text-link">map.metamechanists.org</a><br>
-                <b>Discord:</b> <a href = "https://discord.metamechanists.org" class = "text-link">discord.metamechanists.org</a><br>
-            </p>
-            <br>
+            <data-row 
+            name="online" icon="users" key="Online&nbsp;" value="N/A">
+            </data-row>
+
+            <data-row 
+            name="motd" icon="mail" key="MOTD&nbsp;&nbsp;&nbsp;" value="N/A">
+            </data-row>
         </div>
     </div>
+    
+    <script src="components/main-menu.js"></script>
+    <script src="components/feature-box.js"></script>
+    <script src="components/data-row.js"></script>
+    <script src="script/data.js"></script>
 
     <script>
         feather.replace({ class: 'feather', 'stroke-width': 1 })

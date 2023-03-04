@@ -1,0 +1,117 @@
+/* Toggle Menu */
+.main-menu-toggle-input {
+    display: none;
+}
+
+.main-menu-toggle-label {
+    position: fixed;
+    top: 6px;
+    left: 6px;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.main-menu-toggle-icon {
+    vertical-align: middle;
+    width: 40px;
+    height: 40px;
+    stroke: rgb(255, 255, 255);
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    fill: none;
+}
+
+@media screen and (max-width: 600px) {
+    .main-menu-toggle-input:checked ~ .main-menu-container {
+        transform: translate(0px);
+        transition: 0.5s;
+    }
+
+    .main-menu-toggle-input:not(:checked) ~ .main-menu-container {
+        transform: translate(-200px);
+        transition: 0.5s;
+    }
+}
+
+@media not screen and (max-width: 600px) {
+    .main-menu-toggle-label {
+        display: none;
+    }
+
+    .main-menu-toggle-container {
+        display: none;
+    }
+}
+
+
+/* Menu Components */
+.main-menu-container {
+    height: 100%;
+    width: 200px;
+    float: left;
+    background-color: rgb(33, 33, 36);
+    position: fixed;
+}
+
+.main-menu-heading-image {
+    padding-left: 5px;
+    padding-top: 5px;
+    width: 90%;
+}
+
+.main-menu-list-item a {
+    display: inline-block;
+    cursor: pointer;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    transition-duration: 100ms;
+    width: 98%;
+}
+
+.main-menu-list-item a:hover {
+    background-color: rgb(255, 255, 255, 0.1);
+    transition-duration: 100ms;
+}
+
+.main-menu-list {
+    list-style-type: none;
+    margin-block-start: 5px;
+    padding-inline-start: 0;
+}
+
+.main-menu-divider {
+    border-color: rgb(57, 57, 57);
+}
+
+.main-menu-section-title {
+    color: rgb(147, 147, 147);
+    font-family:monospace;
+    padding-left: 5px;
+}
+
+.main-menu-text a {
+    padding-left: 5px;
+    vertical-align: middle;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size:15px;
+    letter-spacing: 0.0em;
+    color:rgb(255, 255, 255);
+    letter-spacing: 1px;
+    text-decoration: none;
+}
+
+.main-menu-icon img {
+    padding-left: 15px;
+    vertical-align: middle;
+    width: 20px;
+    height: 20px;
+    stroke: rgb(255, 255, 255);
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    fill: none;
+    padding-right: 5px;
+}

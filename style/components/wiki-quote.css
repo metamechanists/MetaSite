@@ -1,0 +1,56 @@
+.wiki-quote {
+    display: inline-block;
+    position: relative;
+    width: 80%;
+    background-color: rgb(30, 51, 87, 0.7);
+    border-radius: 0.7rem;
+    margin-bottom: 15px;
+}
+
+.wiki-quote p {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size:1.0em;
+    letter-spacing: 0.0em;
+    color:rgb(255, 255, 255);
+    margin-block-start: 2px;
+}
+
+.wiki-quote-icon-div {
+    height: 100%;
+    position:absolute;
+    width: 5%;
+    min-height: 5%;
+    float: left;
+    border-radius: 0.7rem 0 0 0.7rem;
+    background-color: rgb(0, 72, 195, 0.7);
+}
+
+.wiki-quote-icon-image {
+    width: 85%;
+    padding: 7.5%;
+    stroke: rgb(255, 255, 255);
+    stroke-width: 2;
+}
+
+.wiki-quote-text-div {
+    position:absolute;
+    left: 5%;
+    width: 83%;
+    min-height: 5%;
+    float: left;
+    padding: 6px;
+    margin-left: 8px;
+    position: relative;
+}
+
+.wiki-quote-text-content {
+    font-family: monospace;
+    font-size: 0.85rem;
+}
+
+.wiki-quote-text-person {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.8rem;
+    font-style: italic;
+    color:rgb(161, 161, 161);
+}

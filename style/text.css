@@ -1,27 +1,27 @@
 .text-heading-big {
-    font-family:monospace;
-    font-size:4em;
-    letter-spacing: 0.3em;
-    color:rgb(112, 198, 255);
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:4.0em;
+    font-weight: 100;
+    letter-spacing: 0.1em;
+    color:rgb(190, 190, 190);
 }
 
 .text-heading-medium {
-    font-family:monospace;
-    font-size:2.6em;
-    color:rgb(212, 169, 76);
-    letter-spacing: 3px;
-}
-
-.text-heading-small {
-    font-family:monospace;
-    font-size:1.7em; 
-    color:rgb(76, 192, 228);
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:2.0em;
+    color:rgb(78, 174, 247);
     letter-spacing: 1px;
 }
 
-.text-paragraph {
+.text-heading-small {
     font-family:Arial, Helvetica, sans-serif;
-    font-size:1.1em;
+    font-size:1.7em; 
+    color:rgb(114, 115, 115);
+}
+
+.text-paragraph {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size:1.0em;
     letter-spacing: 0.0em;
     color:rgb(255, 255, 255);
     margin-block-start: 2px;
@@ -31,7 +31,7 @@
     font-family:Arial, Helvetica, sans-serif;
     font-size:1.1em;
     letter-spacing: 0.0em;
-    color:rgb(108, 199, 226);
+    color:rgb(209, 209, 209);
     margin-block-start: 2px;
 }
 
@@ -48,8 +48,8 @@
 }
 
 .text-success {
-    font-family:Arial, Helvetica, sans-serif;
-    font-size:1.1em;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size:1.0em;
     letter-spacing: 0.0em;
     color:rgb(100, 200, 100);
     margin-block-start: 2px;
