@@ -1,0 +1,54 @@
+<head>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.6/build/grids-responsive-min.css"/>
+    
+    <link rel="stylesheet" href="style/body.css">
+    <link rel="stylesheet" href="style/background.css">
+    <link rel="stylesheet" href="style/text.css">
+
+    <link rel="stylesheet" href="style/components/main-menu.css">
+    <link rel="stylesheet" href="style/components/wiki-box.css">
+    <link rel="stylesheet" href="style/components/wiki-quote.css">
+    <link rel="stylesheet" href="style/components/wiki-info.css">
+    <link rel="stylesheet" href="style/components/wiki-warning.css">
+    
+    <link rel="icon" type = "image/png" href="image/logo.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Overview</title>
+</head>
+
+<body class="background-wiki">
+    <documentation-menu></documentation-menu>
+
+    <div class="content-main">
+        <div class="content-section">
+            <h class="text-heading-big">Tunnel</h>
+        </div>
+        
+        <wiki-box>
+            <h1>Overview</h1>
+            <p>
+                There are only so many ports that can be opened in Void's firewall. Moreover, specific ports such as 80 and 443 are already in use, and so we would need to server HTTP/S traffic through different ports. This would require you to, for example, access the website using metamechanists.org:8740 (assuming the website was hosted on 8740), which looks terrible, and destroys search engine optimisation, and websites not hosted on port 80/443 are either not indexed or considered unsafe/undesireable.<br><br>
+
+                This problem is solved with Cloudflare Tunnels. Tunnels connect a network to the rest of the internet without having to open ports on the firewall. This works by nesting a packet inside another packet and one endpoint, and then sending this nested packet to the client through regular methods. The communication between the tunnel and the machine can now be thought of as a browser talking to a web server such as Google, where the machine boths receives and sends data. Once the packet arrives at the destination endpoint, it can be 'un-nested.' On the endpoint that is running on the server machine, the packet is sent to one of several destinations depending on which subdomain the packet came from. For example, a packet from satanicrituals.metamechanists.org may be redirected to port 666, whereas a packet from justinisanoob.metamechanists.org may be redirected to port 999.<br><br>
+
+                If you need to modify the tunnel, contact Idra as it is entirely done from the Cloudflare web interface.<br><br>
+
+                <wiki-warning>
+                    There is a config file in /etc/cloudflared/. This file <b>does not do anything</b> as we migrated it to the Cloudflare web interface.
+                </wiki-warning>
+            </p>
+        </wiki-box>
+    </div>
+    
+    <script src="components/documentation-menu.js"></script>
+    <script src="components/wiki-box.js"></script>
+    <script src="components/wiki-quote.js"></script>
+    <script src="components/wiki-info.js"></script>
+    <script src="components/wiki-warning.js"></script>
+
+    <script>
+        feather.replace({ class: 'feather', 'stroke-width': 1 })
+    </script>
+
+</body>
