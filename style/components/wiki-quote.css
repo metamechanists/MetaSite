@@ -8,14 +8,6 @@
     margin-left: 20px;
 }
 
-.wiki-quote p {
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-    font-size:1.0em;
-    letter-spacing: 0.0em;
-    color:rgb(255, 255, 255);
-    margin-block-start: 2px;
-}
-
 .wiki-quote-icon-div {
     height: 100%;
     position:absolute;

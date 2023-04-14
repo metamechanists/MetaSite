@@ -1,10 +1,17 @@
-<head>
+class WikiTop extends HTMLElement {
+    constructor() {
+        super();
+    }
+
+    connectedCallback() {
+        this.innerHTML = `
     <script src="https://unpkg.com/feather-icons"></script>
     <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.6/build/grids-responsive-min.css"/>
-    
+
     <link rel="stylesheet" href="style/body.css">
     <link rel="stylesheet" href="style/background.css">
     <link rel="stylesheet" href="style/text.css">
+    <link rel="stylesheet" href="style/hljs.css">
 
     <link rel="stylesheet" href="style/components/main-menu.css">
     <link rel="stylesheet" href="style/components/wiki-box.css">
@@ -13,35 +20,11 @@
     <link rel="stylesheet" href="style/components/wiki-quote.css">
     <link rel="stylesheet" href="style/components/wiki-info.css">
     <link rel="stylesheet" href="style/components/wiki-warning.css">
-    
+
     <link rel="icon" type = "image/png" href="image/logo.png">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Overview</title>
-</head>
+    <title>Overview</title>`
+    }
+}
 
-<body class="background-wiki">
-    <documentation-menu></documentation-menu>
-
-    <div class="content-main">
-        <div class="content-section">
-            <h class="text-heading-big">Commands</h>
-        </div>
-        
-        <wiki-box>
-            <h1>TODO</h1>
-        </wiki-box>
-    </div>
-    
-    <script src="components/documentation-menu.js"></script>
-    <script src="components/wiki-box.js"></script>
-    <script src="components/wiki-path.js"></script>
-    <script src="components/wiki-command.js"></script>
-    <script src="components/wiki-quote.js"></script>
-    <script src="components/wiki-info.js"></script>
-    <script src="components/wiki-warning.js"></script>
-
-    <script>
-        feather.replace({ class: 'feather', 'stroke-width': 1 })
-    </script>
-
-</body>
+customElements.define('wiki-top', WikiTop);

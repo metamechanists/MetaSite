@@ -8,6 +8,8 @@
 
     <link rel="stylesheet" href="style/components/main-menu.css">
     <link rel="stylesheet" href="style/components/wiki-box.css">
+    <link rel="stylesheet" href="style/components/wiki-path.css">
+    <link rel="stylesheet" href="style/components/wiki-command.css">
     <link rel="stylesheet" href="style/components/wiki-quote.css">
     <link rel="stylesheet" href="style/components/wiki-info.css">
     <link rel="stylesheet" href="style/components/wiki-warning.css">
@@ -26,14 +28,14 @@
         </div>
         
         <wiki-box>
-            <h1>Overview</h1>
+            <h2>Overview</h2>
             <p>
                 DNS is the way that your computer converts URLs into IP addresses. A DNS server stores records about what IP each URL maps to, and when a client wants to contact that URL, they make a request to their chosen DNS servers. DNS servers propagate DNS data between each other so it may take some time for information to update after you change it. Our DNS setup involves two domains: metamechanists.org and obelisk.game-server.cc. The obelisk.game-server.cc domain is owned by Void. Its sole purpose is to redirect all requests on all ports to Void's machine, as the machine does not have a static IP. This means any DNS records that intend to point to the machine should point to obelisk.game-server.cc (or the Cloudflare Tunnel).<br><br>
 
                 If DNS records need to be updated, ask Idra. They must be modified via the MetaMechanists Cloudflare account, which only I (Idra) have access to. 
             </p>
             
-            <h1>DNS Records</h1>
+            <h2>DNS Records</h2>
             <ul>
                 <li>
                     <b>The 'discord' record</b> redirects to an invite link to the Discord server. This is currently done via a a Page Rule, as redirects of this kind do not appear to be possible purely with DNS.
@@ -56,6 +58,8 @@
     
     <script src="components/documentation-menu.js"></script>
     <script src="components/wiki-box.js"></script>
+    <script src="components/wiki-path.js"></script>
+    <script src="components/wiki-command.js"></script>
     <script src="components/wiki-quote.js"></script>
     <script src="components/wiki-info.js"></script>
     <script src="components/wiki-warning.js"></script>

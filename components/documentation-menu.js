@@ -17,28 +17,28 @@ class DocumentationMenu extends HTMLElement {
               <h class="main-menu-section-title">MODERATION</h>
 
               <ul class="main-menu-list main-menu-list-item main-menu-icon main-menu-text menu-divider">
-                  <a href="TODO">
-                      <img src="image/icons/format-list-bulleted-square.svg">
+                  <a href="docs-moderation-commands.html">
+                      <img src="image/icons/alert.svg">
                       Commands
                   </a>
 
-                  <a href="TODO">
-                      <img src="image/icons/format-list-bulleted-square.svg">
+                  <a href="docs-moderation-consequences.html">
+                      <img src="image/icons/alert.svg">
                       Consequences
                   </a>
 
-                  <a href="TODO">
-                      <img src="image/icons/format-list-bulleted-square.svg">
+                  <a href="docs-moderation-ban-appeals.html">
+                      <img src="image/icons/alert.svg">
                       Ban Appeals
                   </a>
 
-                  <a href="TODO">
-                      <img src="image/icons/format-list-bulleted-square.svg">
+                  <a href="docs-moderation-communication.html">
+                      <img src="image/icons/alert.svg">
                       Communication
                   </a>
 
-                  <a href="TODO">
-                      <img src="image/icons/format-list-bulleted-square.svg">
+                  <a href="docs-moderation-governance.html">
+                      <img src="image/icons/alert.svg">
                       Governance
                   </a>
               </ul>
@@ -48,78 +48,48 @@ class DocumentationMenu extends HTMLElement {
 
               <ul class="main-menu-list main-menu-list-item main-menu-icon main-menu-text menu-divider">
                   <a href="docs-infrastructure-overview.html">
-                      <img src="image/icons/format-list-bulleted-square.svg">
+                      <img src="image/icons/home.svg">
                       Overview
                   </a>
 
-                  <a href="TODO">
-                      <img src="image/icons/format-list-bulleted-square.svg">
+                  <a href="docs-infrastructure-dns.html">
+                      <img src="image/icons/dns.svg">
                       DNS
                   </a>
 
-                  <a href="TODO">
-                      <img src="image/icons/format-list-bulleted-square.svg">
+                  <a href="docs-infrastructure-tunnel">
+                      <img src="image/icons/tunnel.svg">
                       Tunnel
                   </a>
 
-                  <a href="TODO">
-                      <img src="image/icons/format-list-bulleted-square.svg">
-                      SSH
-                  </a>
-
-                  <a href="TODO">
-                      <img src="image/icons/format-list-bulleted-square.svg">
+                  <a href="docs-infrastructure-reverse-proxy">
+                      <img src="image/icons/lan.svg">
                       Reverse Proxy
                   </a>
 
-                  <a href="TODO">
-                      <img src="image/icons/format-list-bulleted-square.svg">
-                      Website
-                  </a>
-
-                  <a href="TODO">
-                      <img src="image/icons/format-list-bulleted-square.svg">
+                  <a href="docs-infrastructure-map">
+                      <img src="image/icons/map-marker.svg">
                       Map
                   </a>
 
-                  <a href="TODO">
-                      <img src="image/icons/format-list-bulleted-square.svg">
+                  <a href="docs-infrastructure-analytics">
+                      <img src="image/icons/finance.svg">
                       Analytics
                   </a>
 
-                  <a href="TODO">
-                      <img src="image/icons/format-list-bulleted-square.svg">
+                  <a href="docs-infrastructure-jenkins">
+                      <img src="image/icons/cog.svg">
                       Jenkins
                   </a>
 
-                  <a href="TODO">
-                      <img src="image/icons/format-list-bulleted-square.svg">
-                      MySQL
+                  <a href="docs-infrastructure-database">
+                      <img src="image/icons/alert.svg">
+                      Database
                   </a>
 
-                  <a href="TODO">
-                      <img src="image/icons/format-list-bulleted-square.svg">
-                      Postgres
-                  </a>
-
-                  <a href="TODO">
-                      <img src="image/icons/format-list-bulleted-square.svg">
-                      Synapse
-                  </a>
-
-                  <a href="TODO">
-                      <img src="image/icons/format-list-bulleted-square.svg">
-                      Coturn
-                  </a>
-
-                  <a href="TODO">
-                      <img src="image/icons/format-list-bulleted-square.svg">
-                      Bungee
-                  </a>
-
-                  <a href="TODO">
-                      <img src="image/icons/format-list-bulleted-square.svg">
-                      Cable
+                  <a href="docs-infrastructure-element">
+                      <img src="image/icons/alert.svg">
+                      Element
                   </a>
               </ul>
           </div>`

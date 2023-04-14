@@ -24,11 +24,18 @@
 
     <div class="content-main">
         <div class="content-section">
-            <h class="text-heading-big">Commands</h>
+            <h class="text-heading-big">Reverse Proxy</h>
         </div>
         
         <wiki-box>
-            <h1>TODO</h1>
+            <wiki-path>/etc/nginx/sites-enabled</wiki-path>
+            <wiki-command>sudo systemctl (start/stop/restart) nginx</wiki-command>
+            
+            <h2>Overview</h2>
+            <p>
+                A reverse proxy takes incoming requests on different ports, and routes them to services internally. For example, if a request is made on port 8804, we could set up a reverse proxy to route it to an internal web server. The reverse proxy we use is <a href = "https://nginx.org/en/" class = "text-link">nginx</a> for its simplicity and speed. Nginx uses a set of configs, where each config file represents one service.
+            </p>
+
         </wiki-box>
     </div>
     
