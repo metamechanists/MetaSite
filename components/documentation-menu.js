@@ -17,27 +17,27 @@ class DocumentationMenu extends HTMLElement {
               <h class="main-menu-section-title">MODERATION</h>
 
               <ul class="main-menu-list main-menu-list-item main-menu-icon main-menu-text menu-divider">
-                  <a href="docs-moderation-commands.html">
+                  <a href="docs-moderation-commands">
                       <img src="image/icons/alert.svg">
                       Commands
                   </a>
 
-                  <a href="docs-moderation-consequences.html">
+                  <a href="docs-moderation-consequences">
                       <img src="image/icons/alert.svg">
                       Consequences
                   </a>
 
-                  <a href="docs-moderation-ban-appeals.html">
+                  <a href="docs-moderation-ban-appeals">
                       <img src="image/icons/alert.svg">
                       Ban Appeals
                   </a>
 
-                  <a href="docs-moderation-communication.html">
+                  <a href="docs-moderation-communication">
                       <img src="image/icons/alert.svg">
                       Communication
                   </a>
 
-                  <a href="docs-moderation-governance.html">
+                  <a href="docs-moderation-governance">
                       <img src="image/icons/alert.svg">
                       Governance
                   </a>
@@ -47,12 +47,12 @@ class DocumentationMenu extends HTMLElement {
               <h class="main-menu-section-title">INFRASTRUCTURE</h>
 
               <ul class="main-menu-list main-menu-list-item main-menu-icon main-menu-text menu-divider">
-                  <a href="docs-infrastructure-overview.html">
+                  <a href="docs-infrastructure-overview">
                       <img src="image/icons/home.svg">
                       Overview
                   </a>
 
-                  <a href="docs-infrastructure-dns.html">
+                  <a href="docs-infrastructure-dns">
                       <img src="image/icons/dns.svg">
                       DNS
                   </a>
