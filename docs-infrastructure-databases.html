@@ -24,11 +24,19 @@
 
     <div class="content-main">
         <div class="content-section">
-            <h class="text-heading-big">MySQL</h>
+            <h class="text-heading-big">Databases</h>
         </div>
         
         <wiki-box>
-            <h1>TODO</h1>
+            <h1>MySQL</h1>
+
+            <wiki-path>/etc/mysql/my.cnf</wiki-path>
+            <wiki-path><a target=_blank href = "https://mariadb.com/kb/en/running-multiple-mariadb-server-processes/" class = "text-link">https://mariadb.com/kb/en/running-multiple-mariadb-server-processes/</a></wiki-path>
+            <wiki-path><a target=_blank href = "https://dev.mysql.com/doc/refman/8.0/en/using-systemd.html#systemd-multiple-mysql-instances" class = "text-link">https://dev.mysql.com/doc/refman/8.0/en/using-systemd.html#systemd-multiple-mysql-instances</a></wiki-path>
+
+            <p>
+                MySQL is database software. We use MariaDB, which is a FOSS fork of MySQL that maintains high compatibility and provides some additional functionality. We run multiple instances of MariaDB in order to separate data between server networks.
+            </p>
         </wiki-box>
     </div>
     

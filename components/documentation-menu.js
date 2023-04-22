@@ -82,9 +82,9 @@ class DocumentationMenu extends HTMLElement {
                       Jenkins
                   </a>
 
-                  <a href="docs-infrastructure-database">
+                  <a href="docs-infrastructure-databases">
                       <img src="image/icons/alert.svg">
-                      Database
+                      Databases
                   </a>
 
                   <a href="docs-infrastructure-element">
