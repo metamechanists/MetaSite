@@ -14,6 +14,21 @@ class DocumentationMenu extends HTMLElement {
               <img src = "image/banner.png" class = "main-menu-heading-image">
 
               <hr class="main-menu-divider">
+              <h class="main-menu-section-title">BUILDING</h>
+
+              <ul class="main-menu-list main-menu-list-item main-menu-icon main-menu-text menu-divider">
+                  <a href="docs-moderation-commands">
+                      <img src="image/icons/alert.svg">
+                      Commands
+                  </a>
+                  
+                  <a href="docs-moderation-commands">
+                      <img src="image/icons/alert.svg">
+                      WorldEdit
+                  </a>
+              </ul>
+
+              <hr class="main-menu-divider">
               <h class="main-menu-section-title">MODERATION</h>
 
               <ul class="main-menu-list main-menu-list-item main-menu-icon main-menu-text menu-divider">
@@ -25,11 +40,6 @@ class DocumentationMenu extends HTMLElement {
                   <a href="docs-moderation-consequences">
                       <img src="image/icons/alert.svg">
                       Consequences
-                  </a>
-
-                  <a href="docs-moderation-ban-appeals">
-                      <img src="image/icons/alert.svg">
-                      Ban Appeals
                   </a>
 
                   <a href="docs-moderation-communication">
@@ -83,15 +93,39 @@ class DocumentationMenu extends HTMLElement {
                   </a>
 
                   <a href="docs-infrastructure-database">
-                      <img src="image/icons/alert.svg">
+                      <img src="image/icons/database.svg">
                       Database
                   </a>
-
-                  <a href="docs-infrastructure-element">
-                      <img src="image/icons/alert.svg">
-                      Element
-                  </a>
               </ul>
+
+              <hr class="main-menu-divider">
+              <h class="main-menu-section-title">LINUX ADMINISTRATION</h>
+
+              <ul class="main-menu-list main-menu-list-item main-menu-icon main-menu-text menu-divider">
+                  <a href="docs-administration-permissions">
+                      <img src="image/icons/alert.svg">
+                      Permissions
+                  </a>
+                
+                  <a href="docs-administration-screen">
+                      <img src="image/icons/alert.svg">
+                      Screen
+                  </a>
+
+                  <a href="docs-administration-systemctl">
+                      <img src="image/icons/alert.svg">
+                      Systemctl
+                  </a>
+
+                  <a href="docs-administration-autostart">
+                      <img src="image/icons/alert.svg">
+                      Autostart
+                  </a>
+
+                  <a href="docs-administration-nas">
+                      <img src="image/icons/alert.svg">
+                      NAS
+                  </a>
           </div>`
   }
 }

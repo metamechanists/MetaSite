@@ -5,6 +5,7 @@
     <link rel="stylesheet" href="style/body.css">
     <link rel="stylesheet" href="style/background.css">
     <link rel="stylesheet" href="style/text.css">
+    <link rel="stylesheet" href="style/hljs.css">
 
     <link rel="stylesheet" href="style/components/main-menu.css">
     <link rel="stylesheet" href="style/components/wiki-box.css">
@@ -16,7 +17,7 @@
     
     <link rel="icon" type = "image/png" href="image/logo.png">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Overview</title>
+    <title>Consequences</title>
 </head>
 
 <body class="background-wiki">
@@ -24,7 +25,7 @@
 
     <div class="content-main">
         <div class="content-section">
-            <h class="text-heading-big">Commands</h>
+            <h class="text-heading-big">Consequences</h>
         </div>
         
         <wiki-box>
@@ -36,12 +37,15 @@
     <script src="components/wiki-box.js"></script>
     <script src="components/wiki-path.js"></script>
     <script src="components/wiki-command.js"></script>
+    <script src="components/wiki-code.js"></script>
     <script src="components/wiki-quote.js"></script>
     <script src="components/wiki-info.js"></script>
     <script src="components/wiki-warning.js"></script>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
     <script>
         feather.replace({ class: 'feather', 'stroke-width': 1 })
+        hljs.highlightAll();
     </script>
 
 </body>
