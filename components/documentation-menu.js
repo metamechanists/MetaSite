@@ -96,6 +96,11 @@ class DocumentationMenu extends HTMLElement {
                       <img src="image/icons/database.svg">
                       Database
                   </a>
+
+                  <a href="docs-infrastructure-ports">
+                      <img src="image/icons/network.svg">
+                      Ports
+                  </a>
               </ul>
 
               <hr class="main-menu-divider">
