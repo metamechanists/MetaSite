@@ -11,10 +11,10 @@ class MainMenu extends HTMLElement {
           </label>
 
           <div class="main-menu-container">
-              <img src = "image/banner.png" class = "main-menu-heading-image">
+              <img src = "image/banner.png" class = "main-menu-heading-image" alt="MetaMechanists banner">
 
               <hr class="main-menu-divider">
-              <h class="main-menu-section-title">SERVER</h>
+              <h2 class="main-menu-section-title">SERVER</h2>
 
               <ul class="main-menu-list main-menu-list-item main-menu-icon main-menu-text menu-divider">
                   <a href="index">
@@ -54,7 +54,7 @@ class MainMenu extends HTMLElement {
               </ul>
 
               <hr class="main-menu-divider">
-              <h class="main-menu-section-title">SLIMEFUN</h>
+              <h2 class="main-menu-section-title">SLIMEFUN</h2>
 
               <ul class="main-menu-list main-menu-list-item main-menu-icon main-menu-text menu-divider">
                   <a href="slimefun-introduction">
@@ -74,7 +74,7 @@ class MainMenu extends HTMLElement {
               </ul>
 
               <hr class="main-menu-divider">
-              <h class="main-menu-section-title">PLUGINS</h>
+              <h2 class="main-menu-section-title">PLUGINS</h2>
 
               <ul class="main-menu-list main-menu-list-item main-menu-icon main-menu-text menu-divider">
                   <a href="plugins-aurelium-skills">

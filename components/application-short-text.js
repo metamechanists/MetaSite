@@ -8,9 +8,9 @@ class ApplicationShortText extends HTMLElement {
         var description = this.innerHTML;
         this.innerHTML = `
             <div class="application-short-text-container">
-                <h class="text-question">
+                <h2 class="text-question">
                     ${description}
-                </h>
+                </h2>
                 <br>
                 <input class="application-short-text-input" type="text" id="${internal_id}"><br>
             </div>`

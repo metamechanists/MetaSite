@@ -13,7 +13,7 @@ class ApplicationPositionBox extends HTMLElement {
                     <img src = "${icon}" class = "application-position-box-icon-image"></i>
                 </div>
                 <div class="application-position-box-text-div">
-                    <h1>${title}</h1>
+                    <h2>${title}</h2>
                     <p>
                         ${description}
                     </p>

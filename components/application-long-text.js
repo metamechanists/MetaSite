@@ -8,9 +8,9 @@ class ApplicationLongText extends HTMLElement {
         var description = this.innerHTML;
         this.innerHTML = `
             <div class="application-long-text-container">
-                <h class="text-question">
+                <h2 class="text-question">
                     ${description}
-                </h>
+                </h2>
                 <br>
                 <textarea class="application-long-text-input" type="text" id="${internal_id}"></textarea><br>
             </div>`

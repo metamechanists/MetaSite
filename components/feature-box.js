@@ -13,7 +13,7 @@ class FeatureBox extends HTMLElement {
                     <i data-feather = "${icon}" class = "featurebox-icon-image"></i>
                 </div>
                 <div class="featurebox-text-div">
-                    <h1>${title}</h1>
+                    <h2>${title}</h2>
                     <p>
                         ${description}
                     </p>

@@ -15,9 +15,9 @@ class StaffMemberBox extends HTMLElement {
                     <img src = "${icon}" class = "staff-member-box-icon-image"></i>
                 </div>
                 <div class="staff-member-box-text-div">
-                    <h1>${title}</h1>
-                    <h2>${alias}</h2>
-                    <h3 class = "${rank}">${rank}</h3>
+                    <h2>${title}</h2>
+                    <h3>${alias}</h3>
+                    <h4 class = "${rank}">${rank}</h4>
                     <p>
                         ${description}
                     </p>
