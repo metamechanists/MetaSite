@@ -23,7 +23,7 @@ class DocumentationMenu extends HTMLElement {
                   </a>
 
                   <a href="docs-moderation-commands">
-                      <img src="image/icons/alert.svg">
+                      <img src="image/icons/console.svg">
                       Commands
                   </a>
 
