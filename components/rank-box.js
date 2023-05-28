@@ -13,7 +13,7 @@ class RankBox extends HTMLElement {
                     <img src = "${icon}" class = "rank-box-icon-image"></i>
                 </div>
                 <div class="rank-box-text-div">
-                    <h1>${title}</h1>
+                    <h2>${title}</h2>
                     <p>
                         ${description}
                     </p>
