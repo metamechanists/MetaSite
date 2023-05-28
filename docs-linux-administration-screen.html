@@ -17,7 +17,7 @@
     
     <link rel="icon" type = "image/png" href="image/logo.png">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Overview</title>
+    <title>Screen</title>
 </head>
 
 <body class="background-wiki">
@@ -25,11 +25,40 @@
 
     <div class="content-main">
         <div class="content-section">
-            <h class="text-heading-big">Commands</h>
+            <h class="text-heading-big">Screen</h>
         </div>
         
         <wiki-box>
-            <h1>TODO</h1>
+            <p>
+                Screen allows for persistent terminal sessions to be started and navigated between. This is necessary for Minecraft servers, as we would ideally want to be able to access the console (which is much harder with systemctl etc).
+            </p>
+
+            <ul>
+                <li><b>Ctrl+a+d</b> will detach from a session you're connected to</li>
+                <li><b>Ctrl+a+:</b> will open the screen command line for the attached screen</li>
+                <li><b>Ctrl+a+esc</b> will open copy mode (which allows you to scroll)</li>
+            </ul>
+
+            <p>List your user's running sessions</p>
+            <wiki-command>screen -ls</wiki-command>
+            
+            <p>Attach to an existing session</p>
+            <wiki-command>screen -r [name]</wiki-command>
+
+            <p>Create a new session</p>
+            <wiki-command>screen -S [name]</wiki-command>
+
+            <p>Kill an existing session</p>
+            <wiki-command>screen -r [name] -X quit</wiki-command>
+
+            <p>Enable multi-user</p>
+            <wiki-command>screen -S [name] -X multiuser</wiki-command>
+
+            <p>Add a user to a screen</p>
+            <wiki-command>screen -S [name] -X acladd [user]</wiki-command>
+
+            <p>Terminate ALL running screens</p>
+            <wiki-command>pkill screen</wiki-command>
         </wiki-box>
     </div>
     

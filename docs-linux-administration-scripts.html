@@ -17,7 +17,7 @@
     
     <link rel="icon" type = "image/png" href="image/logo.png">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Overview</title>
+    <title>Scripts</title>
 </head>
 
 <body class="background-wiki">
@@ -25,11 +25,21 @@
 
     <div class="content-main">
         <div class="content-section">
-            <h class="text-heading-big">Commands</h>
+            <h class="text-heading-big">Scripts</h>
         </div>
         
         <wiki-box>
-            <h1>TODO</h1>
+            <h1>Local scripts</h1>
+            <p>These scripts can only be run as regular shell scripts and cannot be called from any location as a command can.</p>
+            <wiki-path>/home/idra/MountNAS.sh</wiki-path>
+            <wiki-path>/home/idra/start.sh</wiki-path>
+
+            <h1>Aliased scripts</h1>
+            <p>These scripts can be run from anywhere on the command line. This is done through aliasing in .bashrc.</p>
+            <wiki-command>startserver [server]</wiki-command>
+            <wiki-command>show [server]</wiki-command>
+            <wiki-command>createuser [user]</wiki-command>
+            <wiki-command>renameuser [old-user] [new-user]</wiki-command>
         </wiki-box>
     </div>
     

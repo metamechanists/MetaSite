@@ -17,7 +17,7 @@
     
     <link rel="icon" type = "image/png" href="image/logo.png">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Overview</title>
+    <title>Autostart</title>
 </head>
 
 <body class="background-wiki">
@@ -25,11 +25,14 @@
 
     <div class="content-main">
         <div class="content-section">
-            <h class="text-heading-big">Commands</h>
+            <h class="text-heading-big">Autostart</h>
         </div>
         
         <wiki-box>
-            <h1>TODO</h1>
+            <p>Automatic server startup is handled by crontab. Crontab calls the server startup script whenever the machine boots up.</p>
+
+            <wiki-path>/home/idra/start.sh</wiki-path>
+            <wiki-command>sudo crontab -e</wiki-command>
         </wiki-box>
     </div>
     
