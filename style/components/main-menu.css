@@ -49,6 +49,7 @@
 
 /* Menu Components */
 .main-menu-container {
+    display: flexbox;
     height: 100%;
     width: 200px;
     float: left;
@@ -58,7 +59,6 @@
 }
 
 .main-menu-heading-image {
-    display: flexbox;
     padding-left: 5px;
     padding-top: 5px;
     width: 90%;
