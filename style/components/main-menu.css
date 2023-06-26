@@ -58,6 +58,7 @@
 }
 
 .main-menu-heading-image {
+    display: flexbox;
     padding-left: 5px;
     padding-top: 5px;
     width: 90%;
