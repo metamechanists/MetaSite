@@ -59,9 +59,14 @@
 }
 
 .main-menu-heading-image {
-    padding-left: 5px;
-    padding-top: 5px;
     width: 90%;
+}
+
+.main-menu-heading-box {
+    margin-top: 0.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .main-menu-list-item a {

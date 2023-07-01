@@ -11,7 +11,9 @@ class MainMenu extends HTMLElement {
           </label>
 
           <div class="main-menu-container">
-              <img src = "image/banner.png" class = "main-menu-heading-image" alt="MetaMechanists banner">
+              <div class="main-menu-heading-box">
+                <img src = "image/banner.png" class = "main-menu-heading-image" alt="MetaMechanists banner">
+              </div>
 
               <hr class="main-menu-divider">
               <h2 class="main-menu-section-title">SERVER</h2>
