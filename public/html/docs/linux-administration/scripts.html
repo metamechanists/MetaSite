@@ -1,0 +1,61 @@
+<head>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.6/build/grids-responsive-min.css"/>
+    
+    <link rel="stylesheet" href="/style/body.css">
+    <link rel="stylesheet" href="/style/background.css">
+    <link rel="stylesheet" href="/style/text.css">
+    <link rel="stylesheet" href="/style/hljs.css">
+
+    <link rel="stylesheet" href="/style/components/main-menu.css">
+    <link rel="stylesheet" href="/style/components/wiki-box.css">
+    <link rel="stylesheet" href="/style/components/wiki-path.css">
+    <link rel="stylesheet" href="/style/components/wiki-command.css">
+    <link rel="stylesheet" href="/style/components/wiki-quote.css">
+    <link rel="stylesheet" href="/style/components/wiki-info.css">
+    <link rel="stylesheet" href="/style/components/wiki-warning.css">
+    
+    <link rel="icon" type = "image/png" href="/image/logo.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Scripts</title>
+</head>
+
+<body class="background-wiki">
+    <documentation-menu></documentation-menu>
+
+    <div class="content-main">
+        <div class="content-section">
+            <h class="text-heading-big">Scripts</h>
+        </div>
+        
+        <wiki-box>
+            <h1>Local scripts</h1>
+            <p>These scripts can only be run as regular shell scripts and cannot be called from any location as a command can.</p>
+            <wiki-path>/home/idra/MountNAS.sh</wiki-path>
+            <wiki-path>/home/idra/start.sh</wiki-path>
+
+            <h1>Aliased scripts</h1>
+            <p>These scripts can be run from anywhere on the command line. This is done through aliasing in .bashrc.</p>
+            <wiki-command>startserver [server]</wiki-command>
+            <wiki-command>show [server]</wiki-command>
+            <wiki-command>createuser [user]</wiki-command>
+            <wiki-command>renameuser [old-user] [new-user]</wiki-command>
+        </wiki-box>
+    </div>
+    
+    <script src="/components/documentation-menu.js"></script>
+    <script src="/components/wiki-box.js"></script>
+    <script src="/components/wiki-path.js"></script>
+    <script src="/components/wiki-command.js"></script>
+    <script src="/components/wiki-code.js"></script>
+    <script src="/components/wiki-quote.js"></script>
+    <script src="/components/wiki-info.js"></script>
+    <script src="/components/wiki-warning.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
+    <script>
+        feather.replace({ class: 'feather', 'stroke-width': 1 })
+        hljs.highlightAll();
+    </script>
+
+</body>

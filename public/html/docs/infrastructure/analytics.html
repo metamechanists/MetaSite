@@ -1,0 +1,62 @@
+<head>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.6/build/grids-responsive-min.css"/>
+    
+    <link rel="stylesheet" href="/style/body.css">
+    <link rel="stylesheet" href="/style/background.css">
+    <link rel="stylesheet" href="/style/text.css">
+    <link rel="stylesheet" href="/style/hljs.css">
+
+    <link rel="stylesheet" href="/style/components/main-menu.css">
+    <link rel="stylesheet" href="/style/components/wiki-box.css">
+    <link rel="stylesheet" href="/style/components/wiki-path.css">
+    <link rel="stylesheet" href="/style/components/wiki-command.css">
+    <link rel="stylesheet" href="/style/components/wiki-code.css">
+    <link rel="stylesheet" href="/style/components/wiki-quote.css">
+    <link rel="stylesheet" href="/style/components/wiki-info.css">
+    <link rel="stylesheet" href="/style/components/wiki-warning.css">
+    
+    <link rel="icon" type = "image/png" href="/image/logo.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Analytics</title>
+</head>
+
+<body class="background-wiki">
+    <documentation-menu></documentation-menu>
+
+    <div class="content-main">
+        <div class="content-section">
+            <h class="text-heading-big">Analytics</h>
+        </div>
+        
+        <wiki-box>
+            <wiki-path>/home/mm-main-proxy/plugins/Plan</wiki-path>
+
+            <h2>Overview</h2>
+            <p>
+                Analytics are managed by PLAN and can be accessed <a href = "https://analytics.metamechanists.org" class = "text-link">here</a>. PLAN is installed on all the Minecraft servers. The web server is run internally from BungeeCord.
+            </p>
+            
+            <h2>Encryption</h2>
+            <p>
+                PLAN requires encryption to be enabled for logins to work. There is no internal encryption (ie between the internal webserver and the <a href = "docs-infrastructure-tunnel.html" class = "text-link">tunnel</a>), so PLAN's SSL setting is set to 'proxy', which trusts the proxy to encrypt all traffic (ie the tunnel).
+            </p>
+        </wiki-box>
+    </div>
+    
+    <script src="/components/documentation-menu.js"></script>
+    <script src="/components/wiki-box.js"></script>
+    <script src="/components/wiki-path.js"></script>
+    <script src="/components/wiki-command.js"></script>
+    <script src="/components/wiki-code.js"></script>
+    <script src="/components/wiki-quote.js"></script>
+    <script src="/components/wiki-info.js"></script>
+    <script src="/components/wiki-warning.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
+    <script>
+        feather.replace({ class: 'feather', 'stroke-width': 1 })
+        hljs.highlightAll();
+    </script>
+
+</body>

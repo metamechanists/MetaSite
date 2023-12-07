@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.6/build/grids-responsive-min.css"/>
+    
+    <link rel="stylesheet" href="/style/body.css">
+    <link rel="stylesheet" href="/style/background.css">
+    <link rel="stylesheet" href="/style/text.css">
+
+    <link rel="stylesheet" href="/style/components/main-menu.css">
+    <link rel="stylesheet" href="/style/components/wiki-box.css">
+    <link rel="stylesheet" href="/style/components/wiki-quote.css">
+    <link rel="stylesheet" href="/style/components/wiki-info.css">
+    <link rel="stylesheet" href="/style/components/wiki-warning.css">
+    
+    <link rel="icon" type = "image/png" href="/image/logo.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Learn the basics of GriefPrevention.">
+    <title>Plugins - Claiming</title>
+</head>
+
+<body class="background-wiki">
+    <main-menu></main-menu>
+
+    <div class="content-main">
+        <div class="content-section">
+            <h1 class="text-heading-big">Claiming</h1>
+        </div>
+        
+        <wiki-box>
+            <wiki-warning>
+                How much land you can claim is limited by the number of 'claim blocks' you have. You'll automatically get claim blocks by just playing the game. Holding a golden hoe will show you how many claim blocks you have left.
+            </wiki-warning>
+
+            <wiki-info>
+                You can check who has claimed an area of land by right-clicking in it with a feather.
+            </wiki-info>
+
+            <p>
+                Here's how to claim some land:
+            </p>
+
+            <ul>
+                <li>
+                    Acquire a Golden Hoe with /kit claim - this is the tool used to claim land.
+                </li>
+                <li>
+                    Go to the area you wish to claim. You can only claim rectangles of land.
+                </li>
+                <li>
+                    Right click with the stone hoe at one corner of the rectangle you wish to claim.
+                </li>
+                <li>
+                    Right click at the other end corner of the rectangle.
+                </li>
+                <li>
+                    Profit.
+                </li>
+            </ul>
+        </wiki-box>
+    </div>
+    
+    <script src="/components/main-menu.js"></script>
+    <script src="/components/wiki-box.js"></script>
+    <script src="/components/wiki-quote.js"></script>
+    <script src="/components/wiki-info.js"></script>
+    <script src="/components/wiki-warning.js"></script>
+
+    <script>
+        feather.replace({ class: 'feather', 'stroke-width': 1 })
+    </script>
+
+</body>
+</html>
