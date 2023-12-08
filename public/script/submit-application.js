@@ -82,9 +82,8 @@ function showInterviewInformation() {
 function checkApplicationComplete() {
   let applicationComplete = true
 
-  for (id in checkboxIDs) {
-    console.log(id)
-    element = document.getElementById(id);
+  for (var i = 0; i < checkboxIDs.length; i++) {
+    element = document.getElementById(checkboxIDs[i]);
     if (!element.checked) {
       element.style.backgroundColor = input_error_color
       applicationComplete = false;
@@ -93,8 +92,8 @@ function checkApplicationComplete() {
     }
   }
 
-  for (id in variableIDs) {
-    element = document.getElementById(id);
+  for (var i = 0; i < variableIDs.length; i++) {
+    element = document.getElementById(variableIDs[i]);
     if (element.value == "") {
       element.style.backgroundColor = input_error_color
       applicationComplete = false
