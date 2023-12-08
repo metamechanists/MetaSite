@@ -84,6 +84,7 @@ function checkApplicationComplete() {
 
   for (var i = 0; i < checkboxIDs.length; i++) {
     element = document.getElementById(checkboxIDs[i]);
+    console.log(variableIDs[i] + "-span")
     span = document.getElementById(variableIDs[i] + "-span");
     if (!element.checked) {
       span.style.backgroundColor = input_error_color
