@@ -83,6 +83,7 @@ function checkApplicationComplete() {
   let applicationComplete = true
 
   for (id in checkboxIDs) {
+    console.log(id)
     element = document.getElementById(id);
     if (!element.checked) {
       element.style.backgroundColor = input_error_color
@@ -101,7 +102,7 @@ function checkApplicationComplete() {
       element.style.backgroundColor = input_default_color
     }
   }
-  
+
   return applicationComplete
 }
 
