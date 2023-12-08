@@ -9,9 +9,10 @@ app.use(bodyParser.json());
 
 app.post("/api/submit-application", async function (req, res) {
     let messages = req.body["messages"]
+    console.log("New application received: ", messages)
     res.statusCode = 200;
     for (i in messages) {
-        const success = await submit.sendWebhookMessage(messages[i]);
+        const success = await submit.sendWebhookMessage(messages[i])
         if (!success) {
             res.statusCode = 502;
         }
