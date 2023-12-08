@@ -89,7 +89,7 @@ function checkApplicationComplete() {
       span.style.backgroundColor = input_error_color
       applicationComplete = false;
     } else {
-      element.style.backgroundColor = input_default_color
+      span.style.backgroundColor = input_default_color
     }
   }
 
