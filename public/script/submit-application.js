@@ -84,8 +84,9 @@ function checkApplicationComplete() {
 
   for (var i = 0; i < checkboxIDs.length; i++) {
     element = document.getElementById(checkboxIDs[i]);
+    span = document.getElementById(variableIDs[i] + "-span");
     if (!element.checked) {
-      element.style.backgroundColor = input_error_color
+      span.style.backgroundColor = input_error_color
       applicationComplete = false;
     } else {
       element.style.backgroundColor = input_default_color
@@ -94,9 +95,8 @@ function checkApplicationComplete() {
 
   for (var i = 0; i < variableIDs.length; i++) {
     element = document.getElementById(variableIDs[i]);
-    span = document.getElementById(variableIDs[i] + "-span");
     if (element.value == "") {
-      span.style.backgroundColor = input_error_color
+      element.style.backgroundColor = input_error_color
       applicationComplete = false
     } else {
       element.style.backgroundColor = input_default_color
