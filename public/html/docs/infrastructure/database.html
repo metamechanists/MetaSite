@@ -1,0 +1,61 @@
+<head>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.6/build/grids-responsive-min.css"/>
+    
+    <link rel="stylesheet" href="/style/body.css">
+    <link rel="stylesheet" href="/style/background.css">
+    <link rel="stylesheet" href="/style/text.css">
+    <link rel="stylesheet" href="/style/hljs.css">
+
+    <link rel="stylesheet" href="/style/components/main-menu.css">
+    <link rel="stylesheet" href="/style/components/wiki-box.css">
+    <link rel="stylesheet" href="/style/components/wiki-path.css">
+    <link rel="stylesheet" href="/style/components/wiki-command.css">
+    <link rel="stylesheet" href="/style/components/wiki-quote.css">
+    <link rel="stylesheet" href="/style/components/wiki-info.css">
+    <link rel="stylesheet" href="/style/components/wiki-warning.css">
+    
+    <link rel="icon" type = "image/png" href="/image/logo.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Database</title>
+</head>
+
+<body class="background-wiki">
+    <documentation-menu></documentation-menu>
+
+    <div class="content-main">
+        <div class="content-section">
+            <h class="text-heading-big">Database</h>
+        </div>
+        
+        <wiki-box>
+            <h1>MariaDB</h1>
+
+            <wiki-warning>MariaDB will be phased out for game servers in favour of more reliable local storage.</wiki-warning>
+            <wiki-path>/etc/mysql</wiki-path>
+            <wiki-command>sed -n '/^-- Current Database: `(database)`/,/^-- Current Database:/p' fulldump.sql > test.sql</wiki-command>
+            <wiki-command>mysql -umc -p -o (databasename) < (filename.sql)</wiki-command>
+            <wiki-command>mysql -umc -p -o</wiki-command>
+            
+            <p>
+                MariaDB is a fork of MySQL. We use it instead of MySQL because it provides some small additional functionality and is maintained as a FOSS fork in an effort to escape Oracle's control of MySQL. Currently, several plugins on Survival and Lobby use it. The test servers and Novacore do not use MariaDB. Note that both 'mysql' and 'mariadb' can be used interchangeably in commands.
+            </p>
+        </wiki-box>
+    </div>
+    
+    <script src="/components/documentation-menu.js"></script>
+    <script src="/components/wiki-box.js"></script>
+    <script src="/components/wiki-path.js"></script>
+    <script src="/components/wiki-command.js"></script>
+    <script src="/components/wiki-code.js"></script>
+    <script src="/components/wiki-quote.js"></script>
+    <script src="/components/wiki-info.js"></script>
+    <script src="/components/wiki-warning.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
+    <script>
+        feather.replace({ class: 'feather', 'stroke-width': 1 })
+        hljs.highlightAll();
+    </script>
+
+</body>

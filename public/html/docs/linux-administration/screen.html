@@ -1,0 +1,80 @@
+<head>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.6/build/grids-responsive-min.css"/>
+    
+    <link rel="stylesheet" href="/style/body.css">
+    <link rel="stylesheet" href="/style/background.css">
+    <link rel="stylesheet" href="/style/text.css">
+    <link rel="stylesheet" href="/style/hljs.css">
+
+    <link rel="stylesheet" href="/style/components/main-menu.css">
+    <link rel="stylesheet" href="/style/components/wiki-box.css">
+    <link rel="stylesheet" href="/style/components/wiki-path.css">
+    <link rel="stylesheet" href="/style/components/wiki-command.css">
+    <link rel="stylesheet" href="/style/components/wiki-quote.css">
+    <link rel="stylesheet" href="/style/components/wiki-info.css">
+    <link rel="stylesheet" href="/style/components/wiki-warning.css">
+    
+    <link rel="icon" type = "image/png" href="/image/logo.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Screen</title>
+</head>
+
+<body class="background-wiki">
+    <documentation-menu></documentation-menu>
+
+    <div class="content-main">
+        <div class="content-section">
+            <h class="text-heading-big">Screen</h>
+        </div>
+        
+        <wiki-box>
+            <p>
+                Screen allows for persistent terminal sessions to be started and navigated between. This is necessary for Minecraft servers, as we would ideally want to be able to access the console (which is much harder with systemctl etc).
+            </p>
+
+            <ul>
+                <li><b>Ctrl+a+d</b> will detach from a session you're connected to</li>
+                <li><b>Ctrl+a+:</b> will open the screen command line for the attached screen</li>
+                <li><b>Ctrl+a+esc</b> will open copy mode (which allows you to scroll)</li>
+            </ul>
+
+            <p>List your user's running sessions</p>
+            <wiki-command>screen -ls</wiki-command>
+            
+            <p>Attach to an existing session</p>
+            <wiki-command>screen -r [name]</wiki-command>
+
+            <p>Create a new session</p>
+            <wiki-command>screen -S [name]</wiki-command>
+
+            <p>Kill an existing session</p>
+            <wiki-command>screen -r [name] -X quit</wiki-command>
+
+            <p>Enable multi-user</p>
+            <wiki-command>screen -S [name] -X multiuser</wiki-command>
+
+            <p>Add a user to a screen</p>
+            <wiki-command>screen -S [name] -X acladd [user]</wiki-command>
+
+            <p>Terminate ALL running screens</p>
+            <wiki-command>pkill screen</wiki-command>
+        </wiki-box>
+    </div>
+    
+    <script src="/components/documentation-menu.js"></script>
+    <script src="/components/wiki-box.js"></script>
+    <script src="/components/wiki-path.js"></script>
+    <script src="/components/wiki-command.js"></script>
+    <script src="/components/wiki-code.js"></script>
+    <script src="/components/wiki-quote.js"></script>
+    <script src="/components/wiki-info.js"></script>
+    <script src="/components/wiki-warning.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
+    <script>
+        feather.replace({ class: 'feather', 'stroke-width': 1 })
+        hljs.highlightAll();
+    </script>
+
+</body>

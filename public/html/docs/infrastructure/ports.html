@@ -1,0 +1,84 @@
+<head>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.6/build/grids-responsive-min.css"/>
+    
+    <link rel="stylesheet" href="/style/body.css">
+    <link rel="stylesheet" href="/style/background.css">
+    <link rel="stylesheet" href="/style/text.css">
+    <link rel="stylesheet" href="/style/hljs.css">
+
+    <link rel="stylesheet" href="/style/components/main-menu.css">
+    <link rel="stylesheet" href="/style/components/wiki-box.css">
+    <link rel="stylesheet" href="/style/components/wiki-path.css">
+    <link rel="stylesheet" href="/style/components/wiki-command.css">
+    <link rel="stylesheet" href="/style/components/wiki-code.css">
+    <link rel="stylesheet" href="/style/components/wiki-quote.css">
+    <link rel="stylesheet" href="/style/components/wiki-info.css">
+    <link rel="stylesheet" href="/style/components/wiki-warning.css">
+    
+    <link rel="icon" type = "image/png" href="/image/logo.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ports</title>
+</head>
+
+<body class="background-wiki">
+    <documentation-menu></documentation-menu>
+
+    <div class="content-main">
+        <div class="content-section">
+            <h class="text-heading-big">Ports</h>
+        </div>
+        
+        <wiki-box>
+            <h2>Internal Ports</h2>
+            <p>
+                <b>26565</b> - mm-main-survival<br>
+                <b>26567</b> - mm-main-lobby<br>
+                <b>26568</b> - mm-main-minigames<br>
+                <b>26569</b> - mm-main-creative<br>
+                <b>27566</b> - mm-test-dev<br>
+                <b>27567</b> - mm-test-admin<br>
+                <b>28565</b> - nc-test-dev<br>
+                <b>3306</b> - mysql
+            </p>
+
+            <h2>External Ports</h2>
+            <p>
+                <b>25565</b> - mm-main-proxy<br>
+                <b>25566</b> - mm-test-proxy<br>
+                <b>25569</b> - nc-test-proxy<br>
+                <b>25567</b> - ps-aria-modpack<br>
+                <b>21</b> - ssh<br>
+                <b>8448</b> - matrix federation
+            </p>
+
+            <h2>Cloudflare Ports</h2>
+            <p>
+                <b>8082</b> - map<br>
+                <b>8083</b> - analytics<br>
+                <b>8084</b> - jenkins<br>
+                <b>8085</b> - reposilite<br>
+                <b>8086</b> - resource pack<br>
+                <b>8087</b> - nova resource pack<br>
+                <b>8008</b> - matrix<br>
+                <b>3478</b> - coturn
+            </p>
+        </wiki-box>
+    </div>
+    
+    <script src="/components/documentation-menu.js"></script>
+    <script src="/components/wiki-box.js"></script>
+    <script src="/components/wiki-path.js"></script>
+    <script src="/components/wiki-command.js"></script>
+    <script src="/components/wiki-code.js"></script>
+    <script src="/components/wiki-quote.js"></script>
+    <script src="/components/wiki-info.js"></script>
+    <script src="/components/wiki-warning.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
+    <script>
+        feather.replace({ class: 'feather', 'stroke-width': 1 })
+        hljs.highlightAll();
+    </script>
+
+</body>
