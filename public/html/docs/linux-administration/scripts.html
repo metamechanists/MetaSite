@@ -31,10 +31,19 @@
         <wiki-box>
             <p>Scripts are contained in /scripts</p>
 
-            <h1>Aliases</h1>
+            <p>Aliases</p>
             <wiki-command>startserver [server]</wiki-command>
             <wiki-command>stopserver [server]</wiki-command>
             <wiki-command>show [server]</wiki-command>
+
+            <p>Adding new script</p>
+            <ol>
+                <li>1) Add script to /scripts</li>
+                <li>2) chmod 550 [script]</li>
+                <li>3) chgrp admins [script]</li>
+                <li>4) If requires elevated privileges, sudo visudo and copy+paste an existing entry </li>
+            </ol>
+
         </wiki-box>
     </div>
     
