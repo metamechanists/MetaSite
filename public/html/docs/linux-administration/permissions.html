@@ -54,6 +54,46 @@
             <p>
                 The setup we use involves an individual user for every service. This makes managing permissions much easier, and every user is by design segregated from all the other users. This in turn means that if one server is compromised, it cannot do any damage to other services without finding a privilege escalation exploit. However, editor accounts do have unrestricted access to all the servers (and several services), and so these accounts must not be compromised.
             </p>
+
+            <p>
+                Create a user (-m means create home directory)
+            </p>
+            <wiki-command>useradd [name] -m</wiki-command>
+
+            <p>
+                Remove a user
+            </p>
+            <wiki-command>userdel [name]</wiki-command>
+
+            <p>
+                Add user to group
+            </p>
+            <wiki-command>usermod -a -g [name] -m</wiki-command>
+
+            <p>
+                Rename user
+            </p>
+            <wiki-command>usermod -l [new-user] [old-user]</wiki-command>
+
+            <p>
+                Change user home directory
+            </p>
+            <wiki-command>usermod -d [home-directory] [old-user]</wiki-command>
+
+            <p>
+                Change user group
+            </p>
+            <wiki-command>groupmod -n [new-group] [old-group]</wiki-command>
+
+            <p>
+                Change primary user group
+            </p>
+            <wiki-command>groupmod -g [primary-group] [username]</wiki-command>
+
+            <p>
+                Add user group
+            </p>
+            <wiki-command>groupmod -a -G [group] [username]</wiki-command>
         </wiki-box>
     </div>
     
