@@ -29,6 +29,12 @@
             <h1 class="text-heading-big">Welcome</h1>
         </div>
 
+        <div id="cdSection" style="display: none;" class="countdown-section">
+            <h2 class="text-heading-clock"><span id="cdTimer">00:00:00:00</span></h2>
+            <h3 class="text-heading-medium">until Season 4 launch</h3>
+            <h4 class="text-paragraph" style="margin-bottom: 0;">Saturday 17 February 2024 9:00 am (CST)</h4>
+        </div>
+
         <div class="content-section background-dark-blue">
             <div class="content-limit-width content-pad-top">
                 <p class="text-paragraph">
@@ -98,6 +104,28 @@
 
     <script>
         feather.replace({ class: 'feather', 'stroke-width': 1 })
+    </script>
+
+    <script>
+        const s4l = new Date(1708174800000).getTime();
+
+        function updateClock() {
+            let now = new Date().getTime();
+            let diff = s4l - now;
+
+            document.getElementById("cdTimer").innerHTML=`
+                ${Math.floor(diff / (1000*60*60*24))}d
+                ${Math.floor((diff % (1000*60*60*24)) / (1000*60*60))}h
+                ${Math.floor((diff % (1000*60*60)) / (1000*60))}m
+                ${Math.floor((diff % (1000*60)) / (1000))}s
+            `;
+
+            if (diff >= 0) {
+                document.getElementById("cdSection").style.display='block';
+            }
+        }
+
+        setInterval(updateClock, 100);
     </script>
 
 </body>

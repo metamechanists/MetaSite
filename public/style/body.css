@@ -20,6 +20,20 @@ body {
     padding-left: 10px;
 }
 
+.countdown-section {
+    padding: 35px;
+    background-color: rgb(25, 26, 30, 0.75);
+    color: #ffffff;
+}
+
+.countdown-section h2 {
+    margin: 0px;
+}
+
+.countdown-section h3 {
+    margin: 0px;
+}
+
 .content-limit-width {
     max-width: 800px;
 }
