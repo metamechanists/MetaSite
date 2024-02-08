@@ -34,7 +34,7 @@ class MainMenu extends HTMLElement {
                       Ranks
                   </a>
 
-                  <a href="/https://map.metamechanists.org">
+                  <a href="https://map.metamechanists.org">
                       <img src="/image/icons/map-marker-multiple.svg">
                       Map
                   </a>
