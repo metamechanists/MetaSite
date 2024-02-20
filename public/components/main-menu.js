@@ -34,6 +34,11 @@ class MainMenu extends HTMLElement {
                       Ranks
                   </a>
 
+                  <a href="/server/vote">
+                  <img src="/image/icons/how-to-vote.svg">
+                      Vote
+                  </a>
+
                   <a href="https://map.metamechanists.org">
                       <img src="/image/icons/map-marker-multiple.svg">
                       Map

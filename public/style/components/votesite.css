@@ -1,0 +1,41 @@
+.votesite {
+    padding: 0.5%;
+    display: block;
+    font-size:1.15em;
+}
+
+.votesite strong {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color:rgb(98, 165, 227);
+    text-decoration: underline;
+}
+
+.votesite span {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: #a7a7a7;
+    font-style: italic;
+}
+
+.votesite a {
+    color:rgb(98, 165, 227);
+    text-decoration: none;
+}
+
+.votesite-icon-div {
+    width: 20%;
+    float: left;
+    padding: 0px;
+}
+
+.votesite-icon-image {
+    width: 73%;
+    height: auto;
+    stroke: rgb(255, 255, 255);
+    stroke-width: 2;
+}
+
+.votesite-text-div {
+    width: 78%;
+    float: left;
+    padding: 0px;
+}
