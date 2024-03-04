@@ -2,22 +2,20 @@ const variableIDs = [
   'age', 
   'timezone', 
   'discord-username',
-  'talk-in-voicechat',
   'time-per-week',
 
   'enjoy-programming',
-  'development-experience',
-  'run-length-encoding'];
+  'languages',
+  'programming-projects'];
 
 const variableNames = [
   'Age',
   'Timezone/region',
   'Discord username and tag',
-  'Are you comfortable talking in a voicechat?',
-  'Give a rough estimate of how much time (on average) you\'ll be able to dedicate to MetaMechanisys every week',
+  'Give a rough estimate of how much time (on average) you\'ll be able to dedicate to MetaMechanists every week',
 
   'What makes you enjoy programming?',
-  'What experience do you have with development?',
-  'Write a program to perform run-length-encoding.']
+  'What languages have you worked with?',
+  'List a few programming projects (1-3) that you\'re proud of.']
 
 const applicationType = "DEVELOPER "

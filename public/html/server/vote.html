@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.6/build/grids-responsive-min.css"/>
+    
+    <link rel="stylesheet" href="/style/body.css">
+    <link rel="stylesheet" href="/style/background.css">
+    <link rel="stylesheet" href="/style/text.css">
+
+    <link rel="stylesheet" href="/style/components/main-menu.css">
+    <link rel="stylesheet" href="/style/components/votesite.css">
+    
+    <link rel="icon" type = "/image/png" href="/image/logo.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="A Minecraft server with Slimefun, Aurelium Skills, custom plugins, no donation store, an amazing community, and so much more. Automate to your heart's content.">
+    <title>Vote</title>
+    
+</head>
+
+
+<body class="background-index">
+    <main-menu></main-menu>
+
+    <div class="content-main">
+        <div class="content-section background-gray">
+            <h1 class="text-heading-big">Vote</h1>
+        </div>
+
+        <div class="content-section background-dark-blue">
+            <div class="content-limit-width content-pad-top">
+                <p class="text-paragraph">
+                    Voting for MetaMechanists helps our community grow, and gives you ingame perks. Click all of the links below to vote for us. Thanks!
+                </p>
+            </div>
+        </div>
+        
+        <div class="content-section background-dark-blue content-pad-top" id="votesites">
+            <vote-site name="Minecraft-Server.net" url="https://minecraft-server.net/vote/MetaMechanists/"></vote-site>
+            <vote-site name="Craftlist" url="https://craftlist.org/metamechanists#vote"></vote-site>
+            <vote-site name="Best Minecraft Servers" url="https://best-minecraft-servers.co/server-metamechanists.437/vote"></vote-site>
+            <vote-site name="Top Minecraft Servers" url="http://topminecraftservers.org/vote/14577/"></vote-site>
+            <vote-site name="PlanetMinecraft" url="https://www.planetminecraft.com/server/metamechanists/vote/"></vote-site>
+            <vote-site name="Minecraft MP" url="https://minecraft-mp.com/server/274514/vote/"></vote-site>
+            <vote-site name="TopG" url="https://topg.org/minecraft-servers/server-627837"></vote-site>
+        </div>
+    </div>
+    
+    <script src="/components/main-menu.js"></script>
+    <script src="/components/votesite.js"></script>
+
+    <script>
+        feather.replace({ class: 'feather', 'stroke-width': 1 })
+    </script>
+
+</body>
+</html>
