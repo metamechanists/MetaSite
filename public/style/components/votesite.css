@@ -5,13 +5,13 @@
 }
 
 .votesite strong {
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-family: var(--font);
     color:rgb(98, 165, 227);
     text-decoration: underline;
 }
 
 .votesite span {
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-family: var(--font);
     color: #a7a7a7;
     font-style: italic;
 }

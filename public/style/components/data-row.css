@@ -4,7 +4,7 @@
 
 .data-row-key {
     float: left;
-    font-family:monospace;
+    font-family: var(--font-mono);
     font-size:1.2em;
     font-weight: 100;
     letter-spacing: 0.1em;
@@ -13,8 +13,8 @@
 
 .data-row-value {
     float: left;
-    font-family:monospace;
-    font-size:1.2em;
+    font-family: var(--font-mono);
+    font-size:1em;
     font-weight: 100;
     letter-spacing: 0.1em;
     padding-left: 10px;
