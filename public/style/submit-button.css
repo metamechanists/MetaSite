@@ -2,7 +2,7 @@
     border:0px;
     width:300px;
     height:60px;
-    font-family: monospace;
+    font-family: var(--font-mono);
     font-size:30px;
     cursor:pointer;
     background-color: #509050;

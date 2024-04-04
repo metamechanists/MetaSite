@@ -5,7 +5,7 @@
 }
 
 .rule-box-number {
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-family: var(--font);
     font-size:1.0em; 
     color:rgb(98, 165, 227);
     letter-spacing: 1px;
@@ -15,7 +15,7 @@
 }
 
 .rule-box-rule {
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-family: var(--font);
     font-size:1.0em;
     letter-spacing: 0.0em;
     color:rgb(255, 255, 255);

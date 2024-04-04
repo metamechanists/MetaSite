@@ -5,7 +5,7 @@
 
 .application-long-text-input {
     border: 0px solid;
-    font-family: monospace;
+    font-family: var(--font-mono);
     font-size:15px;
     width: 1150px;
     max-width: 100%;

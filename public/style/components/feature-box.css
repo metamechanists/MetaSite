@@ -4,8 +4,8 @@
 }
 
 .featurebox h2 {
-    font-family:monospace;
-    font-size:2.1em; 
+    font-family: var(--font-mono);
+    font-size:1.7em; 
     color:rgb(98, 165, 227);
     letter-spacing: 1px;
     margin-block-start: 0;
@@ -14,7 +14,7 @@
 }
 
 .featurebox p {
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-family: var(--font);
     font-size:1.0em;
     letter-spacing: 0.0em;
     color:rgb(255, 255, 255);
